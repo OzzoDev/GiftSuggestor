@@ -1,50 +1,84 @@
-# React + TypeScript + Vite
+# Gift Finder App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, feature-rich gift suggestion app built with **React**, **Vite**, and **TypeScript**. The app helps users discover gift ideas for various occasions, review gifts, and save favorites. It’s designed to strengthen advanced React concepts and improve development skills.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎁 **Gift Suggestions:** Browse a collection of predefined gift ideas with title, description, images, price range, and preferred occasions.
+- ⭐ **Reviews & Ratings:** Add reviews and ratings to gifts to help others choose the perfect present.
+- ❤️ **Favorite List:** Save gifts to your favorites for easy access later.
+- 🔍 **Search & Filter:** Find gifts by keywords, price range, or occasion.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend:** React, Vite, TypeScript
+- **State Management:** Redux Toolkit
+- **Server State Management:** React Query
+- **Forms & Validation:** React Hook Form, Zod
+- **Animations:** Framer Motion
+- **Reducers & Context:** useReducer, React Context API
+- **Styling:** Tailwind CSS
 
-- Configure the top-level `parserOptions` property like this:
+## Installation & Setup
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. **Clone the repository:**
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+   ```bash
+   git clone https://github.com/OzzoDev/GiftSuggestor.git
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. **Install dependencies:**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Set up environment variables:**
+   Create a `.env` file and define necessary environment variables (if any).
+
+4. **Run the development server:**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. **Build for production:**
+
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
+
+6. **Preview the production build:**
+   ```bash
+   npm run preview
+   # or
+   yarn preview
+   ```
+
+## Key Concepts & Implementation
+
+### 🎯 Redux Toolkit
+
+Used for global state management, handling favorites, and gift data.
+
+### ⚡ React Query
+
+Efficiently fetch, cache, and sync server data for gifts and reviews.
+
+### 📝 React Hook Form & Zod
+
+Create and validate review forms with ease.
+
+### 🎬 Framer Motion
+
+Add smooth animations to enhance UI interactions.
+
+### 🧠 useReducer
+
+Manage complex component state and share data across components.
