@@ -23,7 +23,7 @@ A modern, feature-rich gift suggestion app built with **React**, **Vite**, and *
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/gift-finder-app.git
+   git clone https://github.com/OzzoDev/GiftSuggestor.git
    ```
 
 2. **Install dependencies:**
