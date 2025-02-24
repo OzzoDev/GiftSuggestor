@@ -97,20 +97,3 @@ Add smooth animations to enhance UI interactions.
 
 ### 🧠 useReducer & Context API
 Manage complex component state and share data across components.
-
-## Contributing
-
-1. **Fork the repository**
-2. **Create a branch:** `git checkout -b feature-name`
-3. **Commit your changes:** `git commit -m 'Add feature'`
-4. **Push to the branch:** `git push origin feature-name`
-5. **Create a Pull Request**
-
-## License
-
-This project is licensed under the MIT License.
-
----
-
-Let me know if you’d like me to tweak anything or expand on a particular section! 🚀
-
