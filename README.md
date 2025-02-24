@@ -19,30 +19,6 @@ A modern, feature-rich gift suggestion app built with **React**, **Vite**, and *
 - **Reducers & Context:** useReducer, React Context API
 - **Styling:** Tailwind CSS
 
-## Project Structure
-
-```
-├── public
-├── src
-│   ├── assets
-│   ├── components
-│   ├── features
-│   │   ├── favorites
-│   │   ├── giftList
-│   │   ├── reviews
-│   │   └── search
-│   ├── hooks
-│   ├── pages
-│   ├── store
-│   ├── utils
-│   └── App.tsx
-├── .env
-├── .eslintrc.js
-├── .prettierrc
-├── index.html
-└── vite.config.ts
-```
-
 ## Installation & Setup
 
 1. **Clone the repository:**
