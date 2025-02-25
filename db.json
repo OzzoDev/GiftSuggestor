@@ -507,8 +507,8 @@
             "gift": "Pet Toy Set",
             "description": "A fun set of toys for your furry friends.",
             "price": {
-                "min":30,
-                "max":60
+                "min": 30,
+                "max": 60
             },
             "occasion": [
                 "Birthday",
@@ -540,8 +540,8 @@
             "gift": "Outdoor Blanket",
             "description": "A large, waterproof blanket perfect for picnics.",
             "price": {
-                "min":20,
-                "max":30
+                "min": 20,
+                "max": 30
             },
             "occasion": [
                 "Summer",
@@ -570,8 +570,8 @@
             "gift": "Cooking Class Voucher",
             "description": "A voucher for a fun cooking class experience.",
             "price": {
-                "min":80, 
-                "max":130
+                "min": 80,
+                "max": 130
             },
             "occasion": [
                 "Anniversary",
@@ -599,8 +599,8 @@
             "gift": "Puzzle Set",
             "description": "A challenging puzzle set for hours of fun.",
             "price": {
-                "min":15, 
-                "max":25
+                "min": 15,
+                "max": 25
             },
             "occasion": [
                 "Birthday",
@@ -631,8 +631,8 @@
             "gift": "Digital Photo Frame",
             "description": "A frame that displays your favorite digital photos.",
             "price": {
-                "min":60,
-                "max":110
+                "min": 60,
+                "max": 110
             },
             "occasion": [
                 "Christmas",
@@ -659,8 +659,8 @@
             "gift": "Smart Home Device",
             "description": "A smart assistant to help manage your home.",
             "price": {
-                "min":90,
-                "max":140
+                "min": 90,
+                "max": 140
             },
             "occasion": [
                 "Birthday",
@@ -688,8 +688,8 @@
             "gift": "Leather Wallet",
             "description": "A stylish leather wallet that combines elegance and functionality.",
             "price": {
-                "min":40, 
-                "max":70
+                "min": 40,
+                "max": 70
             },
             "occasion": [
                 "Birthday",
@@ -718,8 +718,8 @@
             "gift": "Silk Scarf",
             "description": "A luxurious silk scarf that adds elegance to any outfit.",
             "price": {
-                "min":20, 
-                "max":40
+                "min": 20,
+                "max": 40
             },
             "occasion": [
                 "Birthday",
@@ -747,8 +747,8 @@
             "gift": "Fitness Class Membership",
             "description": "A membership for various fitness classes.",
             "price": {
-                "min":120, 
-                "max":150
+                "min": 120,
+                "max": 150
             },
             "occasion": [
                 "Birthday",
@@ -776,8 +776,8 @@
             "gift": "Custom Puzzle",
             "description": "A personalized puzzle featuring a favorite photo.",
             "price": {
-                "min":20,
-                "max":30
+                "min": 20,
+                "max": 30
             },
             "occasion": [
                 "Birthday",
@@ -806,8 +806,8 @@
             "gift": "Elegant Necklace",
             "description": "A stunning necklace that complements any outfit.",
             "price": {
-                "min":30, 
-                "max":50
+                "min": 30,
+                "max": 50
             },
             "occasion": [
                 "Birthday",
@@ -835,8 +835,8 @@
             "gift": "Personalized Calendar",
             "description": "A custom calendar featuring personal photos for each month.",
             "price": {
-                "min":35,
-                "max":65
+                "min": 35,
+                "max": 65
             },
             "occasion": [
                 "New Year",
@@ -863,8 +863,8 @@
             "gift": "Luxury Bathrobe",
             "description": "A soft and cozy bathrobe perfect for lounging.",
             "price": {
-                "min":130, 
-                "max":180
+                "min": 130,
+                "max": 180
             },
             "occasion": [
                 "Christmas",
@@ -892,8 +892,8 @@
             "gift": "Indoor Plant",
             "description": "A low-maintenance indoor plant to brighten up any space.",
             "price": {
-                "min":20,
-                "max":70
+                "min": 20,
+                "max": 70
             },
             "occasion": [
                 "Housewarming",
@@ -922,8 +922,8 @@
             "gift": "Travel Backpack",
             "description": "A stylish and functional backpack for all your travel needs.",
             "price": {
-                "min":150, 
-                "max":200
+                "min": 150,
+                "max": 200
             },
             "occasion": [
                 "Graduation",
@@ -951,8 +951,8 @@
             "gift": "Handcrafted Jewelry Box",
             "description": "A beautiful box to store your precious jewelry.",
             "price": {
-                "min":40, 
-                "max":90
+                "min": 40,
+                "max": 90
             },
             "occasion": [
                 "Anniversary",
@@ -981,8 +981,8 @@
             "gift": "Cooking Utensil Set",
             "description": "A complete set of kitchen utensils for the home chef.",
             "price": {
-                "min":45,
-                "max":70
+                "min": 45,
+                "max": 70
             },
             "occasion": [
                 "Housewarming",
@@ -1010,8 +1010,8 @@
             "gift": "Wireless Earbuds",
             "description": "High-quality wireless earbuds for music lovers.",
             "price": {
-                "min":30, 
-                "max":70
+                "min": 30,
+                "max": 70
             },
             "occasion": [
                 "Birthday",
@@ -1038,8 +1038,8 @@
             "gift": "Subscription Box",
             "description": "A monthly subscription box tailored to interests.",
             "price": {
-                "min":30, 
-                "max":40
+                "min": 30,
+                "max": 40
             },
             "occasion": [
                 "Birthday",
@@ -1067,8 +1067,8 @@
             "gift": "Digital Drawing Tablet",
             "description": "A tablet designed for digital artists.",
             "price": {
-                "min":90,
-                "max":170
+                "min": 90,
+                "max": 170
             },
             "occasion": [
                 "Birthday",
@@ -1096,8 +1096,8 @@
             "gift": "Wireless Charging Pad",
             "description": "A sleek charging pad for your devices.",
             "price": {
-                "min":20, 
-                "max":30
+                "min": 20,
+                "max": 30
             },
             "occasion": [
                 "Birthday",
@@ -1125,8 +1125,8 @@
             "gift": "Leather Journal",
             "description": "A classic leather journal for writing and sketching.",
             "price": {
-                "min":10, 
-                "max":25
+                "min": 10,
+                "max": 25
             },
             "occasion": [
                 "Birthday",
@@ -1155,8 +1155,8 @@
             "gift": "Craft Beer Sampler",
             "description": "A selection of craft beers from local breweries.",
             "price": {
-                "min":25, 
-                "max":40
+                "min": 25,
+                "max": 40
             },
             "occasion": [
                 "Birthday",
@@ -1183,8 +1183,8 @@
             "gift": "Smart Light Bulbs",
             "description": "Smart bulbs that can be controlled via an app.",
             "price": {
-                "min":25,
-                "max":55
+                "min": 25,
+                "max": 55
             },
             "occasion": [
                 "Housewarming",
@@ -1212,8 +1212,8 @@
             "gift": "Cooking Cookbook",
             "description": "A collection of delicious recipes for home cooking.",
             "price": {
-                "min":15, 
-                "max":30
+                "min": 15,
+                "max": 30
             },
             "occasion": [
                 "Birthday",
@@ -1242,8 +1242,8 @@
             "gift": "Portable Blender",
             "description": "A compact blender for smoothies on the go.",
             "price": {
-                "min":35, 
-                "max":50
+                "min": 35,
+                "max": 50
             },
             "occasion": [
                 "Birthday",
@@ -1271,8 +1271,8 @@
             "gift": "Puzzle Book",
             "description": "A fun collection of puzzles and brain teasers.",
             "price": {
-                "min":10, 
-                "max":20
+                "min": 10,
+                "max": 20
             },
             "occasion": [
                 "Birthday",
@@ -1299,8 +1299,8 @@
             "gift": "Baking Kit",
             "description": "A complete kit for baking delicious treats at home.",
             "price": {
-                "min":30, 
-                "max":45
+                "min": 30,
+                "max": 45
             },
             "occasion": [
                 "Birthday",
@@ -1333,8 +1333,8 @@
             "gift": "Coffee Maker",
             "description": "A compact coffee maker for brewing fresh coffee.",
             "price": {
-                "min":80, 
-                "max":200
+                "min": 80,
+                "max": 200
             },
             "occasion": [
                 "Birthday",
@@ -1363,8 +1363,8 @@
             "gift": "Gardening Book",
             "description": "A comprehensive guide to gardening for beginners.",
             "price": {
-                "min":20, 
-                "max":40
+                "min": 20,
+                "max": 40
             },
             "occasion": [
                 "Housewarming",
@@ -1374,7 +1374,7 @@
             "images": [
                 "https://www.phaidon.com/images/9781838663209/main-mobile-x1-jpg/the-garden-book-revised-and-updated-edition-en-6320-overview-jacket-front-3000.jpg",
                 "https://i0.wp.com/www.mandycanudigit.com/wp-content/uploads/2022/06/The-Regenerative-Garden-book-May-13-22.jpg?fit=800%2C600&ssl=1"
-                ],
+            ],
             "reviews": [
                 {
                     "review": "Very informative and helpful!",
@@ -1391,8 +1391,8 @@
             "gift": "Board Game Night Set",
             "description": "Everything you need for a perfect board game night.",
             "price": {
-                "min":20, 
-                "max":40
+                "min": 20,
+                "max": 40
             },
             "occasion": [
                 "Family Gathering",
@@ -1420,8 +1420,8 @@
             "gift": "Personalized Blanket",
             "description": "A cozy blanket customized with a special design.",
             "price": {
-                "min":20,
-                "max":50
+                "min": 20,
+                "max": 50
             },
             "occasion": [
                 "Christmas",
@@ -1450,8 +1450,8 @@
             "gift": "Mini Projector",
             "description": "A portable projector for movie nights anywhere.",
             "price": {
-                "min":60, 
-                "max":90
+                "min": 60,
+                "max": 90
             },
             "occasion": [
                 "Birthday",
@@ -1478,8 +1478,8 @@
             "gift": "Essential Oil Diffuser",
             "description": "A stylish diffuser for creating a calming atmosphere.",
             "price": {
-                "min":110, 
-                "max":190
+                "min": 110,
+                "max": 190
             },
             "occasion": [
                 "Birthday",
