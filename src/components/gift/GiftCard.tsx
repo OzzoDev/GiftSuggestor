@@ -1,4 +1,6 @@
+import { IoIosHeartEmpty, IoIosHeart } from "react-icons/io";
 import { Gift } from "../../types/types";
+import ToggleIconBtn from "../btn/ToggleIconBtn";
 
 interface GiftCardProps {
   gift: Gift;
@@ -6,7 +8,13 @@ interface GiftCardProps {
 
 export default function GiftCard({ gift }: GiftCardProps) {
   return (
-    <div className="bg-red-900">
+    <div className="bg-slate-100 p-6 rounded-lg cursor-pointer">
+      <ToggleIconBtn
+        selected={false}
+        onClick={() => {}}
+        defualtIcon={<IoIosHeartEmpty size={25} />}
+        selectedIcon={<IoIosHeart size={25} color="red" />}
+      />
       <p>{gift.gift}</p>
       <p>{gift.description}</p>
       <p>{gift.occasion.join(", ")}</p>

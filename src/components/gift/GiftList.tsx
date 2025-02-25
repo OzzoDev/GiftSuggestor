@@ -26,7 +26,7 @@ export default function GiftList() {
 
   return (
     <div>
-      <ul className="grid grid-cols-[1fr] md:grid-cols-[repeat(2,1fr)] lg:grid-cols-[repeat(3,1fr)] xl:grid-cols-[repeat(4,1fr)] gap-8">
+      <ul className="grid grid-cols-[1fr] md:grid-cols-[repeat(2,1fr)] lg:grid-cols-[repeat(3,1fr)] xl:grid-cols-[repeat(4,1fr)] gap-8 p-8">
         {gifts?.map((gift) => {
           return <GiftCard key={gift.id} gift={gift} />;
         })}
