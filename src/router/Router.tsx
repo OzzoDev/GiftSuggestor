@@ -1,23 +1,15 @@
-import { lazy, Suspense } from "react";
+// import { lazy, Suspense } from "react";
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router";
-import { PuffLoader } from "react-spinners";
+// import { PuffLoader } from "react-spinners";
 import RootLayout from "../layouts/RootLayout";
+import HomePage from "../pages/HomePage";
 
-const HomePage = lazy(() => import("../pages/HomePage"));
-
-const Loader = <PuffLoader size={50} color="white" />;
+// const Loader = <PuffLoader size={50} />;
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route
-        index
-        element={
-          <Suspense fallback={Loader}>
-            <HomePage />
-          </Suspense>
-        }
-      />
+      <Route index element={<HomePage />} />
     </Route>
   )
 );
