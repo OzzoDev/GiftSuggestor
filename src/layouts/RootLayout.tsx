@@ -7,7 +7,7 @@ export default function RootLayout() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main>
         <PageTransition>
           <Outlet />
         </PageTransition>
