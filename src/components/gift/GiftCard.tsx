@@ -44,6 +44,10 @@ export default function GiftCard({ gift }: GiftCardProps) {
     window.location.href = gift.url;
   };
 
+  const navigteToGiftDetails = (): void => {
+    navigate(`gift/${gift.id}`);
+  };
+
   const minPrice = gift.price.min;
   const priceBadgeBackgroundColor =
     minPrice > 100
@@ -89,7 +93,7 @@ export default function GiftCard({ gift }: GiftCardProps) {
         </div>
         <div className="flex gap-8">
           <PrimaryBtn btnText="Buy here" onClick={navigateToGiftUrl} />
-          <GhostBtn btnText="View more" />
+          <GhostBtn btnText="View more" onClick={navigteToGiftDetails} />
         </div>
       </div>
     </div>
