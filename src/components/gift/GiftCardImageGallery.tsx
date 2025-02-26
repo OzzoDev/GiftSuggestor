@@ -65,11 +65,11 @@ export default function GiftCardImageGallery({ images }: GiftCardImageGalleryPro
         </div>
       ))}
       {hoveredIndex !== null && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 pointer-events-none">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <img
             src={images[hoveredIndex]}
             alt={`Hovered Image ${hoveredIndex + 1}`}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-lg"
             style={{ pointerEvents: "none" }}
           />
         </div>
