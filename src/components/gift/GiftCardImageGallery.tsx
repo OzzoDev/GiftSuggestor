@@ -1,4 +1,5 @@
 import { useState } from "react";
+import useScrollDelay from "../../hooks/useScrollDelay";
 
 interface GiftCardImageGalleryProps {
   images: string[];
@@ -6,7 +7,13 @@ interface GiftCardImageGalleryProps {
 
 export default function GiftCardImageGallery({ images }: GiftCardImageGalleryProps) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [canHover, setCanHover] = useState<boolean>(true);
 
+  useScrollDelay(
+    () => setCanHover(false),
+    () => setCanHover(true),
+    100
+  );
   const getGridStyle = () => {
     const totalImages = images.length;
     switch (totalImages) {
@@ -18,7 +25,7 @@ export default function GiftCardImageGallery({ images }: GiftCardImageGalleryPro
       case 5:
         return "grid grid-cols-2 grid-row-3 gap-2 h-[400px]";
       default:
-        return "grid grid-cols-1 gap-2 h-[400px]"; // Default case
+        return "grid grid-cols-1 gap-2 h-[400px]";
     }
   };
 
@@ -48,7 +55,7 @@ export default function GiftCardImageGallery({ images }: GiftCardImageGalleryPro
         <div
           key={index}
           className={`relative overflow-hidden ${getPlacement(index)}`}
-          onMouseEnter={() => setHoveredIndex(index)}
+          onMouseEnter={() => canHover && setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}>
           <img
             src={src}
