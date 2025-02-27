@@ -12,6 +12,7 @@ import GhostBtn from "../btn/GhostBtn";
 import { useNavigate } from "react-router";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { toggleGiftInFavorites } from "../../api/api";
+import GiftCardRating from "./GiftCardRating";
 
 interface GiftCardProps {
   gift: Gift;
@@ -67,6 +68,12 @@ export default function GiftCard({ gift, isFavorite }: GiftCardProps) {
     navigate(`gift/${gift.id}`);
   };
 
+  const averageRating = Math.round(
+    gift.reviews.reduce((acc, curr) => {
+      return acc + curr.rating;
+    }, 0) / gift.reviews.length
+  );
+
   const minPrice = gift.price.min;
   const priceBadgeBackgroundColor =
     minPrice > 100
@@ -103,10 +110,13 @@ export default function GiftCard({ gift, isFavorite }: GiftCardProps) {
         <div className="flex flex-col gap-y-4">
           <div className="flex flex-col gap-y-2">
             <p>{joinWithAnd(gift.occasion)}</p>
-            <GiftCardPriceBadge
-              text={`$${gift.price.min} - ${gift.price.max}`}
-              backgroundColor={priceBadgeBackgroundColor}
-            />
+            <div className="flex justify-between">
+              <GiftCardPriceBadge
+                text={`$${gift.price.min} - ${gift.price.max}`}
+                backgroundColor={priceBadgeBackgroundColor}
+              />
+              <GiftCardRating rating={averageRating} />
+            </div>
           </div>
           <GiftCardImageGallery images={gift.images} />
         </div>
