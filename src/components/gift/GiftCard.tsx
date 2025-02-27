@@ -1,22 +1,26 @@
 import { IoIosHeartEmpty, IoIosHeart } from "react-icons/io";
-import { Gift } from "../../types/types";
+import { Gift, GiftFavoriteToggleMessage } from "../../types/types";
 import ToggleIconBtn from "../btn/ToggleIconBtn";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { useEffect, useState } from "react";
 import GiftCardImageGallery from "./GiftCardImageGallery";
 import { joinWithAnd } from "../../utils/helpers";
-import GiftCarPriceBadge from "./GiftCarPriceBadge";
+import GiftCardPriceBadge from "./GiftCardPriceBadge";
 import PrimaryBtn from "../btn/PrimaryBtn";
 import GhostBtn from "../btn/GhostBtn";
 import { useNavigate } from "react-router";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { toggleGiftInFavorites } from "../../api/api";
 
 interface GiftCardProps {
   gift: Gift;
+  isFavorite: boolean;
 }
 
-export default function GiftCard({ gift }: GiftCardProps) {
+export default function GiftCard({ gift, isFavorite }: GiftCardProps) {
   const navigate = useNavigate();
+  const queryClient = useQueryClient();
   const [imagesLoaded, setImagesLoaded] = useState<number>(0);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const totalImages: number = gift.images.length;
@@ -36,6 +40,21 @@ export default function GiftCard({ gift }: GiftCardProps) {
     });
   }, [gift.images]);
 
+  const mutation = useMutation<GiftFavoriteToggleMessage, Error, Gift>({
+    mutationFn: toggleGiftInFavorites,
+    onSuccess: (data) => {
+      console.log(data);
+      queryClient.invalidateQueries({ queryKey: ["gifts"] });
+    },
+    onError: (error) => {
+      console.error("Error toggling favorite:", error);
+    },
+  });
+
+  const handleToggleFavorite = async () => {
+    mutation.mutate(gift);
+  };
+
   const handleImageLoad = (): void => {
     setImagesLoaded((prev) => prev + 1);
   };
@@ -51,12 +70,12 @@ export default function GiftCard({ gift }: GiftCardProps) {
   const minPrice = gift.price.min;
   const priceBadgeBackgroundColor =
     minPrice > 100
-      ? "rgba(91, 11, 230,0.6)"
+      ? "rgba(91, 11, 230,0.8)"
       : minPrice > 60
-      ? "rgba(27, 98, 250,0.6)"
+      ? "rgba(27, 98, 250,0.8)"
       : minPrice > 30
-      ? "rgba(27, 183, 250,0.6)"
-      : "rgba(4, 189, 109, 0.6)";
+      ? "rgba(27, 183, 250,0.8)"
+      : "rgba(4, 189, 109, 0.8)";
 
   return (
     <div className="relative">
@@ -73,8 +92,8 @@ export default function GiftCard({ gift }: GiftCardProps) {
           <div className="flex justify-between items-start pb-2 border-b-[1px] border-gray-300">
             <p className="text-lg font-semibold">{gift.gift}</p>
             <ToggleIconBtn
-              selected={false}
-              onClick={() => {}}
+              selected={isFavorite}
+              onClick={handleToggleFavorite}
               defualtIcon={<IoIosHeartEmpty size={25} />}
               selectedIcon={<IoIosHeart size={25} color="red" />}
             />
@@ -84,7 +103,7 @@ export default function GiftCard({ gift }: GiftCardProps) {
         <div className="flex flex-col gap-y-4">
           <div className="flex flex-col gap-y-2">
             <p>{joinWithAnd(gift.occasion)}</p>
-            <GiftCarPriceBadge
+            <GiftCardPriceBadge
               text={`$${gift.price.min} - ${gift.price.max}`}
               backgroundColor={priceBadgeBackgroundColor}
             />

@@ -1,1512 +1,1519 @@
 {
-    "gifts": [
+  "gifts": [
+    {
+      "id": "0",
+      "gift": "Personalized Mug",
+      "description": "A custom mug featuring a name or special message.",
+      "price": {
+        "min": 15,
+        "max": 45
+      },
+      "occasion": [
+        "Birthday",
+        "Christmas"
+      ],
+      "url": "https://www.etsy.com/se-en/market/custom_mug",
+      "images": [
+        "https://i.etsystatic.com/23008040/c/1612/1612/849/136/il/afcc53/6365716831/il_600x600.6365716831_on5r.jpg",
+        "https://i.etsystatic.com/50191947/c/1470/1470/115/1195/il/db8969/6590011780/il_600x600.6590011780_qsbh.jpg",
+        "https://i.etsystatic.com/22404337/c/1642/1642/291/1018/il/b8ba03/6344028434/il_600x600.6344028434_l7mg.jpg",
+        "https://i.etsystatic.com/47794052/r/il/d3cac1/5446984286/il_794xN.5446984286_nr9h.jpg"
+      ],
+      "reviews": [
         {
-            "id": "0",
-            "gift": "Personalized Mug",
-            "description": "A custom mug featuring a name or special message.",
-            "price": {
-                "min": 15,
-                "max": 45
-            },
-            "occasion": [
-                "Birthday",
-                "Christmas"
-            ],
-            "url": "https://www.etsy.com/se-en/market/custom_mug",
-            "images": [
-                "https://i.etsystatic.com/23008040/c/1612/1612/849/136/il/afcc53/6365716831/il_600x600.6365716831_on5r.jpg",
-                "https://i.etsystatic.com/50191947/c/1470/1470/115/1195/il/db8969/6590011780/il_600x600.6590011780_qsbh.jpg",
-                "https://i.etsystatic.com/22404337/c/1642/1642/291/1018/il/b8ba03/6344028434/il_600x600.6344028434_l7mg.jpg",
-                "https://i.etsystatic.com/47794052/r/il/d3cac1/5446984286/il_794xN.5446984286_nr9h.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Great quality and fast shipping!",
-                    "rating": 5
-                },
-                {
-                    "review": "The print was slightly off-center.",
-                    "rating": 3
-                }
-            ]
+          "review": "Great quality and fast shipping!",
+          "rating": 5
         },
         {
-            "id": "1",
-            "gift": "Bluetooth Speaker",
-            "description": "A portable speaker with excellent sound quality and battery life.",
-            "price": {
-                "min": 30,
-                "max": 50
-            },
-            "occasion": [
-                "Birthday",
-                "Anniversary"
-            ],
-            "url": "https://www.amazon.se/-/en/Bluetooth-Deeyaple-Intensive-Connected-Waterproof/dp/B0CQLT78BK?pd_rd_w=t3m0w&content-id=amzn1.sym.2c45a213-2ebd-4981-85d3-11833228850a&pf_rd_p=2c45a213-2ebd-4981-85d3-11833228850a&pf_rd_r=67VRMNR0GKR3S1RXPCRE&pd_rd_wg=MjIpo&pd_rd_r=361a209e-ab78-4b95-a148-f85d163b19d2&pd_rd_i=B0CQLT78BK&ref_=oct_dx_dotd_B0CQLT78BK&th=1",
-            "images": [
-                "https://images.ctfassets.net/javen7msabdh/Fttl4DrU7xxpEqrPBRiRB/58175527eaf6b1c3a114bfd04e5bbc9b/emberton-iii-blackandbrass-front-desktop.jpeg",
-                "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1709049509-jbl-flip-6-65de068c729bd.jpg?crop=1xw:1xh;center,top&resize=980:*",
-                "https://cdn.shopify.com/s/files/1/0548/8849/7221/files/Artboard_50.png?v=1675174007",
-                "https://hips.hearstapps.com/hmg-prod/images/soundcore-motion-x600-2-662ffec2bf56b.jpg?crop=0.9162666666666666xw:1xh;center,top&resize=1200:*",
-                "https://cdn.arstechnica.net/wp-content/uploads/2019/09/sonos-move-1-scaled.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Amazing sound for the size!",
-                    "rating": 5
-                },
-                {
-                    "review": "Battery doesn't last as long as advertised.",
-                    "rating": 2
-                },
-                {
-                    "review": "Perfect for outdoor use!",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "2",
-            "gift": "Yoga Mat",
-            "description": "A high-quality, non-slip yoga mat for all fitness levels.",
-            "price": {
-                "min": 30,
-                "max": 50
-            },
-            "occasion": [
-                "Birthday",
-                "Christmas"
-            ],
-            "url": "https://www.amazon.com/yoga-mat/b?ie=UTF8&node=3422301",
-            "images": [
-                "https://images.byflou.com/13/3/images/products/1280/0/yoga-simple-days-laederrem-yoga-leather-strap-for-yoga-mat-brown-8076658.jpeg",
-                "https://kurma-yoga.com/wp-content/uploads/2019/09/kurma_yoga_mat_grip_twilight_swirl.jpg",
-                "https://cdn.thewirecutter.com/wp-content/media/2020/10/yoga-mats-yoga-acessories-extra-thick-mat-rolled-up.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Very comfortable and durable!",
-                    "rating": 4
-                },
-                {
-                    "review": "A bit too thick for my preference.",
-                    "rating": 3
-                }
-            ]
-        },
-        {
-            "id": "3",
-            "gift": "Scented Candle Set",
-            "description": "A set of relaxing scented candles to create a cozy atmosphere.",
-            "price": {
-                "min": 15,
-                "max": 30
-            },
-            "occasion": [
-                "Christmas",
-                "Valentine's Day"
-            ],
-            "url": "https://www.temptationgifts.com/product-yankee-candle-passport-to-the-holidays-three-signature-filled-votives-gift-set-2641988e?gQT=1",
-            "images": [
-                "https://cdn.cocopanda.se/Media/Product/Image/750/aa2c3198-0277-41b1-bc2d-d73e7640f84c_1.jpeg",
-                "https://deyongs.com/cdn/shop/files/TLCLgRoomScentingSet-Vanilla.jpg?v=1732276581&width=1235",
-                "https://flamingoestate.com/cdn/shop/files/240910_FlamingoSeptember1381_545190a4-8776-4298-abf4-d50eb2abe3c0.jpg?v=1738621720&width=800"
-            ],
-            "reviews": [
-                {
-                    "review": "Lovely scents, perfect for relaxation.",
-                    "rating": 5
-                },
-                {
-                    "review": "Some scents were too strong for me.",
-                    "rating": 4
-                },
-                {
-                    "review": "Great gift for my mom!",
-                    "rating": 5
-                }
-            ]
-        },
-        {
-            "id": "4",
-            "gift": "Fitness Tracker",
-            "description": "A sleek fitness tracker to monitor your daily activity.",
-            "price": {
-                "min": 40,
-                "max": 80
-            },
-            "occasion": [
-                "Birthday",
-                "New Year"
-            ],
-            "url": "https://www.netonnet.se/art/mobil-smartwatch/smartwatch/aktivitetsarmband/xiaomi-smart-band-9-midnight-black/1035131.9162/?gQT=1",
-            "images": [
-                "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1627580477-fitbit-sense-1627580460.jpg?crop=1xw:1xh;center,top&resize=980:*",
-                "https://carrefourbr.vtexassets.com/arquivos/ids/182268748/image-0.jpg?v=638719002348770000",
-                "https://istarmax.com/wp-content/uploads/2022/05/GPS-Watch-Smartwatch-or-Fitness-Tracker-1024x576.webp"
-            ],
-            "reviews": [
-                {
-                    "review": "Helps me stay motivated and active!",
-                    "rating": 5
-                },
-                {
-                    "review": "Syncing issues with my phone.",
-                    "rating": 3
-                },
-                {
-                    "review": "Great battery life!",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "5",
-            "gift": "Coffee Gift Set",
-            "description": "A selection of gourmet coffees for the true coffee lover.",
-            "price": {
-                "min": 35,
-                "max": 55
-            },
-            "occasion": [
-                "Christmas",
-                "Birthday"
-            ],
-            "url": "https://www.amazon.se/-/en/Caja-Regalo-Especialidad-Hombre-Mujer/dp/B0733CKYSS?ref_=Oct_d_orecs_d_26263514031_0&pd_rd_w=KjX9J&content-id=amzn1.sym.5046a2c8-56cb-4eac-bdcb-062f89946f84&pf_rd_p=5046a2c8-56cb-4eac-bdcb-062f89946f84&pf_rd_r=2NBSTF2WQVWEFSE5EJEB&pd_rd_wg=K4uqa&pd_rd_r=c9c8a152-e6e4-467e-ac0e-e4e158f9254f&pd_rd_i=B0733CKYSS",
-            "images": [
-                "https://i0.wp.com/www.giftloooh.com/wp-content/uploads/2024/03/387561617_2936423493158772_31740811875484955_n.webp?fit=695%2C694&ssl=1",
-                "https://www.lovedandfoundbox.com/cdn/shop/products/wood-coffee-snack-client-gift-box-for-two_1972x.jpg?v=1677770476",
-                "https://themansionworld.com/cdn/shop/files/Artboard12_d39bbefe-c0bd-4306-b546-05a3025ff545_800x.jpg?v=1720173690",
-                "https://cdn11.bigcommerce.com/s-00kfbby/images/stencil/1280x1280/products/1191/11290/coffee-christmas-gifts__99332.1698205867.jpg?c=2"
-            ],
-            "reviews": [
-                {
-                    "review": "Delicious variety of flavors!",
-                    "rating": 5
-                },
-                {
-                    "review": "Not all blends were to my taste.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "6",
-            "gift": "Board Game",
-            "description": "A fun and engaging board game for family game nights.",
-            "price": {
-                "min": 30,
-                "max": 50
-            },
-            "occasion": [
-                "Birthday",
-                "Family Gathering"
-            ],
-            "url": "https://www.board-game.co.uk/category/board-games/",
-            "images": [
-                "https://eu.merch.larian.com/media/cache/sylius_shop_product_original/50/fb/10d9feae892183d1ac86f2343eff.jpeg",
-                "https://cdn.thewirecutter.com/wp-content/media/2024/11/BEST-BOARD-GAMES-2048px-DSC9916.jpg",
-                "https://cdn.mos.cms.futurecdn.net/tLeCoEmTBLwZc3iq9aUeM-1200-80.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Great game for all ages!",
-                    "rating": 5
-                },
-                {
-                    "review": "Takes a while to learn the rules.",
-                    "rating": 3
-                },
-                {
-                    "review": "My family loves this game!",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "7",
-            "gift": "Personalized photo album",
-            "description": "A beautifully crafted photo album to cherish memories.",
-            "price": {
-                "min": 20,
-                "max": 30
-            },
-            "occasion": [
-                "Anniversary",
-                "Wedding"
-            ],
-            "url": "https://www.shutterfly.com/photo-books/",
-            "images": [
-                "https://media.artifactuprising.com/media/catalog/product/e/v/evr_q12023_pdpupdates_siglay_lead.jpg",
-                "https://i.etsystatic.com/14051662/r/il/75dec5/3339067027/il_794xN.3339067027_qxj3.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Perfect gift for our anniversary!",
-                    "rating": 5
-                },
-                {
-                    "review": "Pages were not as thick as expected.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "8",
-            "gift": "Gourmet Chocolate Box",
-            "description": "A box filled with assorted gourmet chocolates.",
-            "price": {
-                "min": 20,
-                "max": 50
-            },
-            "occasion": [
-                "Valentine's Day",
-                "Birthday"
-            ],
-            "url": "https://svenskakakao.se/products/chokladbud-deluxe-med-fina-chokladbitar",
-            "images": [
-                "https://svenskakakao.se/cdn/shop/products/chokladbud-stor-presentask-med-lyxiga-praliner-och-chokladkaka-dark-milksvenska-kakao-717904_900x.jpg?v=1699364400",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkDp1X51vWjr-WSafu757WiqCPlgeW5dsxYQ&s",
-                "https://svenskakakao.se/cdn/shop/files/Kolastangeripresentask_aef4e2e6-3757-4969-8c92-b4c5072e11f8_960x.jpg?v=1705577353"
-            ],
-            "reviews": [
-                {
-                    "review": "Absolutely delicious chocolates!",
-                    "rating": 5
-                },
-                {
-                    "review": "Some were a bit too sweet for my liking.",
-                    "rating": 3
-                },
-                {
-                    "review": "Perfect for sharing!",
-                    "rating": 4
-                },
-                {
-                    "review": "Great packaging!",
-                    "rating": 5
-                }
-            ]
-        },
-        {
-            "id": "9",
-            "gift": "Travel Journal",
-            "description": "A beautifully designed journal for travel memories.",
-            "price": {
-                "min": 15,
-                "max": 25
-            },
-            "occasion": [
-                "Graduation",
-                "Birthday"
-            ],
-            "url": "https://www.amazon.com/travel-journal/s?k=travel+journal",
-            "images": [
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8aQZ84pzpv7Szg3yvY2sWR27T7wKoL9IKgg&s",
-                "https://www.jackleatherstudio.com/cdn/shop/products/PersonalizedGenuineLeatherJournal_LeatherNotebook_CustomEngravedGiftforWomenandMenHandmadePaper_TravelJournal_BirthdayGift_13.jpg?v=1680852637",
-                "https://doodlecollection.com/cdn/shop/files/VoyageVibes_1500X2000_2.jpg?v=1739200261"
-            ],
-            "reviews": [
-                {
-                    "review": "Perfect for documenting my adventures!",
-                    "rating": 5
-                },
-                {
-                    "review": "Could use more pages.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "10",
-            "gift": "Smartphone Stand",
-            "description": "An adjustable stand for your smartphone or tablet.",
-            "price": {
-                "min": 10,
-                "max": 20
-            },
-            "occasion": [
-                "Birthday",
-                "Christmas"
-            ],
-            "url": "https://www.amazon.se/-/en/b?ie=UTF8&node=27295368031",
-            "images": [
-                "https://hips.hearstapps.com/hmg-prod/images/lamicall-press-image-64cbcdc851295.png?crop=0.798xw:1.00xh;0.103xw,0&resize=640:*",
-                "https://m.media-amazon.com/images/I/51EyjH1WZ7L._AC_UF1000,1000_QL80_.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Very sturdy and versatile!",
-                    "rating": 5
-                },
-                {
-                    "review": "A bit bulky for travel.",
-                    "rating": 3
-                },
-                {
-                    "review": "Great for video calls!",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "11",
-            "gift": "Wine Glass Set",
-            "description": "Elegant wine glasses perfect for special occasions.",
-            "price": {
-                "min": 40,
-                "max": 70
-            },
-            "occasion": [
-                "Anniversary",
-                "Christmas"
-            ],
-            "url": "https://www.riedel.com/en-se/shop#sort=bestSeller",
-            "images": [
-                "https://www.shophitherlane.com/cdn/shop/files/7F721237-5B9D-4118-B251-C168FFFB8E55.jpg?v=1712107281",
-                "https://m.media-amazon.com/images/I/61GQaETL9rL._AC_UF894,1000_QL80_.jpg",
-                "https://international.nudeglass.com/cdn/shop/files/Stemzeroelegantredwinelarge-Stemzerovolcanoredwine-Joyvotivered-silhouettebowlcaramel_4be119b8-76c6-4df1-a322-866629e4a56e.jpg?v=1708100438",
-                "https://www.foodandwine.com/thmb/m6IH_L1N0iYTNwPjTa75d-4WcP8=/fit-in/1500x2668/filters:no_upscale():max_bytes(150000):strip_icc()/faw-product-josephine-no-2-universal-set-of-2-12-rkilgore-628-6b7f4e6191424847bffe5be23dd13f50.jpeg"
-            ],
-            "reviews": [
-                {
-                    "review": "Beautiful design and great quality!",
-                    "rating": 5
-                },
-                {
-                    "review": "One glass arrived chipped.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "12",
-            "gift": "Gardening Kit",
-            "description": "A complete kit for gardening enthusiasts.",
-            "price": {
-                "min": 50,
-                "max": 80
-            },
-            "occasion": [
-                "Birthday",
-                "Housewarming"
-            ],
-            "url": "https://www.amazon.com/garden-kit/s?k=garden+kit",
-            "images": [
-                "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe9a11ce6-2a97-4341-a583-d2637d23b3b1_1361x1069.jpeg",
-                "https://www.irishtimes.com/resizer/v2/6WVMKFP6HVRUTNXBVO4U5TPFUE.jpg?auth=5a31c34c3b5268af2340232e0bc09ddafa959d1b4820bf3c5d83e0ac8bd0e339&smart=true&width=1600&height=1200",
-                "https://hips.hearstapps.com/hmg-prod/images/gardening-tools-1585131321.jpg?crop=1.00xw:0.760xh;0,0.159xh&resize=640:*"
-            ],
-            "reviews": [
-                {
-                    "review": "Everything you need to start gardening!",
-                    "rating": 5
-                },
-                {
-                    "review": "Great tools but missing a few items.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "13",
-            "gift": "Handmade Soap Set",
-            "description": "A set of organic handmade soaps with various scents.",
-            "price": {
-                "min": 20,
-                "max": 30
-            },
-            "occasion": [
-                "Birthday",
-                "Christmas"
-            ],
-            "url": "https://thehandmadesoapcompany.ie/collections/gifts",
-            "images": [
-                "https://m.media-amazon.com/images/I/716wg0Xh93L.jpg",
-                "https://thehandmadesoapcompany.com/cdn/shop/files/Soap-GS_800x.jpg?v=1736527082",
-                "https://sequoiasoaps.com/cdn/shop/products/tradtitionslargegiftset3.jpg?v=1670348325",
-                "https://myrtleandsoap.de/cdn/shop/files/MS-gift-sets-142.jpg?v=1738949016"
-            ],
-            "reviews": [
-                {
-                    "review": "Smells amazing and feels great on the skin!",
-                    "rating": 5
-                },
-                {
-                    "review": "Some bars were a bit small.",
-                    "rating": 3
-                },
-                {
-                    "review": "Perfect for gifting!",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "14",
-            "gift": "Portable Charger",
-            "description": "A compact power bank to keep your devices charged on the go.",
-            "price": {
-                "min": 25,
-                "max": 50
-            },
-            "occasion": [
-                "Birthday",
-                "New Year"
-            ],
-            "url": "https://www.amazon.se/-/en/b?ie=UTF8&node=20638073031",
-            "images": [
-                "https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8xOTM4Mzc3Mi9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTc1MjIyNDA4Nn0.b9j51rWWVzYV1Xbe6CEZnD4Q71nms8aTMO7tJ9TtMgk/img.jpg?width=1200&height=800&quality=85&coordinates=398%2C0%2C398%2C0",
-                "https://www.romosspowerbank.com/wp-content/uploads/2020/12/romoss-psp10-power-bank-10000mah-slim-portable-4001307362848-0.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Very handy for travel!",
-                    "rating": 5
-                },
-                {
-                    "review": "Charges slowly, but works well.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "15",
-            "gift": "Art Supplies Set",
-            "description": "A complete set of art supplies for budding artists.",
-            "price": {
-                "min": 60,
-                "max": 90
-            },
-            "occasion": [
-                "Birthday",
-                "Graduation"
-            ],
-            "url": "https://penstore.com/en/art-supplies",
-            "images": [
-                "https://dianehill.co.uk/cdn/shop/files/P1040426.jpg?v=1690303229&width=550",
-                "https://c0.wallpaperflare.com/preview/655/392/835/art-art-materials-artwork-canvas.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Fantastic quality, my daughter loves it!",
-                    "rating": 5
-                },
-                {
-                    "review": "Some colors were missing.",
-                    "rating": 3
-                },
-                {
-                    "review": "Great for beginners!",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "16",
-            "gift": "Pet Toy Set",
-            "description": "A fun set of toys for your furry friends.",
-            "price": {
-                "min": 30,
-                "max": 60
-            },
-            "occasion": [
-                "Birthday",
-                "Christmas"
-            ],
-            "url": "https://www.denjodogs.com/en/produkter/play/dog-toys/",
-            "images": [
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEobEfoI2gncqNl-fD9altmjRCRi2c6ty7eg&s",
-                "https://t3.ftcdn.net/jpg/01/93/44/48/360_F_193444833_Wr9OBa9zWspFGHXQxKv22GjY1lvEFyeb.jpg",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_kxWZY1prkWQ_fVjScGLOPwaUsvEQC1U8Q&s"
-            ],
-            "reviews": [
-                {
-                    "review": "My dog loves these toys!",
-                    "rating": 5
-                },
-                {
-                    "review": "Durable and fun!",
-                    "rating": 4
-                },
-                {
-                    "review": "Not all toys are suitable for large breeds.",
-                    "rating": 3
-                }
-            ]
-        },
-        {
-            "id": "17",
-            "gift": "Outdoor Blanket",
-            "description": "A large, waterproof blanket perfect for picnics.",
-            "price": {
-                "min": 20,
-                "max": 30
-            },
-            "occasion": [
-                "Summer",
-                "Picnic"
-            ],
-            "url": "https://www.amazon.se/-/en/b?ie=UTF8&node=26141313031",
-            "images": [
-                "https://media.istockphoto.com/id/874738690/photo/picnic-blanket-and-basket.jpg?s=612x612&w=0&k=20&c=ItIdRqD0BiF6-tGqq6rpyGubgJxNp4WaZWxzJuwnwj8=",
-                "https://media.istockphoto.com/id/1422868465/photo/picnic-on-blanket-with-food-at-summer-sunny-day.jpg?s=612x612&w=0&k=20&c=pi1blsaNrYrES7WjAp4W0J8EsPDC_KhHrbAE0wlNpn4=",
-                "https://hips.hearstapps.com/hmg-prod/images/picnic-blanket-rugs-64706f688c83d.jpg",
-                "https://media.istockphoto.com/id/810227572/photo/picnic-on-the-beach.jpg?s=612x612&w=0&k=20&c=jKDis8IMUN1RUJgdiRl3Hyng2XTwhtZCFLwA5oTUi08="
-            ],
-            "reviews": [
-                {
-                    "review": "Perfect for our family outings!",
-                    "rating": 5
-                },
-                {
-                    "review": "Really spacious and comfortable.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "18",
-            "gift": "Cooking Class Voucher",
-            "description": "A voucher for a fun cooking class experience.",
-            "price": {
-                "min": 80,
-                "max": 130
-            },
-            "occasion": [
-                "Anniversary",
-                "Birthday"
-            ],
-            "url": "https://www.buyagift.co.uk/food-and-drink/cookery-lessons",
-            "images": [
-                "https://i.pinimg.com/736x/87/52/0d/87520d43179a97e0f7339dc47ba9a9c8.jpg",
-                "https://www.vaegbillederxxl.dk/webshop/TAPETE/Photo-wallpaper-Cooking-Pleasure--T_cookingpleasure_0.jpg",
-                "https://images7.alphacoders.com/109/1097602.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Had a blast learning new recipes!",
-                    "rating": 5
-                },
-                {
-                    "review": "Instructor was a bit disorganized.",
-                    "rating": 3
-                }
-            ]
-        },
-        {
-            "id": "19",
-            "gift": "Puzzle Set",
-            "description": "A challenging puzzle set for hours of fun.",
-            "price": {
-                "min": 15,
-                "max": 25
-            },
-            "occasion": [
-                "Birthday",
-                "Family Gathering"
-            ],
-            "url": "https://www.amazon.se/-/en/b?ie=UTF8&node=20638524031",
-            "images": [
-                "https://thumbs.dreamstime.com/b/puzzle-pieces-wooden-table-mountain-sunset-close-up-vibrant-blue-orange-jigsaw-puzzle-pieces-scattered-350911486.jpg",
-                "https://m.media-amazon.com/images/I/71rZPOh3QOL.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Great quality and design!",
-                    "rating": 5
-                },
-                {
-                    "review": "Some pieces were missing.",
-                    "rating": 2
-                },
-                {
-                    "review": "Very challenging but fun!",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "20",
-            "gift": "Digital Photo Frame",
-            "description": "A frame that displays your favorite digital photos.",
-            "price": {
-                "min": 60,
-                "max": 110
-            },
-            "occasion": [
-                "Christmas",
-                "Wedding"
-            ],
-            "url": "https://example.com/digital-photo-frame",
-            "images": [
-                "https://m.media-amazon.com/images/I/51B4gTU-CEL._CR2,0,1276,720_SR684,386_.jpg",
-                "https://djd1xqjx2kdnv.cloudfront.net/photos/34/35/465047_26171_XL.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Perfect for displaying family memories!",
-                    "rating": 5
-                },
-                {
-                    "review": "Setup was a bit tricky.",
-                    "rating": 3
-                }
-            ]
-        },
-        {
-            "id": "21",
-            "gift": "Smart Home Device",
-            "description": "A smart assistant to help manage your home.",
-            "price": {
-                "min": 90,
-                "max": 140
-            },
-            "occasion": [
-                "Birthday",
-                "Housewarming"
-            ],
-            "url": "https://www.amazon.com/Smart-Home/b?ie=UTF8&node=6563140011",
-            "images": [
-                "https://i.pcmag.com/imagery/roundup-groups/051b3JvCaz7TUe9VW12gb2m-6.fit_lim.size_1050x.jpg",
-                "https://www.globalsign.com/application/files/4816/3214/8829/iStock-1215074546.jpg",
-                "https://tedee.com/app/uploads/2022/03/tedee_homekit.jpeg"
-            ],
-            "reviews": [
-                {
-                    "review": "Incredibly useful for daily tasks!",
-                    "rating": 5
-                },
-                {
-                    "review": "Voice recognition could be better.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "22",
-            "gift": "Leather Wallet",
-            "description": "A stylish leather wallet that combines elegance and functionality.",
-            "price": {
-                "min": 40,
-                "max": 70
-            },
-            "occasion": [
-                "Birthday",
-                "Anniversary"
-            ],
-            "url": "https://www.saddler.com/men/accessories/wallets",
-            "images": [
-                "https://techhuset.se/images/zoom/qialino-leather-wallet-case-samsung-galaxy-s24-ultra-brown-bild-6.jpg",
-                "https://godbolegear.com/cdn/shop/files/SingleCashPocket-ClassicWallet-StuffedwithCardsandCash.jpg?v=1722840632",
-                "https://godbolegear.com/cdn/shop/files/SlimWalletwithsix6cardslotshandmade.jpg?v=1712809468&width=1946",
-                "https://craftandglory.in/cdn/shop/products/DSC07927_1.jpg?v=1660802328&width=1946"
-            ],
-            "reviews": [
-                {
-                    "review": "Very classy and well-made!",
-                    "rating": 5
-                },
-                {
-                    "review": "Could use more card slots.",
-                    "rating": 3
-                }
-            ]
-        },
-        {
-            "id": "23",
-            "gift": "Silk Scarf",
-            "description": "A luxurious silk scarf that adds elegance to any outfit.",
-            "price": {
-                "min": 20,
-                "max": 40
-            },
-            "occasion": [
-                "Birthday",
-                "Christmas"
-            ],
-            "url": "https://seveneast.se/en/collections/dam-alla-sjalar-sidensjalar",
-            "images": [
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwzu90E3TTbS7qTzTZbj6HEi7Ht9_lympfjQ&s",
-                "https://aubongoutboutique.com/cdn/shop/products/WILLIAMMORRISCOMPTONSCARF5_720x.jpg?v=1726675715",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-6UAVyylgfzqY4cTdnb50kCp2tvepC_vtDN-T7_c_MWQNMeQLN642fUkQGh4ny6srKyc&usqp=CAU"
-            ],
-            "reviews": [
-                {
-                    "review": "Gorgeous colors and soft texture!",
-                    "rating": 5
-                },
-                {
-                    "review": "A bit delicate, handle with care.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "24",
-            "gift": "Fitness Class Membership",
-            "description": "A membership for various fitness classes.",
-            "price": {
-                "min": 120,
-                "max": 150
-            },
-            "occasion": [
-                "Birthday",
-                "New Year"
-            ],
-            "url": "https://classpass.com/plans",
-            "images": [
-                "https://images.stockcake.com/public/b/0/7/b0726ebe-f28a-457a-b291-3797f091f9c8_large/dynamic-fitness-class-stockcake.jpg",
-                "https://lifthousefitness.com/wp-content/uploads/2021/08/Strength-Training-Class-In-Dallas-Texas.jpg",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpLF5alaUAFlGG5eeqXGo0p-9dGTY8Q2_3lrbfvGmRLeic82IFslKnkDCOe-rIQZhBxSc&usqp=CAU"
-            ],
-            "reviews": [
-                {
-                    "review": "Great way to stay motivated!",
-                    "rating": 5
-                },
-                {
-                    "review": "Classes are too crowded at times.",
-                    "rating": 3
-                }
-            ]
-        },
-        {
-            "id": "25",
-            "gift": "Custom Puzzle",
-            "description": "A personalized puzzle featuring a favorite photo.",
-            "price": {
-                "min": 20,
-                "max": 30
-            },
-            "occasion": [
-                "Birthday",
-                "Anniversary"
-            ],
-            "url": "https://www.puzzleyou.co.uk/photo-puzzle",
-            "images": [
-                "https://cms.cloudinary.vpsvc.com/images/c_scale,dpr_auto,f_auto,q_auto:best,t_productPageHeroGalleryTransformation_v2,w_auto/legacy_dam/en-ca/S001416397/CONS-751-puzzle-marquee-003?cb=65fceeb138fbb31d6fe5b5c0a6fbf17633bdb35c",
-                "https://www.puzzle-lab.com/cdn/shop/products/ImagefromiOS_4032x.jpg?v=1634518416",
-                "https://img.myshopline.com/image/store/1725848895991/1-2-7b63e882-684e-49b6-9b58-64bfb9bfd4ad_800x.png?w=1000&h=1000",
-                "https://www.pictorem.com/images/photo283.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Such a unique gift idea!",
-                    "rating": 5
-                },
-                {
-                    "review": "Puzzle pieces fit a bit loosely.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "26",
-            "gift": "Elegant Necklace",
-            "description": "A stunning necklace that complements any outfit.",
-            "price": {
-                "min": 30,
-                "max": 50
-            },
-            "occasion": [
-                "Birthday",
-                "Anniversary"
-            ],
-            "url": "https://www.etsy.com/market/elegant_necklace",
-            "images": [
-                "https://images.pexels.com/photos/906056/pexels-photo-906056.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQyRXThoOzIVqzOlLmKeDC-RfwVUhvwZCzFw&s",
-                "https://img.pikbest.com/backgrounds/20241206/luxurious-white-gold-and-diamond-necklace-on-elegant-black-background_11221363.jpg!w700wp"
-            ],
-            "reviews": [
-                {
-                    "review": "Absolutely beautiful piece!",
-                    "rating": 5
-                },
-                {
-                    "review": "Chain is a bit short.",
-                    "rating": 3
-                }
-            ]
-        },
-        {
-            "id": "27",
-            "gift": "Personalized Calendar",
-            "description": "A custom calendar featuring personal photos for each month.",
-            "price": {
-                "min": 35,
-                "max": 65
-            },
-            "occasion": [
-                "New Year",
-                "Birthday"
-            ],
-            "url": "https://www.shutterfly.com/calendars/",
-            "images": [
-                "https://prd-static.sf-cdn.com/resources/images/store/2023/global/640x508/WF-772330_SNF_US_Calendar_Alt_images_for_PDP_640x508_calendar_desk%20calendar_lifestyle.jpg",
-                "https://www.reliableprints.com/images/product/2023_-_poster_calendar.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Great gift for the New Year!",
-                    "rating": 5
-                },
-                {
-                    "review": "Some images were blurry.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "28",
-            "gift": "Luxury Bathrobe",
-            "description": "A soft and cozy bathrobe perfect for lounging.",
-            "price": {
-                "min": 130,
-                "max": 180
-            },
-            "occasion": [
-                "Christmas",
-                "Birthday"
-            ],
-            "url": "https://www.casazeytin.se/en/category/bath-robes",
-            "images": [
-                "https://www.ritzcarltonshops.com/images/products/lrg/the-ritz-carlton-frette-microfiber-robe-RTZ-400-01-WL_lrg.jpg",
-                "https://www.naturalbedcompany.co.uk/wp-content/uploads/LUKs-grey-kimono-robe.jpg",
-                "https://media.istockphoto.com/id/1410017429/photo/white-clean-bathrobe-hanging-in-wooden-wardrobe-at-luxury-hotel-or-home-relax-and-travel.jpg?s=612x612&w=0&k=20&c=j_bfDOynNmeNLtCKV72RqJluanKtknN0S9EH9P_Hgz4="
-            ],
-            "reviews": [
-                {
-                    "review": "So comfortable and warm!",
-                    "rating": 5
-                },
-                {
-                    "review": "A bit big, but still nice.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "29",
-            "gift": "Indoor Plant",
-            "description": "A low-maintenance indoor plant to brighten up any space.",
-            "price": {
-                "min": 20,
-                "max": 70
-            },
-            "occasion": [
-                "Housewarming",
-                "Birthday"
-            ],
-            "url": "https://www.ormbunker.se/en/collections/houseplants",
-            "images": [
-                "https://images.unsplash.com/photo-1604762524889-3e2fcc145683?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2UlMjBwbGFudHxlbnwwfHwwfHx8MA%3D%3D",
-                "https://images.unsplash.com/photo-1604762525953-2c80447cc4a6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlJTIwcGxhbnR8ZW58MHx8MHx8fDA%3D",
-                "https://w0.peakpx.com/wallpaper/117/888/HD-wallpaper-green-indoor-plant.jpg",
-                "https://images.unsplash.com/photo-1604762525953-2c80447cc4a6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlJTIwcGxhbnR8ZW58MHx8MHx8fDA%3D"
-            ],
-            "reviews": [
-                {
-                    "review": "Arrived healthy and vibrant!",
-                    "rating": 5
-                },
-                {
-                    "review": "Could use better packaging.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "30",
-            "gift": "Travel Backpack",
-            "description": "A stylish and functional backpack for all your travel needs.",
-            "price": {
-                "min": 150,
-                "max": 200
-            },
-            "occasion": [
-                "Graduation",
-                "Birthday"
-            ],
-            "url": "https://www.thenorthface.se/en-se/c/bags-and-equipment/activities/travel-bags-341470",
-            "images": [
-                "https://images.unsplash.com/photo-1509762774605-f07235a08f1f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFja3BhY2t8ZW58MHx8MHx8fDA%3D",
-                "https://images.pexels.com/photos/732632/pexels-photo-732632.jpeg?cs=srgb&dl=pexels-lalu-fatoni-228553-732632.jpg&fm=jpg",
-                "https://m.media-amazon.com/images/I/91qVLIj62WL._AC_UY1100_.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Perfect for weekend trips!",
-                    "rating": 5
-                },
-                {
-                    "review": "Could use a water bottle holder.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "31",
-            "gift": "Handcrafted Jewelry Box",
-            "description": "A beautiful box to store your precious jewelry.",
-            "price": {
-                "min": 40,
-                "max": 90
-            },
-            "occasion": [
-                "Anniversary",
-                "Birthday"
-            ],
-            "url": "https://www.etsy.com/se-en/market/handmade_jewelry_box",
-            "images": [
-                "https://www.hawthornefineboxes.com/wp-content/uploads/2020/04/untitled-15-1.jpg",
-                "https://woodsala.com/cdn/shop/files/MG_9060.jpg?v=1696077823&width=4000",
-                "https://i5.walmartimages.com/seo/Ajuny-Handcrafted-Indian-Vintage-Jewelry-Box-Celtic-Hand-Carved-Multipurpose-Trinket-Keepsake-Storage-Organiser-Wood-Unique-Gifts-Ideas-9x6-inch_953bea9e-94b0-45fe-b7de-38d49a214183.a0e098c92c47c68c002e952ec62b93d1.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVyewUj52MpE0_uTVyvIRs8PUaW-dPCC9ac8nNd7MCrQ8XDohBfZq4O3TzreB155L92E0&usqp=CAU"
-            ],
-            "reviews": [
-                {
-                    "review": "Stunning craftsmanship!",
-                    "rating": 5
-                },
-                {
-                    "review": "A bit smaller than expected.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "32",
-            "gift": "Cooking Utensil Set",
-            "description": "A complete set of kitchen utensils for the home chef.",
-            "price": {
-                "min": 45,
-                "max": 70
-            },
-            "occasion": [
-                "Housewarming",
-                "Birthday"
-            ],
-            "url": "https://www.amazon.se/-/en/25-Piece-Kitchen-Utensil-Set-Stainless/dp/B075MDYP64?th=1",
-            "images": [
-                "https://img.freepik.com/premium-photo/kitchen-utensils_214787-514.jpg",
-                "https://media.istockphoto.com/id/480627785/photo/rural-kitchen-utensils-on-vintage-planked-wood-table.jpg?s=612x612&w=0&k=20&c=rIeqLQAH1Sq0SbgDX4IsO_eupLQHI7rXT5ab9SuW35M=",
-                "https://i.ebayimg.com/images/g/cbIAAOSwf1dlbr~0/s-l1200.png"
-            ],
-            "reviews": [
-                {
-                    "review": "Everything I needed for cooking!",
-                    "rating": 5
-                },
-                {
-                    "review": "Some utensils feel a bit flimsy.",
-                    "rating": 3
-                }
-            ]
-        },
-        {
-            "id": "33",
-            "gift": "Wireless Earbuds",
-            "description": "High-quality wireless earbuds for music lovers.",
-            "price": {
-                "min": 30,
-                "max": 70
-            },
-            "occasion": [
-                "Birthday",
-                "Christmas"
-            ],
-            "url": "https://www.amazon.com/wireless-earbuds/s?k=wireless+earbuds",
-            "images": [
-                "https://images.pexels.com/photos/3780681/pexels-photo-3780681.jpeg?cs=srgb&dl=pexels-soulful-pizza-2080276-3780681.jpg&fm=jpg",
-                "https://t4.ftcdn.net/jpg/04/37/86/87/360_F_437868712_cD4auf565hQupNY6fILPfF2o0kljack2.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Great sound quality and battery life!",
-                    "rating": 5
-                },
-                {
-                    "review": "Fit could be better for smaller ears.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "34",
-            "gift": "Subscription Box",
-            "description": "A monthly subscription box tailored to interests.",
-            "price": {
-                "min": 30,
-                "max": 40
-            },
-            "occasion": [
-                "Birthday",
-                "Christmas"
-            ],
-            "url": "https://www.cratejoy.com/collections/home-accessories-subscription-boxes",
-            "images": [
-                "https://t3.ftcdn.net/jpg/10/73/52/24/360_F_1073522438_XVwuiNnM2shAraYrhQ9pwvwP5IXP4Hra.jpg",
-                "https://media.istockphoto.com/id/1419645712/photo/anonymous-woman-holding-a-gift-box-and-looking-at-beauty-cosmetics-products-inside.jpg?s=612x612&w=0&k=20&c=-dkJhOLmcARV6MoOhGlSc8XTB9idqcH_cQ80t4MZ1F4=",
-                "https://www.thegoodlane.com/cdn/shop/products/eco-friendlysubscriptionbox.png?v=1674793978"
-            ],
-            "reviews": [
-                {
-                    "review": "Always something exciting inside!",
-                    "rating": 5
-                },
-                {
-                    "review": "Some months are better than others.",
-                    "rating": 3
-                }
-            ]
-        },
-        {
-            "id": "35",
-            "gift": "Digital Drawing Tablet",
-            "description": "A tablet designed for digital artists.",
-            "price": {
-                "min": 90,
-                "max": 170
-            },
-            "occasion": [
-                "Birthday",
-                "Graduation"
-            ],
-            "url": "https://www.amazon.com/drawing-tablet/s?k=drawing+tablet",
-            "images": [
-                "https://cdn-media.wacom.com/-/media/images/discover-2020/discover/wacom-stylus-tf.jpg?h=560&iar=0&w=920&rev=aae9e3dd969d450d9842a7272fa65e29&hash=B2AB8B040BA08BC5B41E9D48F20391A6",
-                "https://gaomon.net/cdn/shop/files/gaomon-pen-tablet-m106k-scenario_ab84ade7-a609-454f-a3c5-a65b91fc9b31.jpg?v=1694792003&width=1445",
-                "https://cdn.mos.cms.futurecdn.net/8ToUvuPXxcD5ANh3D9Sr8L-1200-80.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Perfect for my digital art!",
-                    "rating": 5
-                },
-                {
-                    "review": "Setup was a bit complicated.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "36",
-            "gift": "Wireless Charging Pad",
-            "description": "A sleek charging pad for your devices.",
-            "price": {
-                "min": 20,
-                "max": 30
-            },
-            "occasion": [
-                "Birthday",
-                "Christmas"
-            ],
-            "url": "https://www.amazon.se/-/en/b?ie=UTF8&node=20638067031",
-            "images": [
-                "https://satechi.se/storage/STQTPMEA8.webp",
-                "https://www.ikea.com/se/en/images/products/livboj-wireless-charger-black__0972121_pe811541_s5.jpg",
-                "https://cdn.sanity.io/images/3azemr64/production/530edbc1d8672f389d9f83f279ff97befe68b90a-1024x768.jpg?auto=format&w=873&h=655&crop=center&fit=crop&q=90"
-            ],
-            "reviews": [
-                {
-                    "review": "Convenient and fast charging!",
-                    "rating": 5
-                },
-                {
-                    "review": "Needs a better grip on the surface.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "37",
-            "gift": "Leather Journal",
-            "description": "A classic leather journal for writing and sketching.",
-            "price": {
-                "min": 10,
-                "max": 25
-            },
-            "occasion": [
-                "Birthday",
-                "Graduation"
-            ],
-            "url": "https://www.amazon.com/leather-journal/s?k=leather+journal",
-            "images": [
-                "https://www.galenleather.com/cdn/shop/products/travelers-notebook-leather-cover-crazy-horse-tan_2000x.jpg?v=1552328876",
-                "https://krysset.shop/cdn/shop/products/3005cdda041d37391231a3e933e3bec5b7ce9f00bf7c3b58e6b8359803ac5f66_2048x.jpg?v=1697047772",
-                "https://yellowsunrise.co.uk/cdn/shop/files/HIBLKJ-BR-Buffalo-Leather-Key-journal-1-Non-Personalised.webp?v=1723729765&width=2000",
-                "https://www.borlino.com/cdn/shop/products/Borlino-Leather-Cover-Journal-Terra-1_1200x.jpg?v=1685137239"
-            ],
-            "reviews": [
-                {
-                    "review": "Beautifully made and perfect for gifts!",
-                    "rating": 5
-                },
-                {
-                    "review": "The pages could be thicker.",
-                    "rating": 3
-                }
-            ]
-        },
-        {
-            "id": "38",
-            "gift": "Craft Beer Sampler",
-            "description": "A selection of craft beers from local breweries.",
-            "price": {
-                "min": 25,
-                "max": 40
-            },
-            "occasion": [
-                "Birthday",
-                "Father's Day"
-            ],
-            "url": "https://www.amazon.com/beer-sampler/s?k=beer+sampler",
-            "images": [
-                "https://www.picnictime.com/cdn/shop/products/ea18a01ec2ef58f973f9a319cb81f003600e8302_b34c899a-6919-459d-8a1c-9997515eff45.jpg?v=1695408039",
-                "https://i.ebayimg.com/images/g/4RQAAOSwrFVhDK1A/s-l1200.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Fantastic variety and flavors!",
-                    "rating": 5
-                },
-                {
-                    "review": "Some beers were a bit too hoppy for me.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "39",
-            "gift": "Smart Light Bulbs",
-            "description": "Smart bulbs that can be controlled via an app.",
-            "price": {
-                "min": 25,
-                "max": 55
-            },
-            "occasion": [
-                "Housewarming",
-                "Birthday"
-            ],
-            "url": "https://www.smartlinesweden.com/en/pk/smart-light-bulbs/",
-            "images": [
-                "https://cdn.thewirecutter.com/wp-content/media/2024/02/smartledlightbulbs-2048px-07782-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp",
-                "https://justenergy.com/wp-content/uploads/2018/07/CFL-1.jpg",
-                "https://brizlabs.com/cdn/shop/files/5_1800x.jpg?v=1729256925"
-            ],
-            "reviews": [
-                {
-                    "review": "Easy to install and use!",
-                    "rating": 5
-                },
-                {
-                    "review": "Sometimes loses connection.",
-                    "rating": 3
-                }
-            ]
-        },
-        {
-            "id": "40",
-            "gift": "Cooking Cookbook",
-            "description": "A collection of delicious recipes for home cooking.",
-            "price": {
-                "min": 15,
-                "max": 30
-            },
-            "occasion": [
-                "Birthday",
-                "Housewarming"
-            ],
-            "url": "https://www.amazon.com/amz-books/discover?node=6&navStore=books&ie=UTF8",
-            "images": [
-                "https://images.squarespace-cdn.com/content/v1/56801b350e4c11744888ec37/1612824622618-9JQNFW3K6765U9Q4MVAD/Every+Grain+of+Rice+lede.jpg",
-                "https://shop.thepagecompany.com/cdn/shop/files/vol1cover.jpg?v=1716413456&width=1946",
-                "https://www.greenpan.us/cdn/shop/files/NC_CC008027-001_3-1200x1200-bd93c0f.jpg?v=1734990603",
-                "https://cdn.loveandlemons.com/wp-content/uploads/2023/01/cookbook3.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Inspiring recipes and beautiful photos!",
-                    "rating": 5
-                },
-                {
-                    "review": "Some recipes are a bit complicated.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "41",
-            "gift": "Portable Blender",
-            "description": "A compact blender for smoothies on the go.",
-            "price": {
-                "min": 35,
-                "max": 50
-            },
-            "occasion": [
-                "Birthday",
-                "New Year"
-            ],
-            "url": "https://www.amazon.se/-/en/Portable-Smoothie-Personal-Rechargeable-Cordless/dp/B0B6RSF8B2?th=1",
-            "images": [
-                "https://blendjet.in/fast-image/h_1100/blendjet-in/files/01_HERO_IMAGE_BJ2_BLACK.jpg?v=1707812883",
-                "https://img.joomcdn.net/32ff2c9726a38eacfbd083c7ee25799767bf5d9a_original.jpeg",
-                "https://theblendhive.com/cdn/shop/files/blendhive-portable-blender-201.jpg?v=1734235558"
-            ],
-            "reviews": [
-                {
-                    "review": "Perfect for quick smoothies!",
-                    "rating": 5
-                },
-                {
-                    "review": "Battery life could be improved.",
-                    "rating": 3
-                }
-            ]
-        },
-        {
-            "id": "42",
-            "gift": "Puzzle Book",
-            "description": "A fun collection of puzzles and brain teasers.",
-            "price": {
-                "min": 10,
-                "max": 20
-            },
-            "occasion": [
-                "Birthday",
-                "Christmas"
-            ],
-            "url": "https://www.amazon.com/puzzle-books/s?k=puzzle+books",
-            "images": [
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTra7Nv6lrgok6Ws-iIrIYuk6ayRbtQU59wXw&s",
-                "https://media.istockphoto.com/id/599480486/vector/blue-annual-report-brochure-flyer-design-template.jpg?s=612x612&w=0&k=20&c=_FuYV9S8sblE4ZNdiLoEeQbmOaobZSpkfWgBhoyEozM="
-            ],
-            "reviews": [
-                {
-                    "review": "Great for passing the time!",
-                    "rating": 5
-                },
-                {
-                    "review": "Some puzzles were too easy.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "43",
-            "gift": "Baking Kit",
-            "description": "A complete kit for baking delicious treats at home.",
-            "price": {
-                "min": 30,
-                "max": 45
-            },
-            "occasion": [
-                "Birthday",
-                "Housewarming"
-            ],
-            "url": "https://www.amazon.com/Baking-Kits/s?k=Baking+Kits",
-            "images": [
-                "https://www.cookinggiftset.com/cdn/shop/products/Cooking-Gift-Set-French-Tart-Baking-Kit-Gift-for-Bakers-2_1024x.jpg?v=1695339042",
-                "https://confidentials.com/uploads/images/Manchester-Editorial/Food-Drink/Food-and-drink-2020/2020-05-20-Roberts-bakery-Get-Baking-Kit.jpeg",
-                "https://i.pinimg.com/736x/58/69/ac/5869accf395c8c8bf1355eb28b20a377.jpg",
-                "https://i.pinimg.com/736x/63/fd/5b/63fd5b8d9b3426541fb9e3ce6e22725e.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Everything you need to start baking!",
-                    "rating": 5
-                },
-                {
-                    "review": "Could use a better recipe book.",
-                    "rating": 3
-                },
-                {
-                    "review": "Great fun for kids!",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "44",
-            "gift": "Coffee Maker",
-            "description": "A compact coffee maker for brewing fresh coffee.",
-            "price": {
-                "min": 80,
-                "max": 200
-            },
-            "occasion": [
-                "Birthday",
-                "Christmas"
-            ],
-            "url": "https://www.amazon.se/-/en/b/?_encoding=UTF8&node=20651263031&bbn=20513023031&ref_=Oct_d_odnav_d_20650477031_1&pd_rd_w=hbq0O&content-id=amzn1.sym.8d109ba8-fa95-46d5-a8c8-ce4a2e002a9e&pf_rd_p=8d109ba8-fa95-46d5-a8c8-ce4a2e002a9e&pf_rd_r=AEA1FF3AC68JDHFG55XY&pd_rd_wg=FuWmS&pd_rd_r=4ef5209a-e29b-4874-8284-173af9209082",
-            "images": [
-                "https://www.billboard.com/wp-content/uploads/2024/09/ninja-espresso-machine-2024-billboard-1548.jpg?w=942&h=623&crop=1",
-                "https://shop.smeguk.com/siteassets/ben-h-test/buying-guides/coffee-machines/reasons-to-buy-a-retro-coffee-machine/coffee-preparation-960x690-1.jpg?width=2500",
-                "https://assets.wsimgs.com/wsimgs/rk/images/dp/wcm/202445/0036/cafe-specialty-drip-coffee-maker-o.jpg",
-                "https://image.coolblue.nl/max/1024xauto/content/920ca517726cb5ab8d2e76a2ee9eb981"
-            ],
-            "reviews": [
-                {
-                    "review": "Brews excellent coffee!",
-                    "rating": 5
-                },
-                {
-                    "review": "A bit noisy during operation.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "45",
-            "gift": "Gardening Book",
-            "description": "A comprehensive guide to gardening for beginners.",
-            "price": {
-                "min": 20,
-                "max": 40
-            },
-            "occasion": [
-                "Housewarming",
-                "Birthday"
-            ],
-            "url": "https://www.amazon.se/-/en/Monty-Don/dp/1785947397",
-            "images": [
-                "https://www.phaidon.com/images/9781838663209/main-mobile-x1-jpg/the-garden-book-revised-and-updated-edition-en-6320-overview-jacket-front-3000.jpg",
-                "https://i0.wp.com/www.mandycanudigit.com/wp-content/uploads/2022/06/The-Regenerative-Garden-book-May-13-22.jpg?fit=800%2C600&ssl=1"
-            ],
-            "reviews": [
-                {
-                    "review": "Very informative and helpful!",
-                    "rating": 5
-                },
-                {
-                    "review": "Could use more illustrations.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "46",
-            "gift": "Board Game Night Set",
-            "description": "Everything you need for a perfect board game night.",
-            "price": {
-                "min": 20,
-                "max": 40
-            },
-            "occasion": [
-                "Family Gathering",
-                "Birthday"
-            ],
-            "url": "https://www.amazon.se/Bright-Games-Chess-Checkers-Classic/dp/1452179859",
-            "images": [
-                "https://i.pinimg.com/736x/23/72/b6/2372b6c859dc129911f5bfa9b67389cc.jpg",
-                "https://i0.wp.com/celebratingeverydaylife.com/wp-content/uploads/2024/12/New-Years-Eve-Family-Game-Night-Jennifer-Martin-CelebratingEverydayLife-0353.jpg?resize=768%2C1024&ssl=1",
-                "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/B42570s.jpg?im=Resize,width=750"
-            ],
-            "reviews": [
-                {
-                    "review": "Had a blast with family!",
-                    "rating": 5
-                },
-                {
-                    "review": "Includes great game options!",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "47",
-            "gift": "Personalized Blanket",
-            "description": "A cozy blanket customized with a special design.",
-            "price": {
-                "min": 20,
-                "max": 50
-            },
-            "occasion": [
-                "Christmas",
-                "Birthday"
-            ],
-            "url": "https://www.etsy.com/se-en/market/custom_blanket",
-            "images": [
-                "https://m.media-amazon.com/images/I/71Lx+5oY2qL.jpg",
-                "https://www.personalizationmall.com/cat_image/600/16883-89320-210914095414.jpg",
-                "https://www.personalizationmall.com/cat_image/600/16802-38516-210203170639.jpg",
-                "https://m.media-amazon.com/images/I/711pwe1M+WL.jpg"
-            ],
-            "reviews": [
-                {
-                    "review": "Super soft and warm!",
-                    "rating": 5
-                },
-                {
-                    "review": "Design was not as expected.",
-                    "rating": 3
-                }
-            ]
-        },
-        {
-            "id": "48",
-            "gift": "Mini Projector",
-            "description": "A portable projector for movie nights anywhere.",
-            "price": {
-                "min": 60,
-                "max": 90
-            },
-            "occasion": [
-                "Birthday",
-                "Graduation"
-            ],
-            "url": "https://www.amazon.com/mini-projector/s?k=mini+projector",
-            "images": [
-                "https://scale.coolshop-cdn.com/product-media.coolshop-cdn.com/23MY8Z/27bc8e863e884611b557ccf4b22b5e52.jpg/f/mm-smart-mini-projector.jpg",
-                "https://ls6iibytsc.eu.scalesta-cdn.com/_CYzF0PTt7cOzCBbyjJMHjCYz6Y=/filters:format(webp):fill(fff):quality(90)/www.tnateeshq8.com/images/detailed/271/G14946.webp"
-            ],
-            "reviews": [
-                {
-                    "review": "Great picture quality!",
-                    "rating": 5
-                },
-                {
-                    "review": "Setup took a bit of time.",
-                    "rating": 4
-                }
-            ]
-        },
-        {
-            "id": "49",
-            "gift": "Essential Oil Diffuser",
-            "description": "A stylish diffuser for creating a calming atmosphere.",
-            "price": {
-                "min": 110,
-                "max": 190
-            },
-            "occasion": [
-                "Birthday",
-                "Christmas"
-            ],
-            "url": "https://doftbox.se/en/aroma-diffuser/",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0028/2568/3008/articles/benefits-of-diffusers.jpg?v=1689237771",
-                "https://img.joomcdn.net/3de6864405ba341e02c4a826bb0eb34d3865ffda_original.jpeg",
-                "https://www.nowfoods.com/sites/default/files/styles/cloudzoom_image/public/sku-images/ultrasonic-faux-wood-diffuser.jpg?itok=J9lmcmkD",
-                "https://www.stripxlighting.in/cdn/shop/files/AA434AEF-E4A9-4F9F-BEB3-3CC6E4668268.jpg?v=1704358716"
-            ],
-            "reviews": [
-                {
-                    "review": "Transforms my living space!",
-                    "rating": 5
-                },
-                {
-                    "review": "Could be quieter.",
-                    "rating": 4
-                },
-                {
-                    "review": "Great for relaxation.",
-                    "rating": 5
-                }
-            ]
+          "review": "The print was slightly off-center.",
+          "rating": 3
         }
-    ],
-    "favorites":[]
+      ]
+    },
+    {
+      "id": "1",
+      "gift": "Bluetooth Speaker",
+      "description": "A portable speaker with excellent sound quality and battery life.",
+      "price": {
+        "min": 30,
+        "max": 50
+      },
+      "occasion": [
+        "Birthday",
+        "Anniversary"
+      ],
+      "url": "https://www.amazon.se/-/en/Bluetooth-Deeyaple-Intensive-Connected-Waterproof/dp/B0CQLT78BK?pd_rd_w=t3m0w&content-id=amzn1.sym.2c45a213-2ebd-4981-85d3-11833228850a&pf_rd_p=2c45a213-2ebd-4981-85d3-11833228850a&pf_rd_r=67VRMNR0GKR3S1RXPCRE&pd_rd_wg=MjIpo&pd_rd_r=361a209e-ab78-4b95-a148-f85d163b19d2&pd_rd_i=B0CQLT78BK&ref_=oct_dx_dotd_B0CQLT78BK&th=1",
+      "images": [
+        "https://images.ctfassets.net/javen7msabdh/Fttl4DrU7xxpEqrPBRiRB/58175527eaf6b1c3a114bfd04e5bbc9b/emberton-iii-blackandbrass-front-desktop.jpeg",
+        "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1709049509-jbl-flip-6-65de068c729bd.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "https://cdn.shopify.com/s/files/1/0548/8849/7221/files/Artboard_50.png?v=1675174007",
+        "https://hips.hearstapps.com/hmg-prod/images/soundcore-motion-x600-2-662ffec2bf56b.jpg?crop=0.9162666666666666xw:1xh;center,top&resize=1200:*",
+        "https://cdn.arstechnica.net/wp-content/uploads/2019/09/sonos-move-1-scaled.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Amazing sound for the size!",
+          "rating": 5
+        },
+        {
+          "review": "Battery doesn't last as long as advertised.",
+          "rating": 2
+        },
+        {
+          "review": "Perfect for outdoor use!",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "gift": "Yoga Mat",
+      "description": "A high-quality, non-slip yoga mat for all fitness levels.",
+      "price": {
+        "min": 30,
+        "max": 50
+      },
+      "occasion": [
+        "Birthday",
+        "Christmas"
+      ],
+      "url": "https://www.amazon.com/yoga-mat/b?ie=UTF8&node=3422301",
+      "images": [
+        "https://images.byflou.com/13/3/images/products/1280/0/yoga-simple-days-laederrem-yoga-leather-strap-for-yoga-mat-brown-8076658.jpeg",
+        "https://kurma-yoga.com/wp-content/uploads/2019/09/kurma_yoga_mat_grip_twilight_swirl.jpg",
+        "https://cdn.thewirecutter.com/wp-content/media/2020/10/yoga-mats-yoga-acessories-extra-thick-mat-rolled-up.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Very comfortable and durable!",
+          "rating": 4
+        },
+        {
+          "review": "A bit too thick for my preference.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "gift": "Scented Candle Set",
+      "description": "A set of relaxing scented candles to create a cozy atmosphere.",
+      "price": {
+        "min": 15,
+        "max": 30
+      },
+      "occasion": [
+        "Christmas",
+        "Valentine's Day"
+      ],
+      "url": "https://www.temptationgifts.com/product-yankee-candle-passport-to-the-holidays-three-signature-filled-votives-gift-set-2641988e?gQT=1",
+      "images": [
+        "https://cdn.cocopanda.se/Media/Product/Image/750/aa2c3198-0277-41b1-bc2d-d73e7640f84c_1.jpeg",
+        "https://deyongs.com/cdn/shop/files/TLCLgRoomScentingSet-Vanilla.jpg?v=1732276581&width=1235",
+        "https://flamingoestate.com/cdn/shop/files/240910_FlamingoSeptember1381_545190a4-8776-4298-abf4-d50eb2abe3c0.jpg?v=1738621720&width=800"
+      ],
+      "reviews": [
+        {
+          "review": "Lovely scents, perfect for relaxation.",
+          "rating": 5
+        },
+        {
+          "review": "Some scents were too strong for me.",
+          "rating": 4
+        },
+        {
+          "review": "Great gift for my mom!",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "gift": "Fitness Tracker",
+      "description": "A sleek fitness tracker to monitor your daily activity.",
+      "price": {
+        "min": 40,
+        "max": 80
+      },
+      "occasion": [
+        "Birthday",
+        "New Year"
+      ],
+      "url": "https://www.netonnet.se/art/mobil-smartwatch/smartwatch/aktivitetsarmband/xiaomi-smart-band-9-midnight-black/1035131.9162/?gQT=1",
+      "images": [
+        "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1627580477-fitbit-sense-1627580460.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "https://carrefourbr.vtexassets.com/arquivos/ids/182268748/image-0.jpg?v=638719002348770000",
+        "https://istarmax.com/wp-content/uploads/2022/05/GPS-Watch-Smartwatch-or-Fitness-Tracker-1024x576.webp"
+      ],
+      "reviews": [
+        {
+          "review": "Helps me stay motivated and active!",
+          "rating": 5
+        },
+        {
+          "review": "Syncing issues with my phone.",
+          "rating": 3
+        },
+        {
+          "review": "Great battery life!",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "gift": "Coffee Gift Set",
+      "description": "A selection of gourmet coffees for the true coffee lover.",
+      "price": {
+        "min": 35,
+        "max": 55
+      },
+      "occasion": [
+        "Christmas",
+        "Birthday"
+      ],
+      "url": "https://www.amazon.se/-/en/Caja-Regalo-Especialidad-Hombre-Mujer/dp/B0733CKYSS?ref_=Oct_d_orecs_d_26263514031_0&pd_rd_w=KjX9J&content-id=amzn1.sym.5046a2c8-56cb-4eac-bdcb-062f89946f84&pf_rd_p=5046a2c8-56cb-4eac-bdcb-062f89946f84&pf_rd_r=2NBSTF2WQVWEFSE5EJEB&pd_rd_wg=K4uqa&pd_rd_r=c9c8a152-e6e4-467e-ac0e-e4e158f9254f&pd_rd_i=B0733CKYSS",
+      "images": [
+        "https://i0.wp.com/www.giftloooh.com/wp-content/uploads/2024/03/387561617_2936423493158772_31740811875484955_n.webp?fit=695%2C694&ssl=1",
+        "https://www.lovedandfoundbox.com/cdn/shop/products/wood-coffee-snack-client-gift-box-for-two_1972x.jpg?v=1677770476",
+        "https://themansionworld.com/cdn/shop/files/Artboard12_d39bbefe-c0bd-4306-b546-05a3025ff545_800x.jpg?v=1720173690",
+        "https://cdn11.bigcommerce.com/s-00kfbby/images/stencil/1280x1280/products/1191/11290/coffee-christmas-gifts__99332.1698205867.jpg?c=2"
+      ],
+      "reviews": [
+        {
+          "review": "Delicious variety of flavors!",
+          "rating": 5
+        },
+        {
+          "review": "Not all blends were to my taste.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "gift": "Board Game",
+      "description": "A fun and engaging board game for family game nights.",
+      "price": {
+        "min": 30,
+        "max": 50
+      },
+      "occasion": [
+        "Birthday",
+        "Family Gathering"
+      ],
+      "url": "https://www.board-game.co.uk/category/board-games/",
+      "images": [
+        "https://eu.merch.larian.com/media/cache/sylius_shop_product_original/50/fb/10d9feae892183d1ac86f2343eff.jpeg",
+        "https://cdn.thewirecutter.com/wp-content/media/2024/11/BEST-BOARD-GAMES-2048px-DSC9916.jpg",
+        "https://cdn.mos.cms.futurecdn.net/tLeCoEmTBLwZc3iq9aUeM-1200-80.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Great game for all ages!",
+          "rating": 5
+        },
+        {
+          "review": "Takes a while to learn the rules.",
+          "rating": 3
+        },
+        {
+          "review": "My family loves this game!",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "gift": "Personalized photo album",
+      "description": "A beautifully crafted photo album to cherish memories.",
+      "price": {
+        "min": 20,
+        "max": 30
+      },
+      "occasion": [
+        "Anniversary",
+        "Wedding"
+      ],
+      "url": "https://www.shutterfly.com/photo-books/",
+      "images": [
+        "https://media.artifactuprising.com/media/catalog/product/e/v/evr_q12023_pdpupdates_siglay_lead.jpg",
+        "https://i.etsystatic.com/14051662/r/il/75dec5/3339067027/il_794xN.3339067027_qxj3.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Perfect gift for our anniversary!",
+          "rating": 5
+        },
+        {
+          "review": "Pages were not as thick as expected.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "gift": "Gourmet Chocolate Box",
+      "description": "A box filled with assorted gourmet chocolates.",
+      "price": {
+        "min": 20,
+        "max": 50
+      },
+      "occasion": [
+        "Valentine's Day",
+        "Birthday"
+      ],
+      "url": "https://svenskakakao.se/products/chokladbud-deluxe-med-fina-chokladbitar",
+      "images": [
+        "https://svenskakakao.se/cdn/shop/products/chokladbud-stor-presentask-med-lyxiga-praliner-och-chokladkaka-dark-milksvenska-kakao-717904_900x.jpg?v=1699364400",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkDp1X51vWjr-WSafu757WiqCPlgeW5dsxYQ&s",
+        "https://svenskakakao.se/cdn/shop/files/Kolastangeripresentask_aef4e2e6-3757-4969-8c92-b4c5072e11f8_960x.jpg?v=1705577353"
+      ],
+      "reviews": [
+        {
+          "review": "Absolutely delicious chocolates!",
+          "rating": 5
+        },
+        {
+          "review": "Some were a bit too sweet for my liking.",
+          "rating": 3
+        },
+        {
+          "review": "Perfect for sharing!",
+          "rating": 4
+        },
+        {
+          "review": "Great packaging!",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "gift": "Travel Journal",
+      "description": "A beautifully designed journal for travel memories.",
+      "price": {
+        "min": 15,
+        "max": 25
+      },
+      "occasion": [
+        "Graduation",
+        "Birthday"
+      ],
+      "url": "https://www.amazon.com/travel-journal/s?k=travel+journal",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8aQZ84pzpv7Szg3yvY2sWR27T7wKoL9IKgg&s",
+        "https://www.jackleatherstudio.com/cdn/shop/products/PersonalizedGenuineLeatherJournal_LeatherNotebook_CustomEngravedGiftforWomenandMenHandmadePaper_TravelJournal_BirthdayGift_13.jpg?v=1680852637",
+        "https://doodlecollection.com/cdn/shop/files/VoyageVibes_1500X2000_2.jpg?v=1739200261"
+      ],
+      "reviews": [
+        {
+          "review": "Perfect for documenting my adventures!",
+          "rating": 5
+        },
+        {
+          "review": "Could use more pages.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "gift": "Smartphone Stand",
+      "description": "An adjustable stand for your smartphone or tablet.",
+      "price": {
+        "min": 10,
+        "max": 20
+      },
+      "occasion": [
+        "Birthday",
+        "Christmas"
+      ],
+      "url": "https://www.amazon.se/-/en/b?ie=UTF8&node=27295368031",
+      "images": [
+        "https://hips.hearstapps.com/hmg-prod/images/lamicall-press-image-64cbcdc851295.png?crop=0.798xw:1.00xh;0.103xw,0&resize=640:*",
+        "https://m.media-amazon.com/images/I/51EyjH1WZ7L._AC_UF1000,1000_QL80_.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Very sturdy and versatile!",
+          "rating": 5
+        },
+        {
+          "review": "A bit bulky for travel.",
+          "rating": 3
+        },
+        {
+          "review": "Great for video calls!",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "gift": "Wine Glass Set",
+      "description": "Elegant wine glasses perfect for special occasions.",
+      "price": {
+        "min": 40,
+        "max": 70
+      },
+      "occasion": [
+        "Anniversary",
+        "Christmas"
+      ],
+      "url": "https://www.riedel.com/en-se/shop#sort=bestSeller",
+      "images": [
+        "https://www.shophitherlane.com/cdn/shop/files/7F721237-5B9D-4118-B251-C168FFFB8E55.jpg?v=1712107281",
+        "https://m.media-amazon.com/images/I/61GQaETL9rL._AC_UF894,1000_QL80_.jpg",
+        "https://international.nudeglass.com/cdn/shop/files/Stemzeroelegantredwinelarge-Stemzerovolcanoredwine-Joyvotivered-silhouettebowlcaramel_4be119b8-76c6-4df1-a322-866629e4a56e.jpg?v=1708100438",
+        "https://www.foodandwine.com/thmb/m6IH_L1N0iYTNwPjTa75d-4WcP8=/fit-in/1500x2668/filters:no_upscale():max_bytes(150000):strip_icc()/faw-product-josephine-no-2-universal-set-of-2-12-rkilgore-628-6b7f4e6191424847bffe5be23dd13f50.jpeg"
+      ],
+      "reviews": [
+        {
+          "review": "Beautiful design and great quality!",
+          "rating": 5
+        },
+        {
+          "review": "One glass arrived chipped.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "gift": "Gardening Kit",
+      "description": "A complete kit for gardening enthusiasts.",
+      "price": {
+        "min": 50,
+        "max": 80
+      },
+      "occasion": [
+        "Birthday",
+        "Housewarming"
+      ],
+      "url": "https://www.amazon.com/garden-kit/s?k=garden+kit",
+      "images": [
+        "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe9a11ce6-2a97-4341-a583-d2637d23b3b1_1361x1069.jpeg",
+        "https://www.irishtimes.com/resizer/v2/6WVMKFP6HVRUTNXBVO4U5TPFUE.jpg?auth=5a31c34c3b5268af2340232e0bc09ddafa959d1b4820bf3c5d83e0ac8bd0e339&smart=true&width=1600&height=1200",
+        "https://hips.hearstapps.com/hmg-prod/images/gardening-tools-1585131321.jpg?crop=1.00xw:0.760xh;0,0.159xh&resize=640:*"
+      ],
+      "reviews": [
+        {
+          "review": "Everything you need to start gardening!",
+          "rating": 5
+        },
+        {
+          "review": "Great tools but missing a few items.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "gift": "Handmade Soap Set",
+      "description": "A set of organic handmade soaps with various scents.",
+      "price": {
+        "min": 20,
+        "max": 30
+      },
+      "occasion": [
+        "Birthday",
+        "Christmas"
+      ],
+      "url": "https://thehandmadesoapcompany.ie/collections/gifts",
+      "images": [
+        "https://m.media-amazon.com/images/I/716wg0Xh93L.jpg",
+        "https://thehandmadesoapcompany.com/cdn/shop/files/Soap-GS_800x.jpg?v=1736527082",
+        "https://sequoiasoaps.com/cdn/shop/products/tradtitionslargegiftset3.jpg?v=1670348325",
+        "https://myrtleandsoap.de/cdn/shop/files/MS-gift-sets-142.jpg?v=1738949016"
+      ],
+      "reviews": [
+        {
+          "review": "Smells amazing and feels great on the skin!",
+          "rating": 5
+        },
+        {
+          "review": "Some bars were a bit small.",
+          "rating": 3
+        },
+        {
+          "review": "Perfect for gifting!",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "gift": "Portable Charger",
+      "description": "A compact power bank to keep your devices charged on the go.",
+      "price": {
+        "min": 25,
+        "max": 50
+      },
+      "occasion": [
+        "Birthday",
+        "New Year"
+      ],
+      "url": "https://www.amazon.se/-/en/b?ie=UTF8&node=20638073031",
+      "images": [
+        "https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8xOTM4Mzc3Mi9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTc1MjIyNDA4Nn0.b9j51rWWVzYV1Xbe6CEZnD4Q71nms8aTMO7tJ9TtMgk/img.jpg?width=1200&height=800&quality=85&coordinates=398%2C0%2C398%2C0",
+        "https://www.romosspowerbank.com/wp-content/uploads/2020/12/romoss-psp10-power-bank-10000mah-slim-portable-4001307362848-0.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Very handy for travel!",
+          "rating": 5
+        },
+        {
+          "review": "Charges slowly, but works well.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "gift": "Art Supplies Set",
+      "description": "A complete set of art supplies for budding artists.",
+      "price": {
+        "min": 60,
+        "max": 90
+      },
+      "occasion": [
+        "Birthday",
+        "Graduation"
+      ],
+      "url": "https://penstore.com/en/art-supplies",
+      "images": [
+        "https://dianehill.co.uk/cdn/shop/files/P1040426.jpg?v=1690303229&width=550",
+        "https://c0.wallpaperflare.com/preview/655/392/835/art-art-materials-artwork-canvas.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Fantastic quality, my daughter loves it!",
+          "rating": 5
+        },
+        {
+          "review": "Some colors were missing.",
+          "rating": 3
+        },
+        {
+          "review": "Great for beginners!",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "gift": "Pet Toy Set",
+      "description": "A fun set of toys for your furry friends.",
+      "price": {
+        "min": 30,
+        "max": 60
+      },
+      "occasion": [
+        "Birthday",
+        "Christmas"
+      ],
+      "url": "https://www.denjodogs.com/en/produkter/play/dog-toys/",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEobEfoI2gncqNl-fD9altmjRCRi2c6ty7eg&s",
+        "https://t3.ftcdn.net/jpg/01/93/44/48/360_F_193444833_Wr9OBa9zWspFGHXQxKv22GjY1lvEFyeb.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_kxWZY1prkWQ_fVjScGLOPwaUsvEQC1U8Q&s"
+      ],
+      "reviews": [
+        {
+          "review": "My dog loves these toys!",
+          "rating": 5
+        },
+        {
+          "review": "Durable and fun!",
+          "rating": 4
+        },
+        {
+          "review": "Not all toys are suitable for large breeds.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "gift": "Outdoor Blanket",
+      "description": "A large, waterproof blanket perfect for picnics.",
+      "price": {
+        "min": 20,
+        "max": 30
+      },
+      "occasion": [
+        "Summer",
+        "Picnic"
+      ],
+      "url": "https://www.amazon.se/-/en/b?ie=UTF8&node=26141313031",
+      "images": [
+        "https://media.istockphoto.com/id/874738690/photo/picnic-blanket-and-basket.jpg?s=612x612&w=0&k=20&c=ItIdRqD0BiF6-tGqq6rpyGubgJxNp4WaZWxzJuwnwj8=",
+        "https://media.istockphoto.com/id/1422868465/photo/picnic-on-blanket-with-food-at-summer-sunny-day.jpg?s=612x612&w=0&k=20&c=pi1blsaNrYrES7WjAp4W0J8EsPDC_KhHrbAE0wlNpn4=",
+        "https://hips.hearstapps.com/hmg-prod/images/picnic-blanket-rugs-64706f688c83d.jpg",
+        "https://media.istockphoto.com/id/810227572/photo/picnic-on-the-beach.jpg?s=612x612&w=0&k=20&c=jKDis8IMUN1RUJgdiRl3Hyng2XTwhtZCFLwA5oTUi08="
+      ],
+      "reviews": [
+        {
+          "review": "Perfect for our family outings!",
+          "rating": 5
+        },
+        {
+          "review": "Really spacious and comfortable.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "gift": "Cooking Class Voucher",
+      "description": "A voucher for a fun cooking class experience.",
+      "price": {
+        "min": 80,
+        "max": 130
+      },
+      "occasion": [
+        "Anniversary",
+        "Birthday"
+      ],
+      "url": "https://www.buyagift.co.uk/food-and-drink/cookery-lessons",
+      "images": [
+        "https://i.pinimg.com/736x/87/52/0d/87520d43179a97e0f7339dc47ba9a9c8.jpg",
+        "https://www.vaegbillederxxl.dk/webshop/TAPETE/Photo-wallpaper-Cooking-Pleasure--T_cookingpleasure_0.jpg",
+        "https://images7.alphacoders.com/109/1097602.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Had a blast learning new recipes!",
+          "rating": 5
+        },
+        {
+          "review": "Instructor was a bit disorganized.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "gift": "Puzzle Set",
+      "description": "A challenging puzzle set for hours of fun.",
+      "price": {
+        "min": 15,
+        "max": 25
+      },
+      "occasion": [
+        "Birthday",
+        "Family Gathering"
+      ],
+      "url": "https://www.amazon.se/-/en/b?ie=UTF8&node=20638524031",
+      "images": [
+        "https://thumbs.dreamstime.com/b/puzzle-pieces-wooden-table-mountain-sunset-close-up-vibrant-blue-orange-jigsaw-puzzle-pieces-scattered-350911486.jpg",
+        "https://m.media-amazon.com/images/I/71rZPOh3QOL.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Great quality and design!",
+          "rating": 5
+        },
+        {
+          "review": "Some pieces were missing.",
+          "rating": 2
+        },
+        {
+          "review": "Very challenging but fun!",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "gift": "Digital Photo Frame",
+      "description": "A frame that displays your favorite digital photos.",
+      "price": {
+        "min": 60,
+        "max": 110
+      },
+      "occasion": [
+        "Christmas",
+        "Wedding"
+      ],
+      "url": "https://example.com/digital-photo-frame",
+      "images": [
+        "https://m.media-amazon.com/images/I/51B4gTU-CEL._CR2,0,1276,720_SR684,386_.jpg",
+        "https://djd1xqjx2kdnv.cloudfront.net/photos/34/35/465047_26171_XL.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Perfect for displaying family memories!",
+          "rating": 5
+        },
+        {
+          "review": "Setup was a bit tricky.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "gift": "Smart Home Device",
+      "description": "A smart assistant to help manage your home.",
+      "price": {
+        "min": 90,
+        "max": 140
+      },
+      "occasion": [
+        "Birthday",
+        "Housewarming"
+      ],
+      "url": "https://www.amazon.com/Smart-Home/b?ie=UTF8&node=6563140011",
+      "images": [
+        "https://i.pcmag.com/imagery/roundup-groups/051b3JvCaz7TUe9VW12gb2m-6.fit_lim.size_1050x.jpg",
+        "https://www.globalsign.com/application/files/4816/3214/8829/iStock-1215074546.jpg",
+        "https://tedee.com/app/uploads/2022/03/tedee_homekit.jpeg"
+      ],
+      "reviews": [
+        {
+          "review": "Incredibly useful for daily tasks!",
+          "rating": 5
+        },
+        {
+          "review": "Voice recognition could be better.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "gift": "Leather Wallet",
+      "description": "A stylish leather wallet that combines elegance and functionality.",
+      "price": {
+        "min": 40,
+        "max": 70
+      },
+      "occasion": [
+        "Birthday",
+        "Anniversary"
+      ],
+      "url": "https://www.saddler.com/men/accessories/wallets",
+      "images": [
+        "https://techhuset.se/images/zoom/qialino-leather-wallet-case-samsung-galaxy-s24-ultra-brown-bild-6.jpg",
+        "https://godbolegear.com/cdn/shop/files/SingleCashPocket-ClassicWallet-StuffedwithCardsandCash.jpg?v=1722840632",
+        "https://godbolegear.com/cdn/shop/files/SlimWalletwithsix6cardslotshandmade.jpg?v=1712809468&width=1946",
+        "https://craftandglory.in/cdn/shop/products/DSC07927_1.jpg?v=1660802328&width=1946"
+      ],
+      "reviews": [
+        {
+          "review": "Very classy and well-made!",
+          "rating": 5
+        },
+        {
+          "review": "Could use more card slots.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "gift": "Silk Scarf",
+      "description": "A luxurious silk scarf that adds elegance to any outfit.",
+      "price": {
+        "min": 20,
+        "max": 40
+      },
+      "occasion": [
+        "Birthday",
+        "Christmas"
+      ],
+      "url": "https://seveneast.se/en/collections/dam-alla-sjalar-sidensjalar",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwzu90E3TTbS7qTzTZbj6HEi7Ht9_lympfjQ&s",
+        "https://aubongoutboutique.com/cdn/shop/products/WILLIAMMORRISCOMPTONSCARF5_720x.jpg?v=1726675715",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-6UAVyylgfzqY4cTdnb50kCp2tvepC_vtDN-T7_c_MWQNMeQLN642fUkQGh4ny6srKyc&usqp=CAU"
+      ],
+      "reviews": [
+        {
+          "review": "Gorgeous colors and soft texture!",
+          "rating": 5
+        },
+        {
+          "review": "A bit delicate, handle with care.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "gift": "Fitness Class Membership",
+      "description": "A membership for various fitness classes.",
+      "price": {
+        "min": 120,
+        "max": 150
+      },
+      "occasion": [
+        "Birthday",
+        "New Year"
+      ],
+      "url": "https://classpass.com/plans",
+      "images": [
+        "https://images.stockcake.com/public/b/0/7/b0726ebe-f28a-457a-b291-3797f091f9c8_large/dynamic-fitness-class-stockcake.jpg",
+        "https://lifthousefitness.com/wp-content/uploads/2021/08/Strength-Training-Class-In-Dallas-Texas.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpLF5alaUAFlGG5eeqXGo0p-9dGTY8Q2_3lrbfvGmRLeic82IFslKnkDCOe-rIQZhBxSc&usqp=CAU"
+      ],
+      "reviews": [
+        {
+          "review": "Great way to stay motivated!",
+          "rating": 5
+        },
+        {
+          "review": "Classes are too crowded at times.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "gift": "Custom Puzzle",
+      "description": "A personalized puzzle featuring a favorite photo.",
+      "price": {
+        "min": 20,
+        "max": 30
+      },
+      "occasion": [
+        "Birthday",
+        "Anniversary"
+      ],
+      "url": "https://www.puzzleyou.co.uk/photo-puzzle",
+      "images": [
+        "https://cms.cloudinary.vpsvc.com/images/c_scale,dpr_auto,f_auto,q_auto:best,t_productPageHeroGalleryTransformation_v2,w_auto/legacy_dam/en-ca/S001416397/CONS-751-puzzle-marquee-003?cb=65fceeb138fbb31d6fe5b5c0a6fbf17633bdb35c",
+        "https://www.puzzle-lab.com/cdn/shop/products/ImagefromiOS_4032x.jpg?v=1634518416",
+        "https://img.myshopline.com/image/store/1725848895991/1-2-7b63e882-684e-49b6-9b58-64bfb9bfd4ad_800x.png?w=1000&h=1000",
+        "https://www.pictorem.com/images/photo283.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Such a unique gift idea!",
+          "rating": 5
+        },
+        {
+          "review": "Puzzle pieces fit a bit loosely.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "gift": "Elegant Necklace",
+      "description": "A stunning necklace that complements any outfit.",
+      "price": {
+        "min": 30,
+        "max": 50
+      },
+      "occasion": [
+        "Birthday",
+        "Anniversary"
+      ],
+      "url": "https://www.etsy.com/market/elegant_necklace",
+      "images": [
+        "https://images.pexels.com/photos/906056/pexels-photo-906056.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQyRXThoOzIVqzOlLmKeDC-RfwVUhvwZCzFw&s",
+        "https://img.pikbest.com/backgrounds/20241206/luxurious-white-gold-and-diamond-necklace-on-elegant-black-background_11221363.jpg!w700wp"
+      ],
+      "reviews": [
+        {
+          "review": "Absolutely beautiful piece!",
+          "rating": 5
+        },
+        {
+          "review": "Chain is a bit short.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "gift": "Personalized Calendar",
+      "description": "A custom calendar featuring personal photos for each month.",
+      "price": {
+        "min": 35,
+        "max": 65
+      },
+      "occasion": [
+        "New Year",
+        "Birthday"
+      ],
+      "url": "https://www.shutterfly.com/calendars/",
+      "images": [
+        "https://prd-static.sf-cdn.com/resources/images/store/2023/global/640x508/WF-772330_SNF_US_Calendar_Alt_images_for_PDP_640x508_calendar_desk%20calendar_lifestyle.jpg",
+        "https://www.reliableprints.com/images/product/2023_-_poster_calendar.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Great gift for the New Year!",
+          "rating": 5
+        },
+        {
+          "review": "Some images were blurry.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "gift": "Luxury Bathrobe",
+      "description": "A soft and cozy bathrobe perfect for lounging.",
+      "price": {
+        "min": 130,
+        "max": 180
+      },
+      "occasion": [
+        "Christmas",
+        "Birthday"
+      ],
+      "url": "https://www.casazeytin.se/en/category/bath-robes",
+      "images": [
+        "https://www.ritzcarltonshops.com/images/products/lrg/the-ritz-carlton-frette-microfiber-robe-RTZ-400-01-WL_lrg.jpg",
+        "https://www.naturalbedcompany.co.uk/wp-content/uploads/LUKs-grey-kimono-robe.jpg",
+        "https://media.istockphoto.com/id/1410017429/photo/white-clean-bathrobe-hanging-in-wooden-wardrobe-at-luxury-hotel-or-home-relax-and-travel.jpg?s=612x612&w=0&k=20&c=j_bfDOynNmeNLtCKV72RqJluanKtknN0S9EH9P_Hgz4="
+      ],
+      "reviews": [
+        {
+          "review": "So comfortable and warm!",
+          "rating": 5
+        },
+        {
+          "review": "A bit big, but still nice.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "gift": "Indoor Plant",
+      "description": "A low-maintenance indoor plant to brighten up any space.",
+      "price": {
+        "min": 20,
+        "max": 70
+      },
+      "occasion": [
+        "Housewarming",
+        "Birthday"
+      ],
+      "url": "https://www.ormbunker.se/en/collections/houseplants",
+      "images": [
+        "https://images.unsplash.com/photo-1604762524889-3e2fcc145683?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2UlMjBwbGFudHxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1604762525953-2c80447cc4a6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlJTIwcGxhbnR8ZW58MHx8MHx8fDA%3D",
+        "https://w0.peakpx.com/wallpaper/117/888/HD-wallpaper-green-indoor-plant.jpg",
+        "https://images.unsplash.com/photo-1604762525953-2c80447cc4a6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlJTIwcGxhbnR8ZW58MHx8MHx8fDA%3D"
+      ],
+      "reviews": [
+        {
+          "review": "Arrived healthy and vibrant!",
+          "rating": 5
+        },
+        {
+          "review": "Could use better packaging.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "gift": "Travel Backpack",
+      "description": "A stylish and functional backpack for all your travel needs.",
+      "price": {
+        "min": 150,
+        "max": 200
+      },
+      "occasion": [
+        "Graduation",
+        "Birthday"
+      ],
+      "url": "https://www.thenorthface.se/en-se/c/bags-and-equipment/activities/travel-bags-341470",
+      "images": [
+        "https://images.unsplash.com/photo-1509762774605-f07235a08f1f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFja3BhY2t8ZW58MHx8MHx8fDA%3D",
+        "https://images.pexels.com/photos/732632/pexels-photo-732632.jpeg?cs=srgb&dl=pexels-lalu-fatoni-228553-732632.jpg&fm=jpg",
+        "https://m.media-amazon.com/images/I/91qVLIj62WL._AC_UY1100_.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Perfect for weekend trips!",
+          "rating": 5
+        },
+        {
+          "review": "Could use a water bottle holder.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "gift": "Handcrafted Jewelry Box",
+      "description": "A beautiful box to store your precious jewelry.",
+      "price": {
+        "min": 40,
+        "max": 90
+      },
+      "occasion": [
+        "Anniversary",
+        "Birthday"
+      ],
+      "url": "https://www.etsy.com/se-en/market/handmade_jewelry_box",
+      "images": [
+        "https://www.hawthornefineboxes.com/wp-content/uploads/2020/04/untitled-15-1.jpg",
+        "https://woodsala.com/cdn/shop/files/MG_9060.jpg?v=1696077823&width=4000",
+        "https://i5.walmartimages.com/seo/Ajuny-Handcrafted-Indian-Vintage-Jewelry-Box-Celtic-Hand-Carved-Multipurpose-Trinket-Keepsake-Storage-Organiser-Wood-Unique-Gifts-Ideas-9x6-inch_953bea9e-94b0-45fe-b7de-38d49a214183.a0e098c92c47c68c002e952ec62b93d1.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVyewUj52MpE0_uTVyvIRs8PUaW-dPCC9ac8nNd7MCrQ8XDohBfZq4O3TzreB155L92E0&usqp=CAU"
+      ],
+      "reviews": [
+        {
+          "review": "Stunning craftsmanship!",
+          "rating": 5
+        },
+        {
+          "review": "A bit smaller than expected.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "32",
+      "gift": "Cooking Utensil Set",
+      "description": "A complete set of kitchen utensils for the home chef.",
+      "price": {
+        "min": 45,
+        "max": 70
+      },
+      "occasion": [
+        "Housewarming",
+        "Birthday"
+      ],
+      "url": "https://www.amazon.se/-/en/25-Piece-Kitchen-Utensil-Set-Stainless/dp/B075MDYP64?th=1",
+      "images": [
+        "https://img.freepik.com/premium-photo/kitchen-utensils_214787-514.jpg",
+        "https://media.istockphoto.com/id/480627785/photo/rural-kitchen-utensils-on-vintage-planked-wood-table.jpg?s=612x612&w=0&k=20&c=rIeqLQAH1Sq0SbgDX4IsO_eupLQHI7rXT5ab9SuW35M=",
+        "https://i.ebayimg.com/images/g/cbIAAOSwf1dlbr~0/s-l1200.png"
+      ],
+      "reviews": [
+        {
+          "review": "Everything I needed for cooking!",
+          "rating": 5
+        },
+        {
+          "review": "Some utensils feel a bit flimsy.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "gift": "Wireless Earbuds",
+      "description": "High-quality wireless earbuds for music lovers.",
+      "price": {
+        "min": 30,
+        "max": 70
+      },
+      "occasion": [
+        "Birthday",
+        "Christmas"
+      ],
+      "url": "https://www.amazon.com/wireless-earbuds/s?k=wireless+earbuds",
+      "images": [
+        "https://images.pexels.com/photos/3780681/pexels-photo-3780681.jpeg?cs=srgb&dl=pexels-soulful-pizza-2080276-3780681.jpg&fm=jpg",
+        "https://t4.ftcdn.net/jpg/04/37/86/87/360_F_437868712_cD4auf565hQupNY6fILPfF2o0kljack2.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Great sound quality and battery life!",
+          "rating": 5
+        },
+        {
+          "review": "Fit could be better for smaller ears.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "34",
+      "gift": "Subscription Box",
+      "description": "A monthly subscription box tailored to interests.",
+      "price": {
+        "min": 30,
+        "max": 40
+      },
+      "occasion": [
+        "Birthday",
+        "Christmas"
+      ],
+      "url": "https://www.cratejoy.com/collections/home-accessories-subscription-boxes",
+      "images": [
+        "https://t3.ftcdn.net/jpg/10/73/52/24/360_F_1073522438_XVwuiNnM2shAraYrhQ9pwvwP5IXP4Hra.jpg",
+        "https://media.istockphoto.com/id/1419645712/photo/anonymous-woman-holding-a-gift-box-and-looking-at-beauty-cosmetics-products-inside.jpg?s=612x612&w=0&k=20&c=-dkJhOLmcARV6MoOhGlSc8XTB9idqcH_cQ80t4MZ1F4=",
+        "https://www.thegoodlane.com/cdn/shop/products/eco-friendlysubscriptionbox.png?v=1674793978"
+      ],
+      "reviews": [
+        {
+          "review": "Always something exciting inside!",
+          "rating": 5
+        },
+        {
+          "review": "Some months are better than others.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "35",
+      "gift": "Digital Drawing Tablet",
+      "description": "A tablet designed for digital artists.",
+      "price": {
+        "min": 90,
+        "max": 170
+      },
+      "occasion": [
+        "Birthday",
+        "Graduation"
+      ],
+      "url": "https://www.amazon.com/drawing-tablet/s?k=drawing+tablet",
+      "images": [
+        "https://cdn-media.wacom.com/-/media/images/discover-2020/discover/wacom-stylus-tf.jpg?h=560&iar=0&w=920&rev=aae9e3dd969d450d9842a7272fa65e29&hash=B2AB8B040BA08BC5B41E9D48F20391A6",
+        "https://gaomon.net/cdn/shop/files/gaomon-pen-tablet-m106k-scenario_ab84ade7-a609-454f-a3c5-a65b91fc9b31.jpg?v=1694792003&width=1445",
+        "https://cdn.mos.cms.futurecdn.net/8ToUvuPXxcD5ANh3D9Sr8L-1200-80.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Perfect for my digital art!",
+          "rating": 5
+        },
+        {
+          "review": "Setup was a bit complicated.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "36",
+      "gift": "Wireless Charging Pad",
+      "description": "A sleek charging pad for your devices.",
+      "price": {
+        "min": 20,
+        "max": 30
+      },
+      "occasion": [
+        "Birthday",
+        "Christmas"
+      ],
+      "url": "https://www.amazon.se/-/en/b?ie=UTF8&node=20638067031",
+      "images": [
+        "https://satechi.se/storage/STQTPMEA8.webp",
+        "https://www.ikea.com/se/en/images/products/livboj-wireless-charger-black__0972121_pe811541_s5.jpg",
+        "https://cdn.sanity.io/images/3azemr64/production/530edbc1d8672f389d9f83f279ff97befe68b90a-1024x768.jpg?auto=format&w=873&h=655&crop=center&fit=crop&q=90"
+      ],
+      "reviews": [
+        {
+          "review": "Convenient and fast charging!",
+          "rating": 5
+        },
+        {
+          "review": "Needs a better grip on the surface.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "37",
+      "gift": "Leather Journal",
+      "description": "A classic leather journal for writing and sketching.",
+      "price": {
+        "min": 10,
+        "max": 25
+      },
+      "occasion": [
+        "Birthday",
+        "Graduation"
+      ],
+      "url": "https://www.amazon.com/leather-journal/s?k=leather+journal",
+      "images": [
+        "https://www.galenleather.com/cdn/shop/products/travelers-notebook-leather-cover-crazy-horse-tan_2000x.jpg?v=1552328876",
+        "https://krysset.shop/cdn/shop/products/3005cdda041d37391231a3e933e3bec5b7ce9f00bf7c3b58e6b8359803ac5f66_2048x.jpg?v=1697047772",
+        "https://yellowsunrise.co.uk/cdn/shop/files/HIBLKJ-BR-Buffalo-Leather-Key-journal-1-Non-Personalised.webp?v=1723729765&width=2000",
+        "https://www.borlino.com/cdn/shop/products/Borlino-Leather-Cover-Journal-Terra-1_1200x.jpg?v=1685137239"
+      ],
+      "reviews": [
+        {
+          "review": "Beautifully made and perfect for gifts!",
+          "rating": 5
+        },
+        {
+          "review": "The pages could be thicker.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "gift": "Craft Beer Sampler",
+      "description": "A selection of craft beers from local breweries.",
+      "price": {
+        "min": 25,
+        "max": 40
+      },
+      "occasion": [
+        "Birthday",
+        "Father's Day"
+      ],
+      "url": "https://www.amazon.com/beer-sampler/s?k=beer+sampler",
+      "images": [
+        "https://www.picnictime.com/cdn/shop/products/ea18a01ec2ef58f973f9a319cb81f003600e8302_b34c899a-6919-459d-8a1c-9997515eff45.jpg?v=1695408039",
+        "https://i.ebayimg.com/images/g/4RQAAOSwrFVhDK1A/s-l1200.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Fantastic variety and flavors!",
+          "rating": 5
+        },
+        {
+          "review": "Some beers were a bit too hoppy for me.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "39",
+      "gift": "Smart Light Bulbs",
+      "description": "Smart bulbs that can be controlled via an app.",
+      "price": {
+        "min": 25,
+        "max": 55
+      },
+      "occasion": [
+        "Housewarming",
+        "Birthday"
+      ],
+      "url": "https://www.smartlinesweden.com/en/pk/smart-light-bulbs/",
+      "images": [
+        "https://cdn.thewirecutter.com/wp-content/media/2024/02/smartledlightbulbs-2048px-07782-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp",
+        "https://justenergy.com/wp-content/uploads/2018/07/CFL-1.jpg",
+        "https://brizlabs.com/cdn/shop/files/5_1800x.jpg?v=1729256925"
+      ],
+      "reviews": [
+        {
+          "review": "Easy to install and use!",
+          "rating": 5
+        },
+        {
+          "review": "Sometimes loses connection.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "gift": "Cooking Cookbook",
+      "description": "A collection of delicious recipes for home cooking.",
+      "price": {
+        "min": 15,
+        "max": 30
+      },
+      "occasion": [
+        "Birthday",
+        "Housewarming"
+      ],
+      "url": "https://www.amazon.com/amz-books/discover?node=6&navStore=books&ie=UTF8",
+      "images": [
+        "https://images.squarespace-cdn.com/content/v1/56801b350e4c11744888ec37/1612824622618-9JQNFW3K6765U9Q4MVAD/Every+Grain+of+Rice+lede.jpg",
+        "https://shop.thepagecompany.com/cdn/shop/files/vol1cover.jpg?v=1716413456&width=1946",
+        "https://www.greenpan.us/cdn/shop/files/NC_CC008027-001_3-1200x1200-bd93c0f.jpg?v=1734990603",
+        "https://cdn.loveandlemons.com/wp-content/uploads/2023/01/cookbook3.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Inspiring recipes and beautiful photos!",
+          "rating": 5
+        },
+        {
+          "review": "Some recipes are a bit complicated.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "41",
+      "gift": "Portable Blender",
+      "description": "A compact blender for smoothies on the go.",
+      "price": {
+        "min": 35,
+        "max": 50
+      },
+      "occasion": [
+        "Birthday",
+        "New Year"
+      ],
+      "url": "https://www.amazon.se/-/en/Portable-Smoothie-Personal-Rechargeable-Cordless/dp/B0B6RSF8B2?th=1",
+      "images": [
+        "https://blendjet.in/fast-image/h_1100/blendjet-in/files/01_HERO_IMAGE_BJ2_BLACK.jpg?v=1707812883",
+        "https://img.joomcdn.net/32ff2c9726a38eacfbd083c7ee25799767bf5d9a_original.jpeg",
+        "https://theblendhive.com/cdn/shop/files/blendhive-portable-blender-201.jpg?v=1734235558"
+      ],
+      "reviews": [
+        {
+          "review": "Perfect for quick smoothies!",
+          "rating": 5
+        },
+        {
+          "review": "Battery life could be improved.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "42",
+      "gift": "Puzzle Book",
+      "description": "A fun collection of puzzles and brain teasers.",
+      "price": {
+        "min": 10,
+        "max": 20
+      },
+      "occasion": [
+        "Birthday",
+        "Christmas"
+      ],
+      "url": "https://www.amazon.com/puzzle-books/s?k=puzzle+books",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTra7Nv6lrgok6Ws-iIrIYuk6ayRbtQU59wXw&s",
+        "https://media.istockphoto.com/id/599480486/vector/blue-annual-report-brochure-flyer-design-template.jpg?s=612x612&w=0&k=20&c=_FuYV9S8sblE4ZNdiLoEeQbmOaobZSpkfWgBhoyEozM="
+      ],
+      "reviews": [
+        {
+          "review": "Great for passing the time!",
+          "rating": 5
+        },
+        {
+          "review": "Some puzzles were too easy.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "43",
+      "gift": "Baking Kit",
+      "description": "A complete kit for baking delicious treats at home.",
+      "price": {
+        "min": 30,
+        "max": 45
+      },
+      "occasion": [
+        "Birthday",
+        "Housewarming"
+      ],
+      "url": "https://www.amazon.com/Baking-Kits/s?k=Baking+Kits",
+      "images": [
+        "https://www.cookinggiftset.com/cdn/shop/products/Cooking-Gift-Set-French-Tart-Baking-Kit-Gift-for-Bakers-2_1024x.jpg?v=1695339042",
+        "https://confidentials.com/uploads/images/Manchester-Editorial/Food-Drink/Food-and-drink-2020/2020-05-20-Roberts-bakery-Get-Baking-Kit.jpeg",
+        "https://i.pinimg.com/736x/58/69/ac/5869accf395c8c8bf1355eb28b20a377.jpg",
+        "https://i.pinimg.com/736x/63/fd/5b/63fd5b8d9b3426541fb9e3ce6e22725e.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Everything you need to start baking!",
+          "rating": 5
+        },
+        {
+          "review": "Could use a better recipe book.",
+          "rating": 3
+        },
+        {
+          "review": "Great fun for kids!",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "44",
+      "gift": "Coffee Maker",
+      "description": "A compact coffee maker for brewing fresh coffee.",
+      "price": {
+        "min": 80,
+        "max": 200
+      },
+      "occasion": [
+        "Birthday",
+        "Christmas"
+      ],
+      "url": "https://www.amazon.se/-/en/b/?_encoding=UTF8&node=20651263031&bbn=20513023031&ref_=Oct_d_odnav_d_20650477031_1&pd_rd_w=hbq0O&content-id=amzn1.sym.8d109ba8-fa95-46d5-a8c8-ce4a2e002a9e&pf_rd_p=8d109ba8-fa95-46d5-a8c8-ce4a2e002a9e&pf_rd_r=AEA1FF3AC68JDHFG55XY&pd_rd_wg=FuWmS&pd_rd_r=4ef5209a-e29b-4874-8284-173af9209082",
+      "images": [
+        "https://www.billboard.com/wp-content/uploads/2024/09/ninja-espresso-machine-2024-billboard-1548.jpg?w=942&h=623&crop=1",
+        "https://shop.smeguk.com/siteassets/ben-h-test/buying-guides/coffee-machines/reasons-to-buy-a-retro-coffee-machine/coffee-preparation-960x690-1.jpg?width=2500",
+        "https://assets.wsimgs.com/wsimgs/rk/images/dp/wcm/202445/0036/cafe-specialty-drip-coffee-maker-o.jpg",
+        "https://image.coolblue.nl/max/1024xauto/content/920ca517726cb5ab8d2e76a2ee9eb981"
+      ],
+      "reviews": [
+        {
+          "review": "Brews excellent coffee!",
+          "rating": 5
+        },
+        {
+          "review": "A bit noisy during operation.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "45",
+      "gift": "Gardening Book",
+      "description": "A comprehensive guide to gardening for beginners.",
+      "price": {
+        "min": 20,
+        "max": 40
+      },
+      "occasion": [
+        "Housewarming",
+        "Birthday"
+      ],
+      "url": "https://www.amazon.se/-/en/Monty-Don/dp/1785947397",
+      "images": [
+        "https://www.phaidon.com/images/9781838663209/main-mobile-x1-jpg/the-garden-book-revised-and-updated-edition-en-6320-overview-jacket-front-3000.jpg",
+        "https://i0.wp.com/www.mandycanudigit.com/wp-content/uploads/2022/06/The-Regenerative-Garden-book-May-13-22.jpg?fit=800%2C600&ssl=1"
+      ],
+      "reviews": [
+        {
+          "review": "Very informative and helpful!",
+          "rating": 5
+        },
+        {
+          "review": "Could use more illustrations.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "46",
+      "gift": "Board Game Night Set",
+      "description": "Everything you need for a perfect board game night.",
+      "price": {
+        "min": 20,
+        "max": 40
+      },
+      "occasion": [
+        "Family Gathering",
+        "Birthday"
+      ],
+      "url": "https://www.amazon.se/Bright-Games-Chess-Checkers-Classic/dp/1452179859",
+      "images": [
+        "https://i.pinimg.com/736x/23/72/b6/2372b6c859dc129911f5bfa9b67389cc.jpg",
+        "https://i0.wp.com/celebratingeverydaylife.com/wp-content/uploads/2024/12/New-Years-Eve-Family-Game-Night-Jennifer-Martin-CelebratingEverydayLife-0353.jpg?resize=768%2C1024&ssl=1",
+        "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/B42570s.jpg?im=Resize,width=750"
+      ],
+      "reviews": [
+        {
+          "review": "Had a blast with family!",
+          "rating": 5
+        },
+        {
+          "review": "Includes great game options!",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "47",
+      "gift": "Personalized Blanket",
+      "description": "A cozy blanket customized with a special design.",
+      "price": {
+        "min": 20,
+        "max": 50
+      },
+      "occasion": [
+        "Christmas",
+        "Birthday"
+      ],
+      "url": "https://www.etsy.com/se-en/market/custom_blanket",
+      "images": [
+        "https://m.media-amazon.com/images/I/71Lx+5oY2qL.jpg",
+        "https://www.personalizationmall.com/cat_image/600/16883-89320-210914095414.jpg",
+        "https://www.personalizationmall.com/cat_image/600/16802-38516-210203170639.jpg",
+        "https://m.media-amazon.com/images/I/711pwe1M+WL.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Super soft and warm!",
+          "rating": 5
+        },
+        {
+          "review": "Design was not as expected.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "48",
+      "gift": "Mini Projector",
+      "description": "A portable projector for movie nights anywhere.",
+      "price": {
+        "min": 60,
+        "max": 90
+      },
+      "occasion": [
+        "Birthday",
+        "Graduation"
+      ],
+      "url": "https://www.amazon.com/mini-projector/s?k=mini+projector",
+      "images": [
+        "https://scale.coolshop-cdn.com/product-media.coolshop-cdn.com/23MY8Z/27bc8e863e884611b557ccf4b22b5e52.jpg/f/mm-smart-mini-projector.jpg",
+        "https://ls6iibytsc.eu.scalesta-cdn.com/_CYzF0PTt7cOzCBbyjJMHjCYz6Y=/filters:format(webp):fill(fff):quality(90)/www.tnateeshq8.com/images/detailed/271/G14946.webp"
+      ],
+      "reviews": [
+        {
+          "review": "Great picture quality!",
+          "rating": 5
+        },
+        {
+          "review": "Setup took a bit of time.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "49",
+      "gift": "Essential Oil Diffuser",
+      "description": "A stylish diffuser for creating a calming atmosphere.",
+      "price": {
+        "min": 110,
+        "max": 190
+      },
+      "occasion": [
+        "Birthday",
+        "Christmas"
+      ],
+      "url": "https://doftbox.se/en/aroma-diffuser/",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0028/2568/3008/articles/benefits-of-diffusers.jpg?v=1689237771",
+        "https://img.joomcdn.net/3de6864405ba341e02c4a826bb0eb34d3865ffda_original.jpeg",
+        "https://www.nowfoods.com/sites/default/files/styles/cloudzoom_image/public/sku-images/ultrasonic-faux-wood-diffuser.jpg?itok=J9lmcmkD",
+        "https://www.stripxlighting.in/cdn/shop/files/AA434AEF-E4A9-4F9F-BEB3-3CC6E4668268.jpg?v=1704358716"
+      ],
+      "reviews": [
+        {
+          "review": "Transforms my living space!",
+          "rating": 5
+        },
+        {
+          "review": "Could be quieter.",
+          "rating": 4
+        },
+        {
+          "review": "Great for relaxation.",
+          "rating": 5
+        }
+      ]
+    }
+  ],
+  "favorites": [
+    {
+      "id": "0"
+    },
+    {
+      "id": "11"
+    }
+  ]
 }

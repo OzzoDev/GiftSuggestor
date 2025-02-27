@@ -21,7 +21,7 @@ export default function ToggleIconBtn({
   };
 
   return (
-    <button onClick={handleClick} className="border-0 outline-none cursor-pointer">
+    <button type="button" onClick={handleClick} className="border-0 outline-none cursor-pointer">
       {isSelecetd ? selectedIcon : defualtIcon}
     </button>
   );

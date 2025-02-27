@@ -18,3 +18,9 @@ export type GiftReview = {
   rating: number;
   review: string;
 };
+
+export type GiftFavoriteToggleMessage = "Added" | "Removed";
+
+export type GiftId = {
+  id: string;
+};
