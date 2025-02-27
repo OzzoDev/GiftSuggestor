@@ -1,12 +1,13 @@
-import { forwardRef, useImperativeHandle, useState } from "react";
+import { forwardRef, useImperativeHandle, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { Gift, GiftId } from "../../types/types";
+import { Gift, GiftFilters, GiftId } from "../../types/types";
 import { fetchFavoriteGiftIds, fetchGifts } from "../../api/api";
 import { PuffLoader } from "react-spinners";
 import GiftCard from "./GiftCard";
+import { calcGiftAverageRating } from "../../utils/helpers";
 
 export interface GiftListRef {
-  setSearchQuery: (query: string) => void;
+  setFilters: (filters: GiftFilters | ((prev: GiftFilters | undefined) => GiftFilters)) => void;
 }
 
 const GiftList = forwardRef<GiftListRef, {}>(function GiftList(_, ref) {
@@ -21,11 +22,24 @@ const GiftList = forwardRef<GiftListRef, {}>(function GiftList(_, ref) {
     queryFn: fetchFavoriteGiftIds,
   });
 
-  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [filters, setFilters] = useState<GiftFilters>();
 
   useImperativeHandle(ref, () => ({
-    setSearchQuery,
+    setFilters: (
+      filtersOrUpdater: GiftFilters | ((prev: GiftFilters | undefined) => GiftFilters)
+    ) => {
+      setFilters((prev) => {
+        return typeof filtersOrUpdater === "function" ? filtersOrUpdater(prev) : filtersOrUpdater;
+      });
+    },
   }));
+
+  const filteredGifts = useMemo(() => {
+    return gifts
+      ?.filter((gift) => gift.gift.toLowerCase().includes(filters?.searchQuery || "".toLowerCase()))
+      .filter((gift) => (filters?.minPrice ? gift.price.min >= filters.minPrice : true))
+      .sort((a, b) => calcGiftAverageRating(b.reviews) - calcGiftAverageRating(a.reviews));
+  }, [gifts, filters]);
 
   if (isLoading) {
     return (
@@ -39,12 +53,6 @@ const GiftList = forwardRef<GiftListRef, {}>(function GiftList(_, ref) {
   if (error instanceof Error) {
     return <div className="text-red-500">{error.message}</div>;
   }
-
-  const filteredGifts = gifts?.filter((gift) => {
-    console.log(searchQuery);
-
-    return gift.gift.toLowerCase().includes(searchQuery.toLowerCase());
-  });
 
   return (
     <div>

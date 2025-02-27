@@ -5,7 +5,7 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { useEffect, useState } from "react";
 import GiftCardImageGallery from "./GiftCardImageGallery";
-import { joinWithAnd } from "../../utils/helpers";
+import { calcGiftAverageRating, giftPriceBadgeBg, joinWithAnd } from "../../utils/helpers";
 import GiftCardPriceBadge from "./GiftCardPriceBadge";
 import PrimaryBtn from "../btn/PrimaryBtn";
 import GhostBtn from "../btn/GhostBtn";
@@ -68,21 +68,10 @@ export default function GiftCard({ gift, isFavorite }: GiftCardProps) {
     navigate(`gift/${gift.id}`);
   };
 
-  const averageRating = Math.round(
-    gift.reviews.reduce((acc, curr) => {
-      return acc + curr.rating;
-    }, 0) / gift.reviews.length
-  );
+  const averageRating = calcGiftAverageRating(gift.reviews);
 
   const minPrice = gift.price.min;
-  const priceBadgeBackgroundColor =
-    minPrice > 100
-      ? "rgba(91, 11, 230,0.8)"
-      : minPrice > 60
-      ? "rgba(27, 98, 250,0.8)"
-      : minPrice > 30
-      ? "rgba(27, 183, 250,0.8)"
-      : "rgba(4, 189, 109, 0.8)";
+  const priceBadgeBackgroundColor = giftPriceBadgeBg(minPrice);
 
   return (
     <div className="relative">
@@ -92,7 +81,7 @@ export default function GiftCard({ gift, isFavorite }: GiftCardProps) {
         </div>
       )}
       <div
-        className={`flex flex-col justify-between h-[700px] bg-slate-100 p-6 rounded-lg cursor-pointer ${
+        className={`flex flex-col justify-between h-[700px] bg-slate-100 p-6 rounded-lg${
           isLoading ? "opacity-0" : "opacity-100 transition-opacity duration-300"
         }`}>
         <div className="flex flex-col gap-y-2">

@@ -24,3 +24,8 @@ export type GiftFavoriteToggleMessage = "Added" | "Removed";
 export type GiftId = {
   id: string;
 };
+
+export type GiftFilters = {
+  searchQuery?: string;
+  minPrice?: number;
+};
