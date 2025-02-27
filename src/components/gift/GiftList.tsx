@@ -27,10 +27,6 @@ const GiftList = forwardRef<GiftListRef, {}>(function GiftList(_, ref) {
     setSearchQuery,
   }));
 
-  // const searchGifts = (query: string): void => {
-  //   setSearchQuery(query);
-  // };
-
   if (isLoading) {
     return (
       <PuffLoader
