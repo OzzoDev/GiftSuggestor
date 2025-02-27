@@ -1,8 +1,9 @@
 import { useRef } from "react";
-import Searchbar from "../components/common/Searchbar";
 import GiftList, { GiftListRef } from "../components/gift/GiftList";
 import { GiftFilters } from "../types/types";
 import GiftPriceFilter from "../components/gift/GiftPriceFilter";
+import Searchbar from "../components/common/SearchBar";
+import { GiftListProvider } from "../contexts/GiftListContext";
 
 export default function HomePage() {
   const giftListRef = useRef<GiftListRef>(null);
@@ -27,13 +28,15 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
-      <div className="flex flex-col items-center gap-y-6 my-12">
+      <div className="flex flex-col items-center gap-y-6 py-12 bg-slate-700">
         <div className="w-full max-w-[700px]">
           <Searchbar placeholder="Search gifts" onChange={handleSearchGifts} />
         </div>
         <GiftPriceFilter onClick={handleSelectPriceMinPrice} />
       </div>
-      <GiftList ref={giftListRef} />
+      <GiftListProvider>
+        <GiftList ref={giftListRef} />
+      </GiftListProvider>
     </div>
   );
 }
