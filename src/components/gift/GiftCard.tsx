@@ -15,6 +15,7 @@ import { toggleGiftInFavorites } from "../../api/api";
 import GiftCardRating from "./GiftCardRating";
 import Toast from "../common/Toast";
 import { useGiftListContext } from "../../hooks/useGiftListContext";
+import useFavGiftsStore from "../../hooks/useFavGiftsStore";
 
 interface GiftCardProps {
   gift: Gift;
@@ -26,11 +27,11 @@ export default function GiftCard({ gift, isFavorite }: GiftCardProps) {
   const queryClient = useQueryClient();
   const [imagesLoaded, setImagesLoaded] = useState<number>(0);
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  // const [showToast, setShowToast] = useState<boolean>(false);
-  // const [toastMessage, setToastMessage] = useState<string>("");
-  const totalImages: number = gift.images.length;
-
+  const [favMarked, setFavMarked] = useState<boolean>(isFavorite);
   const { state: giftListState, setState: setGiftListState } = useGiftListContext();
+  const { numFavGifts, appendFavGiftId, deleteFavGiftId } = useFavGiftsStore();
+
+  const totalImages: number = gift.images.length;
 
   useEffect(() => {
     if (imagesLoaded >= totalImages && totalImages > 0) {
@@ -50,20 +51,29 @@ export default function GiftCard({ gift, isFavorite }: GiftCardProps) {
   const mutation = useMutation<GiftFavoriteToggleMessage, Error, Gift>({
     mutationFn: toggleGiftInFavorites,
     onSuccess: (data) => {
-      const message =
-        data === "Added"
-          ? `${gift.gift} successfully marked as favorite gift`
-          : `${gift.gift} is no longer marked as favorite gift`;
-      setGiftListState({ favGiftToggleMessage: message });
+      let message;
+
+      if (data === "Added") {
+        message = `${gift.gift} successfully marked as favorite gift`;
+        appendFavGiftId({ id: gift.id });
+        setFavMarked(true);
+      } else {
+        message = `${gift.gift} is no longer marked as favorite gift`;
+        deleteFavGiftId({ id: gift.id });
+        setFavMarked(false);
+      }
+
+      setGiftListState({ favGiftToggleMessage: message, hasFavGiftToggleError: false });
 
       queryClient.invalidateQueries({ queryKey: ["gifts"] });
     },
     onError: (error) => {
-      console.error("Error toggling favorite:", error);
+      setFavMarked(false);
+      setGiftListState({ favGiftToggleMessage: error.message, hasFavGiftToggleError: true });
     },
   });
 
-  const handleToggleFavorite = async () => {
+  const handleToggleFavorite = (): void => {
     mutation.mutate(gift);
   };
 
@@ -78,6 +88,8 @@ export default function GiftCard({ gift, isFavorite }: GiftCardProps) {
   const navigteToGiftDetails = (): void => {
     navigate(`gift/${gift.id}`);
   };
+
+  const preventAddToFav = numFavGifts >= 10;
 
   const averageRating = calcGiftAverageRating(gift.reviews);
 
@@ -100,7 +112,8 @@ export default function GiftCard({ gift, isFavorite }: GiftCardProps) {
             <div className="flex justify-between items-start pb-2 border-b-[1px] border-gray-300">
               <p className="text-lg font-semibold">{gift.gift}</p>
               <ToggleIconBtn
-                selected={isFavorite}
+                selected={favMarked}
+                disabled={preventAddToFav}
                 onClick={handleToggleFavorite}
                 defualtIcon={<IoIosHeartEmpty size={25} />}
                 selectedIcon={<IoIosHeart size={25} color="red" />}
@@ -131,7 +144,8 @@ export default function GiftCard({ gift, isFavorite }: GiftCardProps) {
         message={giftListState.favGiftToggleMessage}
         show={!!giftListState.favGiftToggleMessage}
         visibilityDuration={4}
-        onClose={() => setGiftListState({ favGiftToggleMessage: "" })}
+        isError={giftListState.hasFavGiftToggleError}
+        onClose={() => setGiftListState((prev) => ({ ...prev, favGiftToggleMessage: "" }))}
       />
     </>
   );

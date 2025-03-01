@@ -1,23 +1,33 @@
-import { ReactNode, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 interface ToggleIconBtnProps {
-  onClick: () => void;
   selected: boolean;
+  disabled?: boolean;
   defualtIcon: ReactNode;
   selectedIcon: ReactNode;
+  onClick: () => void | boolean;
 }
 
 export default function ToggleIconBtn({
-  onClick,
   selected,
+  disabled,
   defualtIcon,
   selectedIcon,
+  onClick,
 }: ToggleIconBtnProps) {
   const [isSelecetd, setIsSelected] = useState<boolean>(selected);
 
+  useEffect(() => {
+    setIsSelected(selected);
+  }, [selected]);
+
   const handleClick = () => {
     onClick();
-    setIsSelected((prev) => !prev);
+    if (isSelecetd) {
+      setIsSelected(false);
+    } else if (!isSelecetd && !disabled) {
+      setIsSelected(true);
+    }
   };
 
   return (

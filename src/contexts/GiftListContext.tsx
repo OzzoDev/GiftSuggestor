@@ -2,6 +2,7 @@ import React, { createContext, ReactNode, useState } from "react";
 
 interface GiftListState {
   favGiftToggleMessage: string;
+  hasFavGiftToggleError: boolean;
 }
 
 export interface GiftListContextType {
@@ -14,6 +15,7 @@ export const GiftListContext = createContext<GiftListContextType | undefined>(un
 export const GiftListProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [state, setState] = useState<GiftListState>({
     favGiftToggleMessage: "",
+    hasFavGiftToggleError: false,
   });
 
   return (

@@ -5,10 +5,17 @@ interface ToastProps {
   message: string;
   show?: boolean;
   visibilityDuration?: number;
+  isError?: boolean;
   onClose?: () => void;
 }
 
-export default function Toast({ message, show, visibilityDuration = 3, onClose }: ToastProps) {
+export default function Toast({
+  message,
+  show,
+  visibilityDuration = 3,
+  isError,
+  onClose,
+}: ToastProps) {
   const [isVisible, setIsVisible] = useState<boolean>(!!show);
   const [progress, setProgress] = useState<number>(100);
 
@@ -40,7 +47,7 @@ export default function Toast({ message, show, visibilityDuration = 3, onClose }
       <button onClick={onClose} className="cursor-pointer">
         <IoMdClose size={24} color="red" />
       </button>
-      <p className="text-white font-medium">{message}</p>
+      <p className={`${isError ? "text-red-500" : "text-white"} font-medium`}>{message}</p>
       <div
         className="h-1 bg-green-700"
         style={{
