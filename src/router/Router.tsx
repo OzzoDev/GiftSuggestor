@@ -5,6 +5,7 @@ import RootLayout from "../layouts/RootLayout";
 import HomePage from "../pages/HomePage";
 
 const GiftDetailsPage = lazy(() => import("../pages/gift/GiftDetailsPage"));
+const FavoriteGiftsPage = lazy(() => import("../pages/gift/FavoriteGiftsPage"));
 
 const Loader = (
   <PuffLoader
@@ -17,6 +18,14 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<HomePage />} />
+      <Route
+        path="favorites"
+        element={
+          <Suspense fallback={Loader}>
+            <FavoriteGiftsPage />
+          </Suspense>
+        }
+      />
       <Route
         path="gift/:giftid"
         element={

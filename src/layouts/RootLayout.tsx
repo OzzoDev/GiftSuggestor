@@ -15,7 +15,7 @@ export default function RootLayout() {
   return (
     <>
       <Header />
-      <main>
+      <main className="mt-[65px] min-h-screen">
         <PageTransition>
           <Outlet />
         </PageTransition>

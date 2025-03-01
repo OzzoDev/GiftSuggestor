@@ -50,8 +50,8 @@ const GiftList = forwardRef<GiftListRef, {}>(function GiftList(_, ref) {
     );
   }
 
-  if (error instanceof Error) {
-    return <div className="text-red-500">{error.message}</div>;
+  if (error) {
+    return <h1 className="p-6 text-2xl text-red-500 text-center">{error.message}</h1>;
   }
 
   return (

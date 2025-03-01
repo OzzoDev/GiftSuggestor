@@ -23,6 +23,31 @@ export const fetchGifts = async (): Promise<Gift[]> => {
   }
 };
 
+export const fetchGift = async (giftId: string) => {
+  try {
+    const response = await axios.get(`${API_ENDPOINTS["GIFTS"]}/${giftId}`);
+    return response.data;
+  } catch (error) {
+    if (axios.isAxiosError(error)) {
+      throw new Error(error.response?.data.message || "An error occurred while fetching gifts.");
+    } else {
+      throw new Error("An unexpected error occurred.");
+    }
+  }
+};
+
+export const fetchFavoriteGifts = async (giftIds: string[]) => {
+  try {
+    return await Promise.all(giftIds.map((giftId) => fetchGift(giftId)));
+  } catch (error) {
+    if (axios.isAxiosError(error)) {
+      throw new Error(error.response?.data.message || "An error occurred while fetching gifts.");
+    } else {
+      throw new Error("An unexpected error occurred.");
+    }
+  }
+};
+
 export const fetchFavoriteGiftIds = async (): Promise<GiftId[]> => {
   try {
     const response = await axios.get<GiftId[]>(API_ENDPOINTS["FAVORITES"]);

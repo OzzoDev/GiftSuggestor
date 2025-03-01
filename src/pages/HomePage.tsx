@@ -27,7 +27,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen">
+    <div>
       <div className="flex flex-col items-center gap-y-6 py-12 bg-slate-700">
         <div className="w-full max-w-[700px]">
           <Searchbar placeholder="Search gifts" onChange={handleSearchGifts} />
