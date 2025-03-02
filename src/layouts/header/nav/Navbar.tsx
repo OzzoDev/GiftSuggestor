@@ -6,14 +6,17 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-screen pb-4 pt-6 bg-slate-800 z-100">
-      <div className="mx-8 flex gap-x-12">
-        <LinkNav path="/" text="Gifts" />
-        <div className="relative">
-          <LinkNav path="favorites" text="Favorite gifts" />
-          <span className="absolute top-[-6px] right-[-20px] text-sm text-white rounded-full">
-            {numFavGifts}
-          </span>
+      <div className="mx-8 flex justify-between">
+        <div className="flex gap-x-12">
+          <LinkNav path="/" text="Gifts" />
+          <div className="relative">
+            <LinkNav path="favorites" text="Favorite gifts" />
+            <span className="absolute top-[-6px] right-[-20px] text-sm text-white rounded-full">
+              {numFavGifts}
+            </span>
+          </div>
         </div>
+        <LinkNav path="addgift" text="Add Gift" />
       </div>
     </nav>
   );

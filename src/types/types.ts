@@ -29,3 +29,7 @@ export type GiftFilters = {
   searchQuery?: string;
   minPrice?: number;
 };
+
+export type BuildUnion<N extends number, Acc extends number[] = [1]> = Acc["length"] extends N
+  ? Acc[number]
+  : BuildUnion<N, [...Acc, Acc["length"] extends 0 ? 1 : Acc["length"]]>;
