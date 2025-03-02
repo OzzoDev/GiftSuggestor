@@ -1,6 +1,27 @@
-import { BuildUnion, Gift } from "../types/types";
+import { BuildUnion, Gift, GiftPrice } from "../types/types";
 
 export type AddGiftFormSteps = BuildUnion<6>;
+
+export type FormFieldsStepOne = {
+  gift: string;
+  description: string;
+};
+
+export type FormFieldsStepTwo = {
+  price: GiftPrice;
+};
+
+export type FormFieldsStepThree = {
+  occassion: string[];
+};
+
+export type FormFieldsStepFour = {
+  url: string;
+};
+
+export type FormFieldsStepFive = {
+  images: string[];
+};
 
 export const NUM_FORM_STEPS: AddGiftFormSteps = 5;
 
@@ -16,9 +37,17 @@ function getPrevStep(currentStep: AddGiftFormSteps): AddGiftFormSteps {
   return (currentStep > 1 ? currentStep - 1 : currentStep) as AddGiftFormSteps;
 }
 
+export type AddGiftFormFields = Omit<Gift, "reviews">;
+
+export type AddGiftFieldName =
+  | keyof Omit<AddGiftFormFields, "price" | "occasion" | "images">
+  | `price.${keyof GiftPrice}`
+  | `occasion.${number}`
+  | `images.${number}`;
+
 export interface AddGiftState {
   formStep: AddGiftFormSteps;
-  formData: Gift;
+  formData: AddGiftFormFields;
 }
 
 export const initialState: AddGiftState = {
@@ -29,12 +58,11 @@ export const initialState: AddGiftState = {
     description: "",
     url: "",
     price: {
-      min: -1,
-      max: -1,
+      min: undefined,
+      max: undefined,
     },
     occasion: [],
     images: [],
-    reviews: [],
   },
 };
 
@@ -42,7 +70,15 @@ export type AddGiftAction =
   | { type: "STEP"; payload: number }
   | { type: "NEXT_STEP" }
   | { type: "PREV_STEP" }
-  | { type: "UPDATE_FORM_DATA"; payload: Gift }
+  | {
+      type: "UPDATE_FORM_DATA";
+      payload:
+        | FormFieldsStepOne
+        | FormFieldsStepTwo
+        | FormFieldsStepThree
+        | FormFieldsStepFour
+        | FormFieldsStepFive;
+    }
   | { type: "RESET_FORM" };
 
 export function addGiftReducer(state: AddGiftState, action: AddGiftAction): AddGiftState {
@@ -54,7 +90,11 @@ export function addGiftReducer(state: AddGiftState, action: AddGiftAction): AddG
     case "PREV_STEP":
       return { ...state, formStep: getPrevStep(state.formStep) };
     case "UPDATE_FORM_DATA":
-      return { ...state, formData: { ...state.formData, ...action.payload } };
+      return {
+        ...state,
+        formStep: getNextStep(state.formStep),
+        formData: { ...state.formData, ...action.payload },
+      };
     case "RESET_FORM":
       return initialState;
     default:

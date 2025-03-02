@@ -12,7 +12,7 @@ export default function Navbar() {
           <div className="relative">
             <LinkNav path="favorites" text="Favorite gifts" />
             <span className="absolute top-[-6px] right-[-20px] text-sm text-white rounded-full">
-              {numFavGifts}
+              {numFavGifts !== 0 ? numFavGifts : ""}
             </span>
           </div>
         </div>

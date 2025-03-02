@@ -1,16 +1,18 @@
+import { ReactNode } from "react";
+
 interface PrimaryBtnProps {
-  btnText: string;
   type?: "button" | "submit";
   onClick?: () => void;
+  children: ReactNode;
 }
 
-export default function PrimaryBtn({ btnText, type = "button", onClick }: PrimaryBtnProps) {
+export default function PrimaryBtn({ type = "button", onClick, children }: PrimaryBtnProps) {
   return (
     <button
       type={type}
       onClick={onClick}
-      className="px-4 font-medium w-full rounded-full text-white bg-gradient-to-r from-cyan-500 to-cyan-300 transition-opacity duration-300 hover:opacity-70 cursor-pointer">
-      {btnText}
+      className="flex items-center gap-2 px-6 font-medium w-full rounded-full text-white bg-gradient-to-r from-cyan-500 to-cyan-300 transition-opacity duration-300 hover:opacity-70 cursor-pointer whitespace-nowrap">
+      {children}
     </button>
   );
 }

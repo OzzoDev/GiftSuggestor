@@ -10,8 +10,8 @@ export type Gift = {
 };
 
 export type GiftPrice = {
-  min: number;
-  max: number;
+  min?: number;
+  max?: number;
 };
 
 export type GiftReview = {

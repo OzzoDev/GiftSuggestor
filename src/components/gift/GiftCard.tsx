@@ -135,8 +135,12 @@ export default function GiftCard({ gift, isFavorite }: GiftCardProps) {
             <GiftCardImageGallery images={gift.images} />
           </div>
           <div className="flex gap-8">
-            <PrimaryBtn btnText="Buy here" onClick={navigateToGiftUrl} />
-            <GhostBtn btnText="View more" onClick={navigteToGiftDetails} />
+            <PrimaryBtn onClick={navigateToGiftUrl}>
+              <span>Buy here</span>
+            </PrimaryBtn>
+            <GhostBtn onClick={navigteToGiftDetails}>
+              <span>View more</span>
+            </GhostBtn>
           </div>
         </div>
       </div>
