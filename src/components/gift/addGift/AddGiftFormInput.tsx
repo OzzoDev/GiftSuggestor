@@ -1,12 +1,8 @@
 import { UseFormGetValues, UseFormRegister, UseFormSetValue } from "react-hook-form";
 import { ReactNode, useEffect, useState } from "react";
-import {
-  AddGiftFieldName,
-  AddGiftFormFields,
-  AddGiftFormSteps,
-} from "../../reducers/addGiftReducer";
+import { AddGiftFieldName, AddGiftFormFields } from "../../../reducers/addGiftReducer";
 
-interface FormInputProps {
+interface AddGiftFormInputProps {
   type?: "text" | "number" | "url";
   name: AddGiftFieldName;
   placeholder?: string;
@@ -19,7 +15,7 @@ interface FormInputProps {
   children?: ReactNode;
 }
 
-export default function FormInput({
+export default function AddGiftFormInput({
   type = "text",
   name,
   placeholder = "",
@@ -30,20 +26,27 @@ export default function FormInput({
   register,
   setFormValue,
   children,
-}: FormInputProps) {
+}: AddGiftFormInputProps) {
   const value = formValues(name);
-  const [charCount, setCharCount] = useState<number>(value ? String(value).length : 0);
+  const [localValue, setLocalValue] = useState<string | number>("");
+
+  useEffect(() => {
+    const fieldValue = formValues(name);
+    setLocalValue(fieldValue !== undefined ? fieldValue : "");
+  }, [formValues, name]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const inputValue = e.target.value;
+    const parsedValue =
+      type === "number" ? (inputValue === "" ? "" : Number(inputValue)) : inputValue;
 
-    setCharCount(inputValue.length);
-    setFormValue(name, inputValue);
+    setLocalValue(parsedValue);
+    setFormValue(name, parsedValue);
   };
 
+  const charCount = localValue ? String(localValue).length : 0;
   const remainingChars = maxLength !== undefined ? maxLength - charCount : undefined;
   const minCharsMet = minLength !== undefined ? charCount >= minLength : false;
-
   return (
     <div className="flex flex-col gap-y-2">
       <label className="text-lg text-slate-600 font-medium">{label}</label>

@@ -1,6 +1,6 @@
 import { UseFormGetValues, UseFormRegister, UseFormSetValue } from "react-hook-form";
 import { AddGiftFormFields, AddGiftFormSteps } from "../../../reducers/addGiftReducer";
-import FormInput from "../../common/FormInput";
+import AddGiftFormInput from "./AddGiftFormInput";
 
 interface AddGiftFormProps {
   currentFormStep: AddGiftFormSteps;
@@ -19,7 +19,7 @@ export default function AddGiftForm({
     case 1:
       return (
         <div className="flex flex-col gap-y-16 w-full">
-          <FormInput
+          <AddGiftFormInput
             name="gift"
             placeholder="Enter name of gift"
             label="Gift"
@@ -27,7 +27,7 @@ export default function AddGiftForm({
             register={register}
             setFormValue={setFormValue}
           />
-          <FormInput
+          <AddGiftFormInput
             name="description"
             placeholder="Describe gift"
             label="Description"
@@ -42,7 +42,7 @@ export default function AddGiftForm({
     case 2:
       return (
         <div className="flex flex-col gap-y-16 w-full">
-          <FormInput
+          <AddGiftFormInput
             type="number"
             name="price.min"
             placeholder="Enter minimum price of gift"
@@ -54,8 +54,8 @@ export default function AddGiftForm({
               All prices are displayed in US Dollars (USD). Please ensure you are aware of the
               exchange rates if using a different currency.
             </p>
-          </FormInput>
-          <FormInput
+          </AddGiftFormInput>
+          <AddGiftFormInput
             type="number"
             name="price.max"
             placeholder="Enter maximum price of gift"
@@ -67,13 +67,13 @@ export default function AddGiftForm({
               All prices are displayed in US Dollars (USD). Please ensure you are aware of the
               exchange rates if using a different currency.
             </p>
-          </FormInput>
+          </AddGiftFormInput>
         </div>
       );
     case 3:
       return (
         <div className="flex flex-col gap-y-16 w-full">
-          <FormInput
+          <AddGiftFormInput
             name="occasion.0"
             placeholder="Enter most suitable occasion for giving the gift"
             label="Occasion 1"
@@ -81,7 +81,7 @@ export default function AddGiftForm({
             register={register}
             setFormValue={setFormValue}
           />
-          <FormInput
+          <AddGiftFormInput
             name="occasion.1"
             placeholder="Enter second most suitable occasion for giving the gift"
             label="Occasion 2"
@@ -89,7 +89,7 @@ export default function AddGiftForm({
             register={register}
             setFormValue={setFormValue}
           />
-          <FormInput
+          <AddGiftFormInput
             name="occasion.2"
             placeholder="Enter thrid most suitable occasion for giving the gift"
             label="Occasion 3"

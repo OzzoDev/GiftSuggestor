@@ -47,11 +47,13 @@ export type AddGiftFieldName =
 
 export interface AddGiftState {
   formStep: AddGiftFormSteps;
+  isFormStepsFilled: boolean[];
   formData: AddGiftFormFields;
 }
 
 export const initialState: AddGiftState = {
   formStep: 1,
+  isFormStepsFilled: new Array(5).fill(false),
   formData: {
     id: "",
     gift: "",
@@ -78,6 +80,7 @@ export type AddGiftAction =
         | FormFieldsStepThree
         | FormFieldsStepFour
         | FormFieldsStepFive;
+      shouldStepNext: boolean;
     }
   | { type: "RESET_FORM" };
 
@@ -90,9 +93,17 @@ export function addGiftReducer(state: AddGiftState, action: AddGiftAction): AddG
     case "PREV_STEP":
       return { ...state, formStep: getPrevStep(state.formStep) };
     case "UPDATE_FORM_DATA":
+      const step = state.formStep;
+      const nextStep = getNextStep(step);
+
+      const isFormStepsFilled = state.isFormStepsFilled.map((formStep, index) =>
+        index === step - 1 ? true : formStep
+      );
+
       return {
         ...state,
-        formStep: getNextStep(state.formStep),
+        formStep: action.shouldStepNext ? nextStep : step,
+        isFormStepsFilled,
         formData: { ...state.formData, ...action.payload },
       };
     case "RESET_FORM":
