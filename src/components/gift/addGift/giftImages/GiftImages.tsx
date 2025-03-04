@@ -1,0 +1,98 @@
+import { useFormContext, Controller } from "react-hook-form";
+import { GiftFormSchemaProps } from "../../../../validations/giftForm";
+import AddGiftInput from "../AddGiftInput";
+
+export default function GiftImages() {
+  const {
+    control,
+    formState: { errors: inputErrors },
+  } = useFormContext<GiftFormSchemaProps>();
+
+  console.log(inputErrors);
+
+  const firstImageError = (
+    inputErrors as {
+      giftImages?: { images?: { 0?: { message: string } } };
+    }
+  )?.giftImages?.images?.[0]?.message;
+
+  const secondImageError = (
+    inputErrors as {
+      giftImages?: { images?: { 1?: { message: string } } };
+    }
+  )?.giftImages?.images?.[1]?.message;
+
+  return (
+    <div className="grid grid-cols-[1fr_1fr] gap-x-12">
+      <Controller
+        name="giftImages.images.0"
+        control={control}
+        defaultValue=""
+        render={({ field }) => (
+          <AddGiftInput
+            label="Image 1"
+            value={field.value}
+            placeholder="Enter first image as a url"
+            errorMessage={firstImageError}
+            onChange={field.onChange}
+          />
+        )}
+      />
+      <Controller
+        name="giftImages.images.1"
+        control={control}
+        defaultValue=""
+        render={({ field }) => (
+          <AddGiftInput
+            label="Image 2"
+            value={field.value}
+            placeholder="Enter second image as a url"
+            errorMessage={secondImageError}
+            onChange={field.onChange}
+          />
+        )}
+      />
+      <Controller
+        name="giftImages.images.2"
+        control={control}
+        defaultValue=""
+        render={({ field }) => (
+          <AddGiftInput
+            label="Image 3"
+            value={field.value}
+            placeholder="Enter third image as a url"
+            onChange={field.onChange}
+          />
+        )}
+      />
+      <Controller
+        name="giftImages.images.3"
+        control={control}
+        defaultValue=""
+        render={({ field }) => (
+          <AddGiftInput
+            label="Image 4"
+            value={field.value}
+            placeholder="Enter fourth image as a url"
+            onChange={field.onChange}
+          />
+        )}
+      />
+      <span className="col-span-2">
+        <Controller
+          name="giftImages.images.4"
+          control={control}
+          defaultValue=""
+          render={({ field }) => (
+            <AddGiftInput
+              label="Image 5"
+              value={field.value}
+              placeholder="Enter fifth image as a url"
+              onChange={field.onChange}
+            />
+          )}
+        />
+      </span>
+    </div>
+  );
+}

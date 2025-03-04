@@ -22,8 +22,10 @@ export default function AddGiftFormControls({
     addGiftAction({ type: "PREV_STEP" });
   };
 
+  const isAllFormStepsFilled = addGiftState.isFormStepsFilled.every((formStep) => formStep);
+
   return (
-    <div className="flex flex-col items-center gap-y-24 w-full">
+    <div className="flex flex-col justify-between items-center gap-y-24 w-full h-[680px]">
       <AddGiftFormStepper
         currentFormStep={addGiftState.formStep}
         addGiftState={addGiftState}
@@ -31,7 +33,7 @@ export default function AddGiftFormControls({
         onSubmit={onSubmit}
       />
       {children}
-      <div className="flex justify-between mx-2 w-full">
+      {/* <div className="flex justify-between mx-2 w-full">
         <span>
           <GhostBtn onClick={handlePrev}>
             <IoIosArrowRoundBack size={24} />
@@ -40,10 +42,12 @@ export default function AddGiftFormControls({
         </span>
         <span>
           {addGiftState.formStep === NUM_FORM_STEPS ? (
-            <PrimaryBtn type="submit">
-              <span>Add Gift</span>
-              <IoMdCheckmark size={24} />
-            </PrimaryBtn>
+            isAllFormStepsFilled && (
+              <PrimaryBtn type="submit">
+                <span>Add Gift</span>
+                <IoMdCheckmark size={24} />
+              </PrimaryBtn>
+            )
           ) : (
             <GhostBtn type="submit">
               <span>Next</span>
@@ -51,7 +55,7 @@ export default function AddGiftFormControls({
             </GhostBtn>
           )}
         </span>
-      </div>
+      </div> */}
     </div>
   );
 }

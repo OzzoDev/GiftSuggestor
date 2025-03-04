@@ -23,6 +23,13 @@ export type FormFieldsStepFive = {
   images: string[];
 };
 
+export type FormStepFields =
+  | FormFieldsStepOne
+  | FormFieldsStepTwo
+  | FormFieldsStepThree
+  | FormFieldsStepFour
+  | FormFieldsStepFive;
+
 export const NUM_FORM_STEPS: AddGiftFormSteps = 5;
 
 function getStep(currentStep: AddGiftFormSteps, step: number): AddGiftFormSteps {
@@ -39,8 +46,15 @@ function getPrevStep(currentStep: AddGiftFormSteps): AddGiftFormSteps {
 
 export type AddGiftFormFields = Omit<Gift, "reviews">;
 
+// export type AddGiftFieldName =
+//   | keyof FormFieldsStepOne
+//   | keyof FormFieldsStepFour
+//   | `price.${keyof GiftPrice}`
+//   | `occasion.${number}`
+//   | `images.${number}`;
+
 export type AddGiftFieldName =
-  | keyof Omit<AddGiftFormFields, "price" | "occasion" | "images">
+  | keyof Omit<AddGiftFormFields, "price" | "occasion" | "images" | "id">
   | `price.${keyof GiftPrice}`
   | `occasion.${number}`
   | `images.${number}`;
@@ -74,12 +88,7 @@ export type AddGiftAction =
   | { type: "PREV_STEP" }
   | {
       type: "UPDATE_FORM_DATA";
-      payload:
-        | FormFieldsStepOne
-        | FormFieldsStepTwo
-        | FormFieldsStepThree
-        | FormFieldsStepFour
-        | FormFieldsStepFive;
+      payload: FormStepFields;
       shouldStepNext: boolean;
     }
   | { type: "RESET_FORM" };

@@ -1,5 +1,5 @@
-import AddGiftMultiStepForm from "../../components/gift/addGift/AddGiftMultiStepForm";
+import AddGiftForm from "../../components/gift/addGift/AddGiftForm";
 
 export default function AddGiftPage() {
-  return <AddGiftMultiStepForm />;
+  return <AddGiftForm />;
 }

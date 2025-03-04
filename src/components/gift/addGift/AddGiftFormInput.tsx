@@ -1,6 +1,6 @@
 import { UseFormGetValues, UseFormRegister, UseFormSetValue } from "react-hook-form";
 import { ReactNode, useEffect, useState } from "react";
-import { AddGiftFieldName, AddGiftFormFields } from "../../../reducers/addGiftReducer";
+import { AddGiftFieldName, FormStepFields } from "../../../reducers/addGiftReducer";
 
 interface AddGiftFormInputProps {
   type?: "text" | "number" | "url";
@@ -9,9 +9,9 @@ interface AddGiftFormInputProps {
   label: string;
   minLength?: number;
   maxLength?: number;
-  formValues: UseFormGetValues<AddGiftFormFields>;
-  register: UseFormRegister<AddGiftFormFields>;
-  setFormValue: UseFormSetValue<AddGiftFormFields>;
+  formValues: UseFormGetValues<FormStepFields>;
+  register: UseFormRegister<FormStepFields>;
+  setFormValue: UseFormSetValue<FormStepFields>;
   children?: ReactNode;
 }
 
@@ -48,7 +48,7 @@ export default function AddGiftFormInput({
   const remainingChars = maxLength !== undefined ? maxLength - charCount : undefined;
   const minCharsMet = minLength !== undefined ? charCount >= minLength : false;
   return (
-    <div className="flex flex-col gap-y-2">
+    <div className="flex flex-col gap-y-2 w-full">
       <label className="text-lg text-slate-600 font-medium">{label}</label>
       <div className="flex items-end p-2 border-b-2 border-gray-400">
         <input
