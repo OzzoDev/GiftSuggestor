@@ -86,7 +86,7 @@ export default function AddGiftForm() {
       <div className="flex justify-center items-center min-h-screen">
         <form
           onSubmit={handleSubmit(handleNextFormType)}
-          className="flex flex-col justify-between h-[600px] w-[90%] max-w-[600px]">
+          className="relative flex flex-col justify-between h-[600px] w-[90%] max-w-[600px]">
           {formTypeIsGiftDetails && <GiftDetails />}
           {formTypeIsGiftPrice && <GiftPrice />}
           {formTypeIsGiftOccasion && <GiftOccasion />}

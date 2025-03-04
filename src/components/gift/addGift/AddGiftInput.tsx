@@ -16,6 +16,7 @@ interface AddGiftInputProps {
   maxLength?: number;
   errorMessage?: string;
   onChange: (value: InputValueType) => void;
+  onBlur?: (value: string) => void;
   children?: ReactNode;
 }
 
@@ -31,6 +32,7 @@ const AddGiftInput = React.forwardRef<HTMLInputElement, AddGiftInputProps>(
       maxLength,
       value,
       onChange,
+      onBlur,
       errorMessage,
       children,
       ...props
@@ -72,6 +74,7 @@ const AddGiftInput = React.forwardRef<HTMLInputElement, AddGiftInputProps>(
             autoCorrect="off"
             spellCheck="false"
             onChange={handleChange}
+            onBlur={(e) => onBlur && onBlur(e.target.value)}
             {...props}
             className="mb-2 p-2 w-full border-0 outline-none border-b-2 border-gray-400"
           />

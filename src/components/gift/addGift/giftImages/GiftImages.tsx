@@ -1,14 +1,18 @@
 import { useFormContext, Controller } from "react-hook-form";
 import { GiftFormSchemaProps } from "../../../../validations/giftForm";
 import AddGiftInput from "../AddGiftInput";
+import { useState } from "react";
+import { PuffLoader } from "react-spinners";
 
 export default function GiftImages() {
   const {
     control,
+    setError,
+    clearErrors,
     formState: { errors: inputErrors },
   } = useFormContext<GiftFormSchemaProps>();
 
-  console.log(inputErrors);
+  const [isValidating, setIsValidating] = useState<boolean>(false);
 
   const firstImageError = (
     inputErrors as {
@@ -21,6 +25,40 @@ export default function GiftImages() {
       giftImages?: { images?: { 1?: { message: string } } };
     }
   )?.giftImages?.images?.[1]?.message;
+
+  const validateImages = async (imageUrl: string, index: number): Promise<void> => {
+    if (!imageUrl) return;
+
+    setIsValidating(true);
+
+    const isValidImage = await new Promise((resolve) => {
+      const img = new Image();
+      img.src = imageUrl;
+
+      img.onload = () => resolve(true);
+      img.onerror = () => resolve(false);
+    });
+
+    if (isValidImage) {
+      clearErrors(`giftImages.images.${index}`);
+    } else {
+      setError(`giftImages.images.${index}`, {
+        type: "manual",
+        message: "Invalid image URL",
+      });
+    }
+
+    setIsValidating(false);
+  };
+
+  if (isValidating) {
+    return (
+      <PuffLoader
+        size={50}
+        className="absoulte top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      />
+    );
+  }
 
   return (
     <div className="grid grid-cols-[1fr_1fr] gap-x-12">
@@ -35,6 +73,7 @@ export default function GiftImages() {
             placeholder="Enter first image as a url"
             errorMessage={firstImageError}
             onChange={field.onChange}
+            onBlur={() => validateImages(field.value, 0)}
           />
         )}
       />
@@ -49,6 +88,7 @@ export default function GiftImages() {
             placeholder="Enter second image as a url"
             errorMessage={secondImageError}
             onChange={field.onChange}
+            onBlur={() => validateImages(field.value, 1)}
           />
         )}
       />
