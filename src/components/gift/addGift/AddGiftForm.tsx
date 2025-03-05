@@ -15,15 +15,18 @@ import GiftUrl from "./giftUrl/GiftUrl";
 import GiftImages from "./giftImages/GiftImages";
 import { useEffect, useReducer } from "react";
 import { AddGiftFormFields, addGiftReducer, initialState } from "../../../reducers/addGiftReducer";
-import { validateImage } from "../../../validations/giftImages";
+import { validateImage, validateUrl } from "../../../validations/giftImages";
 import { PuffLoader } from "react-spinners";
+import { useAddGiftContext } from "../../../hooks/contexts/useAddGiftContext";
 
 export default function AddGiftForm() {
   const [formState, dispatchFormAction] = useReducer(addGiftReducer, initialState);
+  const { setState: setAddGiftState } = useAddGiftContext();
+
   const formMethods = useForm<GiftFormSchemaProps>({
     resolver: zodResolver(giftFormSchema),
     defaultValues: {
-      formType: GiftFormTypeEnum.GiftDetails,
+      formType: GiftFormTypeEnum.GiftImages,
     },
   });
   const {
@@ -39,6 +42,23 @@ export default function AddGiftForm() {
       console.log("Form validated successfully, formData: ", formState.formData);
     }
   }, [formState]);
+
+  const watchedImages = watch("giftImages.images", ["", "", "", "", ""]);
+
+  useEffect(() => {
+    (async () => {
+      const validUrls = watchedImages
+        .map((img) => (validateUrl(img) ? img : ""))
+        .map((img) => validateImage(img));
+      const validatedImages = await Promise.all(validUrls);
+      const images = validatedImages.map((_, index) => watchedImages[index]).filter((img) => img);
+
+      setAddGiftState((prev) => ({
+        ...prev,
+        images: images,
+      }));
+    })();
+  }, [watchedImages.join(",")]);
 
   const formType = watch("formType");
   const formTypeIsGiftDetails = formType === "giftDetails";

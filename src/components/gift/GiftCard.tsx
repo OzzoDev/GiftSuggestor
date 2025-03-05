@@ -14,8 +14,8 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { toggleGiftInFavorites } from "../../api/api";
 import GiftCardRating from "./GiftCardRating";
 import Toast from "../common/Toast";
-import { useGiftListContext } from "../../hooks/useGiftListContext";
 import useFavGiftsStore from "../../hooks/useFavGiftsStore";
+import { useGiftListContext } from "../../hooks/contexts/useGiftListContext";
 
 interface GiftCardProps {
   gift: Gift;
@@ -94,7 +94,7 @@ export default function GiftCard({ gift, isFavorite }: GiftCardProps) {
   const averageRating = calcGiftAverageRating(gift.reviews);
 
   const minPrice = gift.price.min;
-  const priceBadgeBackgroundColor = giftPriceBadgeBg(minPrice);
+  const priceBadgeBackgroundColor = giftPriceBadgeBg(minPrice || 0);
 
   return (
     <>

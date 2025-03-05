@@ -37,7 +37,9 @@ const GiftList = forwardRef<GiftListRef, {}>(function GiftList(_, ref) {
   const filteredGifts = useMemo(() => {
     return gifts
       ?.filter((gift) => gift.gift.toLowerCase().includes(filters?.searchQuery || "".toLowerCase()))
-      .filter((gift) => (filters?.minPrice ? gift.price.min >= filters.minPrice : true))
+      .filter((gift) =>
+        filters?.minPrice ? gift.price?.min && gift.price?.min >= filters.minPrice : true
+      )
       .sort((a, b) => calcGiftAverageRating(b.reviews) - calcGiftAverageRating(a.reviews));
   }, [gifts, filters]);
 

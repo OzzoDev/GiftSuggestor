@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { GiftListContext, GiftListContextType } from "../contexts/GiftListContext";
+import { GiftListContext, GiftListContextType } from "../../contexts/GiftListContext";
 
 export const useGiftListContext = (): GiftListContextType => {
   const context = useContext(GiftListContext);
