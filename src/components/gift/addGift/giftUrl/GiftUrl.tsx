@@ -22,7 +22,7 @@ export default function GiftUrl() {
             label="Gift url"
             type="url"
             value={field.value}
-            placeholder="Enter name of gift"
+            placeholder="Enter url"
             errorMessage={urlError}
             onChange={field.onChange}>
             <p>

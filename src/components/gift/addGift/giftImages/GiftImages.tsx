@@ -3,6 +3,7 @@ import { GiftFormSchemaProps } from "../../../../validations/giftForm";
 import AddGiftInput from "../AddGiftInput";
 import { useState } from "react";
 import { PuffLoader } from "react-spinners";
+import { validateImage, validateUrl } from "../../../../validations/giftImages";
 
 export default function GiftImages() {
   const {
@@ -31,13 +32,18 @@ export default function GiftImages() {
 
     setIsValidating(true);
 
-    const isValidImage = await new Promise((resolve) => {
-      const img = new Image();
-      img.src = imageUrl;
+    const isValid = validateUrl(imageUrl);
 
-      img.onload = () => resolve(true);
-      img.onerror = () => resolve(false);
-    });
+    if (!isValid) {
+      setError(`giftImages.images.${index}`, {
+        type: "manual",
+        message: "Invalid image URL",
+      });
+      setIsValidating(false);
+      return;
+    }
+
+    const isValidImage = await validateImage(imageUrl);
 
     if (isValidImage) {
       clearErrors(`giftImages.images.${index}`);
@@ -69,11 +75,11 @@ export default function GiftImages() {
         render={({ field }) => (
           <AddGiftInput
             label="Image 1"
-            value={field.value}
+            value={field.value || ""}
             placeholder="Enter first image as a url"
             errorMessage={firstImageError}
             onChange={field.onChange}
-            onBlur={() => validateImages(field.value, 0)}
+            onBlur={() => validateImages(field.value || "", 0)}
           />
         )}
       />
@@ -84,11 +90,11 @@ export default function GiftImages() {
         render={({ field }) => (
           <AddGiftInput
             label="Image 2"
-            value={field.value}
+            value={field.value || ""}
             placeholder="Enter second image as a url"
             errorMessage={secondImageError}
             onChange={field.onChange}
-            onBlur={() => validateImages(field.value, 1)}
+            onBlur={() => validateImages(field.value || "", 1)}
           />
         )}
       />
@@ -99,7 +105,7 @@ export default function GiftImages() {
         render={({ field }) => (
           <AddGiftInput
             label="Image 3"
-            value={field.value}
+            value={field.value || ""}
             placeholder="Enter third image as a url"
             onChange={field.onChange}
           />
@@ -112,7 +118,7 @@ export default function GiftImages() {
         render={({ field }) => (
           <AddGiftInput
             label="Image 4"
-            value={field.value}
+            value={field.value || ""}
             placeholder="Enter fourth image as a url"
             onChange={field.onChange}
           />
@@ -126,7 +132,7 @@ export default function GiftImages() {
           render={({ field }) => (
             <AddGiftInput
               label="Image 5"
-              value={field.value}
+              value={field.value || ""}
               placeholder="Enter fifth image as a url"
               onChange={field.onChange}
             />
