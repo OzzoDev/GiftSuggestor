@@ -86,7 +86,7 @@ export default function GiftCard({ gift, isFavorite }: GiftCardProps) {
   };
 
   const navigteToGiftDetails = (): void => {
-    navigate(`gift/${gift.id}`);
+    navigate(`/gift/${gift.id}`);
   };
 
   const preventAddToFav = numFavGifts >= 10;
