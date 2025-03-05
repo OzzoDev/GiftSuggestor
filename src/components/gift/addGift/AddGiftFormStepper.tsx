@@ -1,69 +1,80 @@
 import { ReactNode } from "react";
-import {
-  AddGiftAction,
-  AddGiftFormSteps,
-  AddGiftState,
-  NUM_FORM_STEPS,
-} from "../../../reducers/addGiftReducer";
 import { IoCloseOutline } from "react-icons/io5";
 import { IoCheckmarkOutline } from "react-icons/io5";
 import { MdOutlineCircle } from "react-icons/md";
+import { GiftFormTypeEnum } from "../../../validations/giftForm";
 
 interface AddGiftFormStepperProps {
-  currentFormStep: AddGiftFormSteps;
-  addGiftState: AddGiftState;
-  addGiftAction: React.ActionDispatch<[action: AddGiftAction]>;
-  onSubmit: () => void;
+  formType: GiftFormTypeEnum;
+  isStepsValid: boolean[];
+  hasError: boolean;
+  setFormType: (formType: GiftFormTypeEnum) => void;
 }
 
 export default function AddGiftFormStepper({
-  currentFormStep,
-  addGiftState,
-  addGiftAction,
-  onSubmit,
+  formType,
+  isStepsValid,
+  hasError,
+  setFormType,
 }: AddGiftFormStepperProps) {
-  const handleStep = (step: number): void => {
-    onSubmit();
-    addGiftAction({ type: "STEP", payload: step });
+  const handleStep = (type: GiftFormTypeEnum): void => {
+    if (!hasError) {
+      setFormType(type);
+    }
   };
 
-  const isFormStepsFilled = addGiftState.isFormStepsFilled;
+  const formTypes: GiftFormTypeEnum[] = Object.values(GiftFormTypeEnum) as GiftFormTypeEnum[];
 
-  const isStepFilled = (index: number): boolean => isFormStepsFilled[index];
-  const isCurrentStep = (index: number): boolean => index === currentFormStep - 1;
+  const isStepFilled = (index: number): boolean => isStepsValid[index];
+  const isCurrentStep = (index: number): boolean => index === formTypes.indexOf(formType);
 
   const stepIcon = (index: number): ReactNode => {
-    return isStepFilled(index) ? (
-      <IoCheckmarkOutline size={24} color="green" />
+    return isCurrentStep(index) && hasError ? (
+      <IoCloseOutline size={24} color="#de0b27" />
+    ) : isStepFilled(index) ? (
+      <IoCheckmarkOutline size={24} color="#0bdb2a" />
     ) : isCurrentStep(index) ? (
-      <MdOutlineCircle size={24} color="grey" />
+      <MdOutlineCircle size={24} color="#737874" />
     ) : (
-      <IoCloseOutline size={24} color="red" />
+      <IoCloseOutline size={24} color="#de0b27" />
     );
   };
 
   const stepColor = (index: number): string => {
-    return isStepFilled(index) ? "green-500" : isCurrentStep(index) ? "gray-600" : "red-500";
+    return isCurrentStep(index) && hasError
+      ? "#de0b27"
+      : isStepFilled(index)
+      ? "#0bdb2a"
+      : isCurrentStep(index)
+      ? "#737874"
+      : "#de0b27";
   };
 
   return (
     <ul className="flex gap-6 sm:gap-2">
-      {Array.from({ length: NUM_FORM_STEPS }, (_, index) => {
+      {formTypes.map((type, index) => {
         const color = stepColor(index);
+        const disabled = (!isStepFilled(index) && !isCurrentStep(index)) || hasError;
+
         return (
           <li key={index} className="flex items-end gap-4">
             <div className="flex flex-col items-center gap-2">
               <span>{stepIcon(index)}</span>
               <button
                 type="button"
-                onClick={() => handleStep(index + 1)}
-                className={`relative py-2 px-4 border-2 rounded-full outline-none cursor-pointer transition-all duration-300 ease border-${color}`}>
+                onClick={() => handleStep(type as GiftFormTypeEnum)}
+                disabled={disabled}
+                style={{ borderColor: color }}
+                className={`relative py-2 px-4 border-2 rounded-full outline-none transition-all duration-300 ease ${
+                  disabled ? "cursor-not-allowed" : "cursor-pointer"
+                }`}>
                 <span>{index + 1}</span>
               </button>
             </div>
-            {index < NUM_FORM_STEPS - 1 && (
+            {index < formTypes.length - 1 && (
               <div
-                className={`hidden sm:block mb-5 mr-2 h-[2px] w-16 transition-all duration-300 ease bg-${color}`}
+                style={{ backgroundColor: color }}
+                className={`hidden sm:block mb-5 mr-2 h-[2px] w-16 transition-all duration-300 ease`}
               />
             )}
           </li>

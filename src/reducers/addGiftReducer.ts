@@ -1,5 +1,6 @@
 import { Gift } from "../types/types";
 import { GiftDetailsFormSchemaProps } from "../validations/giftDetails";
+import { GiftFormTypeEnum } from "../validations/giftForm";
 import { GiftImagesFormSchemaProps } from "../validations/giftImages";
 import { GiftOccasionFormSchemaProps } from "../validations/giftOccasion";
 import { GiftPriceFormSchemaProps } from "../validations/giftPrice";
@@ -17,6 +18,7 @@ export type AddGiftFormFields =
 export interface AddGiftState {
   formData: AddGiftData;
   isFormValid: boolean;
+  isStepsValid: boolean[];
 }
 
 export const initialState: AddGiftState = {
@@ -32,12 +34,14 @@ export const initialState: AddGiftState = {
     images: [],
   },
   isFormValid: false,
+  isStepsValid: [false, false, false, false, false],
 };
 
 export type AddGiftAction =
   | {
       type: "UPDATE_FORM_DATA";
       payload: AddGiftFormFields;
+      formType: GiftFormTypeEnum;
     }
   | {
       type: "INVALIDATE_FORM";
@@ -51,7 +55,19 @@ export type AddGiftAction =
 export function addGiftReducer(state: AddGiftState, action: AddGiftAction): AddGiftState {
   switch (action.type) {
     case "UPDATE_FORM_DATA":
-      return { ...state, formData: { ...state.formData, ...action.payload } };
+      const formType = action.formType;
+      const formTypes: GiftFormTypeEnum[] = Object.values(GiftFormTypeEnum) as GiftFormTypeEnum[];
+
+      const isStepsValid = state.isStepsValid;
+
+      const updatedIsStepsValid = isStepsValid.map((field, index) =>
+        index === formTypes.indexOf(formType) ? true : field
+      );
+      return {
+        ...state,
+        formData: { ...state.formData, ...action.payload },
+        isStepsValid: updatedIsStepsValid,
+      };
     case "INVALIDATE_FORM":
       return { ...state, isFormValid: action.payload };
     case "SUBMIT_FORM":

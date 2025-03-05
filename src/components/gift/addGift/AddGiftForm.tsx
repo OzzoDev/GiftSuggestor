@@ -18,6 +18,7 @@ import { AddGiftFormFields, addGiftReducer, initialState } from "../../../reduce
 import { validateImage, validateUrl } from "../../../validations/giftImages";
 import { PuffLoader } from "react-spinners";
 import { useAddGiftContext } from "../../../hooks/contexts/useAddGiftContext";
+import AddGiftFormStepper from "./AddGiftFormStepper";
 
 export default function AddGiftForm() {
   const [formState, dispatchFormAction] = useReducer(addGiftReducer, initialState);
@@ -26,14 +27,14 @@ export default function AddGiftForm() {
   const formMethods = useForm<GiftFormSchemaProps>({
     resolver: zodResolver(giftFormSchema),
     defaultValues: {
-      formType: GiftFormTypeEnum.GiftImages,
+      formType: GiftFormTypeEnum.GiftDetails,
     },
   });
   const {
     watch,
     getValues,
     setError,
-    formState: { isSubmitting },
+    formState: { isSubmitting, errors },
     handleSubmit,
   } = formMethods;
 
@@ -67,6 +68,8 @@ export default function AddGiftForm() {
   const formTypeIsGiftUrl = formType === "giftUrl";
   const formTypeIsGiftImages = formType === "giftImages";
 
+  const isValid = Object.keys(errors).length === 0;
+
   const setFormType = (formType: GiftFormTypeEnum): void => {
     formMethods.setValue("formType", formType);
   };
@@ -82,19 +85,35 @@ export default function AddGiftForm() {
     switch (formType) {
       case "giftDetails":
         setFormType(GiftFormTypeEnum.GiftPrice);
-        dispatchFormAction({ type: "UPDATE_FORM_DATA", payload: data });
+        dispatchFormAction({
+          type: "UPDATE_FORM_DATA",
+          payload: data,
+          formType: GiftFormTypeEnum.GiftDetails,
+        });
         break;
       case "giftPrice":
         setFormType(GiftFormTypeEnum.GiftOccasion);
-        dispatchFormAction({ type: "UPDATE_FORM_DATA", payload: data });
+        dispatchFormAction({
+          type: "UPDATE_FORM_DATA",
+          payload: data,
+          formType: GiftFormTypeEnum.GiftPrice,
+        });
         break;
       case "giftOccasion":
         setFormType(GiftFormTypeEnum.GiftUrl);
-        dispatchFormAction({ type: "UPDATE_FORM_DATA", payload: data });
+        dispatchFormAction({
+          type: "UPDATE_FORM_DATA",
+          payload: data,
+          formType: GiftFormTypeEnum.GiftOccasion,
+        });
         break;
       case "giftUrl":
         setFormType(GiftFormTypeEnum.GiftImages);
-        dispatchFormAction({ type: "UPDATE_FORM_DATA", payload: data });
+        dispatchFormAction({
+          type: "UPDATE_FORM_DATA",
+          payload: data,
+          formType: GiftFormTypeEnum.GiftUrl,
+        });
         break;
       case "giftImages":
         const images = (
@@ -136,22 +155,24 @@ export default function AddGiftForm() {
   };
 
   const handlePrevFormType = (): void => {
-    switch (formType) {
-      case "giftDetails":
-        console.log("Start of form with first type");
-        break;
-      case "giftPrice":
-        setFormType(GiftFormTypeEnum.GiftDetails);
-        break;
-      case "giftOccasion":
-        setFormType(GiftFormTypeEnum.GiftPrice);
-        break;
-      case "giftUrl":
-        setFormType(GiftFormTypeEnum.GiftOccasion);
-        break;
-      case "giftImages":
-        setFormType(GiftFormTypeEnum.GiftUrl);
-        break;
+    if (isValid) {
+      switch (formType) {
+        case "giftDetails":
+          console.log("Start of form with first type");
+          break;
+        case "giftPrice":
+          setFormType(GiftFormTypeEnum.GiftDetails);
+          break;
+        case "giftOccasion":
+          setFormType(GiftFormTypeEnum.GiftPrice);
+          break;
+        case "giftUrl":
+          setFormType(GiftFormTypeEnum.GiftOccasion);
+          break;
+        case "giftImages":
+          setFormType(GiftFormTypeEnum.GiftUrl);
+          break;
+      }
     }
   };
 
@@ -163,7 +184,13 @@ export default function AddGiftForm() {
         ) : (
           <form
             onSubmit={handleSubmit(handleNextFormType)}
-            className="relative flex flex-col justify-between h-[600px] w-[90%] max-w-[600px]">
+            className="relative flex flex-col justify-between mt-[120px] h-[660px] w-[90%] max-w-[600px]">
+            <AddGiftFormStepper
+              formType={formType}
+              isStepsValid={formState.isStepsValid}
+              hasError={!isValid}
+              setFormType={setFormType}
+            />
             {formTypeIsGiftDetails && <GiftDetails />}
             {formTypeIsGiftPrice && <GiftPrice />}
             {formTypeIsGiftOccasion && <GiftOccasion />}
