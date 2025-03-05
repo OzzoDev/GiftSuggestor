@@ -1,5 +1,7 @@
 import axios from "axios";
 import { Gift, GiftFavoriteToggleMessage, GiftId } from "../types/types";
+import { generateID } from "../utils/helpers";
+import { AddGiftData } from "../reducers/addGiftReducer";
 export const API_URL: string = "http://localhost:5000";
 
 export const API_ENDPOINTS: Record<string, string> = {
@@ -8,7 +10,6 @@ export const API_ENDPOINTS: Record<string, string> = {
 };
 
 export const fetchGifts = async (): Promise<Gift[]> => {
-  // Simulate a delay
   await new Promise((resolve) => setTimeout(resolve, 400));
 
   try {
@@ -17,6 +18,22 @@ export const fetchGifts = async (): Promise<Gift[]> => {
   } catch (error) {
     if (axios.isAxiosError(error)) {
       throw new Error(error.response?.data.message || "An error occurred while fetching gifts.");
+    } else {
+      throw new Error("An unexpected error occurred.");
+    }
+  }
+};
+
+export const addGift = async (gift: AddGiftData): Promise<void> => {
+  const gifts = await fetchGifts();
+
+  const giftWithId: Gift = { ...gift, id: generateID(gifts.map((g) => g.id)) };
+
+  try {
+    await axios.post<Gift[]>(API_ENDPOINTS["GIFTS"], giftWithId);
+  } catch (error) {
+    if (axios.isAxiosError(error)) {
+      throw new Error(error.response?.data.message || "An error occurred while adding gift.");
     } else {
       throw new Error("An unexpected error occurred.");
     }

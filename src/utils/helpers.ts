@@ -25,3 +25,11 @@ export function giftPriceBadgeBg(price: number): string {
     ? "rgba(27, 183, 250,0.9)"
     : "rgba(4, 189, 109, 0.9)";
 }
+
+export function generateID(array: string[]): string {
+  if (array.length === 0) {
+    return "1";
+  } else {
+    return String(Math.max(...array.map((item) => parseInt(item))) + 1);
+  }
+}

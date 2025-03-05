@@ -1506,6 +1506,26 @@
           "rating": 5
         }
       ]
+    },
+    {
+      "id": "50",
+      "gift": "Keyboard",
+      "description": "A new looking keyboard for the stetup",
+      "price": {
+        "min": 40,
+        "max": 80
+      },
+      "url": "https://www.amazon.se/AJAZZ-AK820-Tr%C3%A5dbundet-mekaniskt-tangentbord/dp/B0CQNRQFW8/ref=asc_df_B0CQNRQFW8/?tag=shpngadsglede-21&linkCode=df0&hvadid=476704348295&hvpos=&hvnetw=g&hvrand=4166142335448222478&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1012257&hvtargid=pla-2275954825603&mcid=717427d2b8393626a13b696854490336&th=1",
+      "occasion": [
+        "Birthday",
+        "Christmas"
+      ],
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOD8p6CyQPcmfx6JazFd-HXNA1tBtuda469w&s",
+        "https://media.wired.com/photos/65b0438c22aa647640de5c75/191:100/w_1280,c_limit/Mechanical-Keyboard-Guide-Gear-GettyImages-1313504623.jpg",
+        "https://qwertykey.eu/cdn/shop/files/QK100_RNDR_30.png?v=1730726502&width=3200"
+      ],
+      "reviews": []
     }
   ],
   "favorites": [

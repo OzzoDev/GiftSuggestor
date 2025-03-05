@@ -5,7 +5,7 @@ export const giftDetailsSchema = z.object({
   description: z
     .string()
     .min(15, "Description must be at least 15 characters")
-    .max(30, "Description must not be longer than 30 characters"),
+    .max(50, "Description must not be longer than 30 characters"),
 });
 
 export type GiftDetailsFormSchemaProps = z.infer<typeof giftDetailsSchema>;

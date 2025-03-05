@@ -91,7 +91,7 @@ const AddGiftInput = React.forwardRef<HTMLInputElement, AddGiftInputProps>(
                 )
               ) : (
                 <span>
-                  A minimum of {min} characters is required. The current character count is
+                  A minimum of {minLength} characters is required. The current character count is
                   <span className="text-black font-semibold">&nbsp;{charCount}.</span>
                 </span>
               )}

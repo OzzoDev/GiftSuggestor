@@ -19,8 +19,13 @@ import { validateImage, validateUrl } from "../../../validations/giftImages";
 import { PuffLoader } from "react-spinners";
 import { useAddGiftContext } from "../../../hooks/contexts/useAddGiftContext";
 import AddGiftFormStepper from "./AddGiftFormStepper";
+import { useQueryClient, useMutation } from "@tanstack/react-query";
+import { useNavigate } from "react-router";
+import { addGift } from "../../../api/api";
 
 export default function AddGiftForm() {
+  const navigate = useNavigate();
+  const queryClient = useQueryClient();
   const [formState, dispatchFormAction] = useReducer(addGiftReducer, initialState);
   const { setState: setAddGiftState } = useAddGiftContext();
 
@@ -40,6 +45,8 @@ export default function AddGiftForm() {
 
   useEffect(() => {
     if (formState.isFormValid) {
+      const data = formState.formData;
+      mutation.mutate(data);
       console.log("Form validated successfully, formData: ", formState.formData);
     }
   }, [formState]);
@@ -60,6 +67,17 @@ export default function AddGiftForm() {
       }));
     })();
   }, [watchedImages.join(",")]);
+
+  const mutation = useMutation({
+    mutationFn: addGift,
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["gifts"] });
+      navigate("/");
+    },
+    onError: () => {
+      console.log("Error adding gift");
+    },
+  });
 
   const formType = watch("formType");
   const formTypeIsGiftDetails = formType === "giftDetails";

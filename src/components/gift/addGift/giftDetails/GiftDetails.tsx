@@ -40,7 +40,7 @@ export default function GiftDetails() {
             value={String(field.value)}
             placeholder="Enter gift description"
             minLength={15}
-            maxLength={30}
+            maxLength={50}
             errorMessage={descriptionError}
             onChange={field.onChange}
           />

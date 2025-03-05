@@ -6,7 +6,7 @@ import { GiftOccasionFormSchemaProps } from "../validations/giftOccasion";
 import { GiftPriceFormSchemaProps } from "../validations/giftPrice";
 import { GiftUrlFormSchemaProps } from "../validations/giftUrl";
 
-type AddGiftData = Omit<Gift, "reviews" | "id">;
+export type AddGiftData = Omit<Gift, "id">;
 
 export type AddGiftFormFields =
   | GiftDetailsFormSchemaProps
@@ -32,6 +32,7 @@ export const initialState: AddGiftState = {
     url: "",
     occasion: [],
     images: [],
+    reviews: [],
   },
   isFormValid: false,
   isStepsValid: [false, false, false, false, false],
