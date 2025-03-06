@@ -58,7 +58,7 @@ const GiftList = forwardRef<GiftListRef, {}>(function GiftList(_, ref) {
 
   return (
     <div>
-      <ul className="flex flex-wrap justify-center gap-8 p-8">
+      <ul className="flex flex-wrap justify-center gap-8 m-auto w-[94%] max-w-[1800px] pt-20">
         {filteredGifts?.map((gift) => {
           const isFavoriteGift = favoriteGiftIds?.some((favId) => favId.id === gift.id);
           return <GiftCard key={gift.id} gift={gift} isFavorite={!!isFavoriteGift} />;

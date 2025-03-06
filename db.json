@@ -1553,6 +1553,31 @@
         "https://tinypng.com/static/images/boat.png"
       ],
       "reviews": []
+    },
+    {
+      "id": "52",
+      "gift": "Mentality book",
+      "description": "A valuable book with tips to boost confidence",
+      "price": {
+        "min": 35,
+        "max": 60
+      },
+      "url": "https://www.amazon.se/Champions-Mind-Great-Athletes-Thrive/dp/1623365627/ref=asc_df_1623365627/?tag=shpngadsglede-21&linkCode=df0&hvadid=476468067278&hvpos=&hvnetw=g&hvrand=6642200833184684367&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1012257&hvtargid=pla-333067440690&psc=1&mcid=966c82734c703ebfa0e02cf54fa9a2e1",
+      "occasion": [
+        "Birthday",
+        "Anniversary",
+        "Holiday"
+      ],
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4qhUCkNQd8PH-ysI0gmdu47uwC8wD9xePuw&s",
+        "https://thumbs.dreamstime.com/b/psychology-book-4475470.jpg"
+      ],
+      "reviews": [
+        {
+          "review": "Lovly stuff!",
+          "rating": 4
+        }
+      ]
     }
   ],
   "favorites": [

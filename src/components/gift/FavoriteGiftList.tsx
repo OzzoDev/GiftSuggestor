@@ -36,7 +36,7 @@ export default function FavoriteGiftList() {
 
   return (
     <div>
-      <ul className="flex flex-wrap gap-8 p-8">
+      <ul className="flex flex-wrap gap-8 m-auto w-[94%] max-w-[1800px] pt-20">
         {favoriteGifts.map((gift) => {
           return <GiftCard key={gift.id} gift={gift} isFavorite={true} />;
         })}
