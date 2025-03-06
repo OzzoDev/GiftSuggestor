@@ -1,20 +1,14 @@
-import { lazy, Suspense } from "react";
+import { lazy } from "react";
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router";
-import { PuffLoader } from "react-spinners";
 import RootLayout from "../layouts/RootLayout";
 import HomePage from "../pages/HomePage";
 import NotFoundPage from "../pages/error/NotFoundPage";
+import RouteWrapper from "./RouteWrapper";
 
+// Import lazy components
 const GiftDetailsPage = lazy(() => import("../pages/gift/GiftDetailsPage"));
 const FavoriteGiftsPage = lazy(() => import("../pages/gift/FavoriteGiftsPage"));
 const AddGiftPage = lazy(() => import("../pages/gift/AddGiftPage"));
-
-const Loader = (
-  <PuffLoader
-    size={50}
-    className="absoulte top-[50vh] left-[50vw] transform -translate-x-1/2 -translate-y-1/2"
-  />
-);
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,25 +17,25 @@ const router = createBrowserRouter(
       <Route
         path="favorites"
         element={
-          <Suspense fallback={Loader}>
+          <RouteWrapper>
             <FavoriteGiftsPage />
-          </Suspense>
+          </RouteWrapper>
         }
       />
       <Route
         path="gift/:giftid"
         element={
-          <Suspense fallback={Loader}>
+          <RouteWrapper>
             <GiftDetailsPage />
-          </Suspense>
+          </RouteWrapper>
         }
       />
       <Route
         path="addgift"
         element={
-          <Suspense fallback={Loader}>
+          <RouteWrapper>
             <AddGiftPage />
-          </Suspense>
+          </RouteWrapper>
         }
       />
       <Route path="*" element={<NotFoundPage />} />

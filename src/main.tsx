@@ -5,15 +5,19 @@ import { Provider } from "react-redux";
 import App from "./App.tsx";
 import "./index.css";
 import store from "./store/store.ts";
+import { ErrorBoundary } from "react-error-boundary";
+import UnexpectedErrorPage from "./pages/error/UnexpectedErrorPage.tsx";
 
 const queryClient = new QueryClient();
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Provider store={store}>
-      <QueryClientProvider client={queryClient}>
-        <App />
-      </QueryClientProvider>
-    </Provider>
+    <ErrorBoundary FallbackComponent={UnexpectedErrorPage}>
+      <Provider store={store}>
+        <QueryClientProvider client={queryClient}>
+          <App />
+        </QueryClientProvider>
+      </Provider>
+    </ErrorBoundary>
   </StrictMode>
 );
