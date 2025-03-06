@@ -2,7 +2,7 @@ interface GiftCardRatingProps {
   rating: number;
 }
 
-export default function GiftCardRating({ rating }: GiftCardRatingProps) {
+export default function GiftRating({ rating }: GiftCardRatingProps) {
   return (
     <ul className="flex gap-x-2">
       {Array.from({ length: rating }, (_, index) => {

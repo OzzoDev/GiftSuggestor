@@ -35,6 +35,7 @@ export default function AddGiftForm() {
       formType: GiftFormTypeEnum.GiftDetails,
     },
   });
+
   const {
     watch,
     getValues,

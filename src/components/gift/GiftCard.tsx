@@ -6,13 +6,13 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { useEffect, useState } from "react";
 import GiftCardImageGallery from "./GiftCardImageGallery";
 import { calcGiftAverageRating, giftPriceBadgeBg, joinWithAnd } from "../../utils/helpers";
-import GiftCardPriceBadge from "./GiftCardPriceBadge";
+import GiftPriceBadge from "./GiftPriceBadge";
 import PrimaryBtn from "../btn/PrimaryBtn";
 import GhostBtn from "../btn/GhostBtn";
 import { useNavigate } from "react-router";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { toggleGiftInFavorites } from "../../api/api";
-import GiftCardRating from "./GiftCardRating";
+import GiftRating from "./GiftRating";
 import Toast from "../common/Toast";
 import useFavGiftsStore from "../../hooks/useFavGiftsStore";
 import { useGiftListContext } from "../../hooks/contexts/useGiftListContext";
@@ -125,11 +125,11 @@ export default function GiftCard({ gift, isFavorite }: GiftCardProps) {
             <div className="flex flex-col gap-y-2">
               <p>{joinWithAnd(gift.occasion)}</p>
               <div className="flex justify-between">
-                <GiftCardPriceBadge
+                <GiftPriceBadge
                   text={`$${gift.price.min} - ${gift.price.max}`}
                   backgroundColor={priceBadgeBackgroundColor}
                 />
-                <GiftCardRating rating={averageRating} />
+                <GiftRating rating={averageRating} />
               </div>
             </div>
             <GiftCardImageGallery images={gift.images} />

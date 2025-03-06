@@ -7,6 +7,7 @@ import GiftDetails from "../../components/gift/giftDetails/GiftDetails";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import PrimaryBtn from "../../components/btn/PrimaryBtn";
 import GiftDetailsImageGallery from "../../components/gift/giftDetails/GiftDetailsImageGallery";
+import GiftDetailsReviews from "../../components/gift/giftDetails/GiftDetailsReviews";
 
 export default function GiftDetailsPage() {
   const navigate = useNavigate();
@@ -34,7 +35,7 @@ export default function GiftDetailsPage() {
   };
 
   return (
-    <div className="flex flex-col gap-24">
+    <div className="flex flex-col gap-24 pb-[100px]">
       <div className="flex justify-between items-center p-8">
         <IoIosArrowRoundBack size={32} onClick={() => navigate(-1)} className="cursor-pointer" />
         <div>
@@ -45,6 +46,7 @@ export default function GiftDetailsPage() {
       </div>
       <GiftDetails gift={gift} />
       <GiftDetailsImageGallery images={gift.images} />
+      <GiftDetailsReviews gift={gift} />
     </div>
   );
 }

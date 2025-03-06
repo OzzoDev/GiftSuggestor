@@ -1,6 +1,6 @@
 import { useFormContext, Controller } from "react-hook-form";
 import { GiftFormSchemaProps } from "../../../../validations/giftForm";
-import AddGiftInput from "../AddGiftInput";
+import FormInput from "../../../common/FormInput";
 
 export default function GiftPrice() {
   const {
@@ -21,7 +21,7 @@ export default function GiftPrice() {
         control={control}
         defaultValue={10}
         render={({ field }) => (
-          <AddGiftInput
+          <FormInput
             label="Minimum price of gift"
             type="number"
             value={field.value}
@@ -33,7 +33,7 @@ export default function GiftPrice() {
               Prices are displayed in US Dollars (USD). Please ensure you are aware of the exchange
               rates if using a different currency.
             </p>
-          </AddGiftInput>
+          </FormInput>
         )}
       />
       <Controller
@@ -41,7 +41,7 @@ export default function GiftPrice() {
         control={control}
         defaultValue={20}
         render={({ field }) => (
-          <AddGiftInput
+          <FormInput
             label="Maximum price of gift"
             type="number"
             value={String(field.value)}
@@ -53,7 +53,7 @@ export default function GiftPrice() {
               Prices are displayed in US Dollars (USD). Please ensure you are aware of the exchange
               rates if using a different currency.
             </p>
-          </AddGiftInput>
+          </FormInput>
         )}
       />
     </div>

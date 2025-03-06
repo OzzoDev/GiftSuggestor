@@ -1,5 +1,5 @@
 import { useState } from "react";
-import GiftCardPriceBadge from "./GiftCardPriceBadge";
+import GiftPriceBadge from "./GiftPriceBadge";
 import { giftPriceBadgeBg } from "../../utils/helpers";
 
 const GIFT_MIN_PRICES = [0, 30, 60, 90, 130];
@@ -30,7 +30,7 @@ export default function GiftPriceFilter({ onClick }: GiftPriceFilterProps) {
               className={`pb-2 cursor-pointer ${
                 selectedMinPrice === price ? "opacity-60 border-b-[1px] border-white" : ""
               }`}>
-              <GiftCardPriceBadge text={`$${price}`} backgroundColor={backgroundColor} />
+              <GiftPriceBadge text={`$${price}`} backgroundColor={backgroundColor} />
             </button>
           );
         })}

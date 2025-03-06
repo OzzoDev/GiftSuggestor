@@ -1,5 +1,5 @@
 import { Controller, useFormContext } from "react-hook-form";
-import AddGiftInput from "../AddGiftInput";
+import FormInput from "../../../common/FormInput";
 import { GiftFormSchemaProps } from "../../../../validations/giftForm";
 
 export default function GiftDetails() {
@@ -21,7 +21,7 @@ export default function GiftDetails() {
         control={control}
         defaultValue=""
         render={({ field }) => (
-          <AddGiftInput
+          <FormInput
             label="Gift name"
             value={field.value}
             placeholder="Enter name of gift"
@@ -35,7 +35,7 @@ export default function GiftDetails() {
         control={control}
         defaultValue=""
         render={({ field }) => (
-          <AddGiftInput
+          <FormInput
             label="Gift description"
             value={String(field.value)}
             placeholder="Enter gift description"

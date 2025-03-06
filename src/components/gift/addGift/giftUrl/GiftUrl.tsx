@@ -1,6 +1,6 @@
 import { useFormContext, Controller } from "react-hook-form";
 import { GiftFormSchemaProps } from "../../../../validations/giftForm";
-import AddGiftInput from "../AddGiftInput";
+import FormInput from "../../../common/FormInput";
 
 export default function GiftUrl() {
   const {
@@ -18,7 +18,7 @@ export default function GiftUrl() {
         control={control}
         defaultValue=""
         render={({ field }) => (
-          <AddGiftInput
+          <FormInput
             label="Gift url"
             type="url"
             value={field.value}
@@ -30,7 +30,7 @@ export default function GiftUrl() {
               This will serve as a reference for the gift and provide a convenient location for its
               purchase.
             </p>
-          </AddGiftInput>
+          </FormInput>
         )}
       />
     </div>

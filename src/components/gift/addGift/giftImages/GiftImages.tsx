@@ -1,6 +1,6 @@
 import { useFormContext, Controller } from "react-hook-form";
 import { GiftFormSchemaProps } from "../../../../validations/giftForm";
-import AddGiftInput from "../AddGiftInput";
+import FormInput from "../../../common/FormInput";
 import { useState } from "react";
 import { PuffLoader } from "react-spinners";
 import { validateImage, validateUrl } from "../../../../validations/giftImages";
@@ -73,7 +73,7 @@ export default function GiftImages() {
         control={control}
         defaultValue=""
         render={({ field }) => (
-          <AddGiftInput
+          <FormInput
             label="Image 1"
             value={field.value || ""}
             placeholder="Enter first image as a url"
@@ -88,7 +88,7 @@ export default function GiftImages() {
         control={control}
         defaultValue=""
         render={({ field }) => (
-          <AddGiftInput
+          <FormInput
             label="Image 2"
             value={field.value || ""}
             placeholder="Enter second image as a url"
@@ -103,7 +103,7 @@ export default function GiftImages() {
         control={control}
         defaultValue=""
         render={({ field }) => (
-          <AddGiftInput
+          <FormInput
             label="Image 3"
             value={field.value || ""}
             placeholder="Enter third image as a url"
@@ -116,7 +116,7 @@ export default function GiftImages() {
         control={control}
         defaultValue=""
         render={({ field }) => (
-          <AddGiftInput
+          <FormInput
             label="Image 4"
             value={field.value || ""}
             placeholder="Enter fourth image as a url"
@@ -130,7 +130,7 @@ export default function GiftImages() {
           control={control}
           defaultValue=""
           render={({ field }) => (
-            <AddGiftInput
+            <FormInput
               label="Image 5"
               value={field.value || ""}
               placeholder="Enter fifth image as a url"

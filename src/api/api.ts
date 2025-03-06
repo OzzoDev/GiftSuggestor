@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosResponse } from "axios";
 import { Gift, GiftFavoriteToggleMessage, GiftId } from "../types/types";
 import { generateID } from "../utils/helpers";
 import { AddGiftData } from "../reducers/addGiftReducer";
@@ -40,7 +40,7 @@ export const addGift = async (gift: AddGiftData): Promise<void> => {
   }
 };
 
-export const fetchGift = async (giftId: string) => {
+export const fetchGift = async (giftId: string): Promise<Gift> => {
   try {
     const response = await axios.get(`${API_ENDPOINTS["GIFTS"]}/${giftId}`);
     return response.data;
@@ -104,6 +104,18 @@ export const toggleGiftInFavorites = async (gift: Gift): Promise<GiftFavoriteTog
       throw new Error(
         "You can only have up to 10 favorite gifts. Please remove one to add a new favorite."
       );
+    } else {
+      throw new Error("An unexpected error occurred.");
+    }
+  }
+};
+
+export const addGiftReview = async (updatedGift: Gift): Promise<void> => {
+  try {
+    await axios.put(`${API_ENDPOINTS["GIFTS"]}/${updatedGift.id}`, updatedGift);
+  } catch (error) {
+    if (axios.isAxiosError(error)) {
+      throw new Error(error.response?.data.message || "An error occurred while fetching gifts.");
     } else {
       throw new Error("An unexpected error occurred.");
     }

@@ -1,6 +1,6 @@
 import { useFormContext, Controller } from "react-hook-form";
 import { GiftFormSchemaProps } from "../../../../validations/giftForm";
-import AddGiftInput from "../AddGiftInput";
+import FormInput from "../../../common/FormInput";
 
 export default function GiftOccasion() {
   const {
@@ -21,7 +21,7 @@ export default function GiftOccasion() {
         control={control}
         defaultValue=""
         render={({ field }) => (
-          <AddGiftInput
+          <FormInput
             label="Occasion 1"
             value={field.value}
             placeholder="Enter first occasion"
@@ -35,7 +35,7 @@ export default function GiftOccasion() {
         control={control}
         defaultValue=""
         render={({ field }) => (
-          <AddGiftInput
+          <FormInput
             label="Occasion 2"
             value={field.value}
             placeholder="Enter second occasion"
@@ -48,7 +48,7 @@ export default function GiftOccasion() {
         control={control}
         defaultValue=""
         render={({ field }) => (
-          <AddGiftInput
+          <FormInput
             label="Occasion 3"
             value={field.value}
             placeholder="Enter thrid occasion"

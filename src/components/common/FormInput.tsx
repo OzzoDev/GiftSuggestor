@@ -20,7 +20,7 @@ interface AddGiftInputProps {
   children?: ReactNode;
 }
 
-const AddGiftInput = React.forwardRef<HTMLInputElement, AddGiftInputProps>(
+const FormInput = React.forwardRef<HTMLInputElement, AddGiftInputProps>(
   (
     {
       label,
@@ -52,7 +52,10 @@ const AddGiftInput = React.forwardRef<HTMLInputElement, AddGiftInputProps>(
 
     return (
       <div className="flex flex-col gap-y-2 w-full">
-        <div className={`flex justify-between mb-4 ${errorMessage ? "opacity-100" : "opacity-0"}`}>
+        <div
+          className={`flex justify-between gap-x-12 mb-4 ${
+            errorMessage ? "opacity-100" : "opacity-0"
+          }`}>
           <p className="text text-red-500 font-bold">{errorMessage}</p>
           <HiOutlineExclamationCircle size={24} color="red" />
         </div>
@@ -104,4 +107,4 @@ const AddGiftInput = React.forwardRef<HTMLInputElement, AddGiftInputProps>(
   }
 );
 
-export default AddGiftInput;
+export default FormInput;
