@@ -79,6 +79,6 @@ Create and validate review forms with ease.
 
 Add smooth animations to enhance UI interactions.
 
-### 🧠 useReducer
+### 🧠 useReducer and Context API
 
 Manage complex component state and share data across components.
