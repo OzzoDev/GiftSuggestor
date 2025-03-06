@@ -36,7 +36,7 @@ export default function GiftDetailsPage() {
   return (
     <div className="flex flex-col gap-24">
       <div className="flex justify-between items-center p-8">
-        <IoIosArrowRoundBack size={32} onClick={() => navigate("/")} className="cursor-pointer" />
+        <IoIosArrowRoundBack size={32} onClick={() => navigate(-1)} className="cursor-pointer" />
         <div>
           <PrimaryBtn onClick={navigateToGiftUrl}>
             <span>Buy here</span>
