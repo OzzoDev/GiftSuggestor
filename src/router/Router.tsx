@@ -5,7 +5,6 @@ import HomePage from "../pages/HomePage";
 import NotFoundPage from "../pages/error/NotFoundPage";
 import RouteWrapper from "./RouteWrapper";
 
-// Import lazy components
 const GiftDetailsPage = lazy(() => import("../pages/gift/GiftDetailsPage"));
 const FavoriteGiftsPage = lazy(() => import("../pages/gift/FavoriteGiftsPage"));
 const AddGiftPage = lazy(() => import("../pages/gift/AddGiftPage"));
