@@ -1529,7 +1529,12 @@
         "https://media.wired.com/photos/65b0438c22aa647640de5c75/191:100/w_1280,c_limit/Mechanical-Keyboard-Guide-Gear-GettyImages-1313504623.jpg",
         "https://qwertykey.eu/cdn/shop/files/QK100_RNDR_30.png?v=1730726502&width=3200"
       ],
-      "reviews": []
+      "reviews": [
+        {
+          "review": "Cool looking keyboard",
+          "rating": 5
+        }
+      ]
     },
     {
       "id": "51",

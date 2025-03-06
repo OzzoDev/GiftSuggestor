@@ -1,5 +1,5 @@
 import { GiftListProvider } from "../../contexts/GiftListContext";
-import FavoriteGiftList from "./FavoriteGiftList";
+import FavoriteGiftList from "../../components/gift/FavoriteGiftList";
 
 export default function FavoriteGiftsPage() {
   return (

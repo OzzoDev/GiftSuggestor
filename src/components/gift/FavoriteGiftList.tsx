@@ -3,7 +3,7 @@ import { fetchFavoriteGifts } from "../../api/api";
 import { Gift } from "../../types/types";
 import useFavGiftsStore from "../../hooks/useFavGiftsStore";
 import { PuffLoader } from "react-spinners";
-import GiftCard from "../../components/gift/GiftCard";
+import GiftCard from "./GiftCard";
 
 export default function FavoriteGiftList() {
   const { favGiftIds } = useFavGiftsStore();
@@ -36,7 +36,7 @@ export default function FavoriteGiftList() {
 
   return (
     <div>
-      <ul className="grid grid-cols-[1fr] md:grid-cols-[repeat(2,1fr)] lg:grid-cols-[repeat(3,1fr)] xl:grid-cols-[repeat(4,1fr)] gap-8 p-8">
+      <ul className="flex flex-wrap gap-8 p-8">
         {favoriteGifts.map((gift) => {
           return <GiftCard key={gift.id} gift={gift} isFavorite={true} />;
         })}

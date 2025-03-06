@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 import { Gift, GiftFavoriteToggleMessage, GiftId } from "../types/types";
 import { generateID } from "../utils/helpers";
 import { AddGiftData } from "../reducers/addGiftReducer";

@@ -98,7 +98,7 @@ export default function GiftCard({ gift, isFavorite }: GiftCardProps) {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative max-w-[380px]">
         {isLoading && (
           <div className="absolute inset-0 z-10">
             <Skeleton height="100%" width="100%" baseColor="#f3f3f3" highlightColor="#ecebeb" />
