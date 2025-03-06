@@ -1526,6 +1526,24 @@
         "https://qwertykey.eu/cdn/shop/files/QK100_RNDR_30.png?v=1730726502&width=3200"
       ],
       "reviews": []
+    },
+    {
+      "id": "51",
+      "gift": "New gift",
+      "description": "This is just a test",
+      "price": {
+        "min": 10,
+        "max": 20
+      },
+      "url": "https://test.com",
+      "occasion": [
+        "test"
+      ],
+      "images": [
+        "https://cdn.imago-images.com/Images/header/hello-we-are-imago_03-2023.jpg",
+        "https://tinypng.com/static/images/boat.png"
+      ],
+      "reviews": []
     }
   ],
   "favorites": [

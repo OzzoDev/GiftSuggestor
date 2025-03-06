@@ -51,6 +51,9 @@ export type AddGiftAction =
   | {
       type: "SUBMIT_FORM";
       payload: AddGiftFormFields;
+    }
+  | {
+      type: "RESET_FORM";
     };
 
 export function addGiftReducer(state: AddGiftState, action: AddGiftAction): AddGiftState {
@@ -84,6 +87,8 @@ export function addGiftReducer(state: AddGiftState, action: AddGiftAction): AddG
       };
 
       return { ...state, formData: filteredFormData, isFormValid: true };
+    case "RESET_FORM":
+      return initialState;
     default:
       return state;
   }

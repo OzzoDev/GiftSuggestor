@@ -13,21 +13,21 @@ import GiftPrice from "./giftPrice/GiftPrice";
 import GiftOccasion from "./giftOccasion/GiftOccasion";
 import GiftUrl from "./giftUrl/GiftUrl";
 import GiftImages from "./giftImages/GiftImages";
-import { useEffect, useReducer } from "react";
+import { useEffect, useReducer, useState } from "react";
 import { AddGiftFormFields, addGiftReducer, initialState } from "../../../reducers/addGiftReducer";
 import { validateImage, validateUrl } from "../../../validations/giftImages";
 import { PuffLoader } from "react-spinners";
 import { useAddGiftContext } from "../../../hooks/contexts/useAddGiftContext";
 import AddGiftFormStepper from "./AddGiftFormStepper";
 import { useQueryClient, useMutation } from "@tanstack/react-query";
-import { useNavigate } from "react-router";
 import { addGift } from "../../../api/api";
+import Toast from "../../common/Toast";
 
 export default function AddGiftForm() {
-  const navigate = useNavigate();
   const queryClient = useQueryClient();
   const [formState, dispatchFormAction] = useReducer(addGiftReducer, initialState);
   const { setState: setAddGiftState } = useAddGiftContext();
+  const [toastMessage, setToastMessage] = useState<string>("");
 
   const formMethods = useForm<GiftFormSchemaProps>({
     resolver: zodResolver(giftFormSchema),
@@ -40,6 +40,7 @@ export default function AddGiftForm() {
     getValues,
     setError,
     formState: { isSubmitting, errors },
+    reset,
     handleSubmit,
   } = formMethods;
 
@@ -71,11 +72,14 @@ export default function AddGiftForm() {
   const mutation = useMutation({
     mutationFn: addGift,
     onSuccess: () => {
+      const giftName = formState.formData.gift;
       queryClient.invalidateQueries({ queryKey: ["gifts"] });
-      navigate("/");
+      setToastMessage(`${giftName} added successfully`);
+      resetForm();
     },
     onError: () => {
-      console.log("Error adding gift");
+      const giftName = formState.formData.gift;
+      setToastMessage(`Error adding ${giftName}`);
     },
   });
 
@@ -194,50 +198,59 @@ export default function AddGiftForm() {
     }
   };
 
+  const resetForm = () => {
+    dispatchFormAction({ type: "RESET_FORM" });
+    setFormType(GiftFormTypeEnum.GiftDetails);
+    reset();
+  };
+
   return (
-    <FormProvider {...formMethods}>
-      <div className="relative flex justify-center items-center min-h-screen">
-        {isSubmitting ? (
-          <PuffLoader size={50} className="" />
-        ) : (
-          <form
-            onSubmit={handleSubmit(handleNextFormType)}
-            className="relative flex flex-col justify-between mt-[120px] h-[660px] w-[90%] max-w-[600px]">
-            <AddGiftFormStepper
-              formType={formType}
-              isStepsValid={formState.isStepsValid}
-              hasError={!isValid}
-              setFormType={setFormType}
-            />
-            {formTypeIsGiftDetails && <GiftDetails />}
-            {formTypeIsGiftPrice && <GiftPrice />}
-            {formTypeIsGiftOccasion && <GiftOccasion />}
-            {formTypeIsGiftUrl && <GiftUrl />}
-            {formTypeIsGiftImages && <GiftImages />}
-            <div className="flex justify-between w-full">
-              <span>
-                <GhostBtn onClick={handlePrevFormType}>
-                  <IoIosArrowRoundBack size={24} />
-                  <span>Previous</span>
-                </GhostBtn>
-              </span>
-              <span>
-                {formTypeIsGiftImages ? (
-                  <PrimaryBtn type="submit">
-                    <span>Add Gift</span>
-                    <IoMdCheckmark size={24} />
-                  </PrimaryBtn>
-                ) : (
-                  <GhostBtn type="submit">
-                    <span>Next</span>
-                    <IoIosArrowRoundForward size={24} />
+    <>
+      <FormProvider {...formMethods}>
+        <div className="relative flex justify-center items-center min-h-screen">
+          {isSubmitting ? (
+            <PuffLoader size={50} className="" />
+          ) : (
+            <form
+              onSubmit={handleSubmit(handleNextFormType)}
+              className="relative flex flex-col justify-between mt-[120px] h-[660px] w-[90%] max-w-[600px]">
+              <AddGiftFormStepper
+                formType={formType}
+                isStepsValid={formState.isStepsValid}
+                hasError={!isValid}
+                setFormType={setFormType}
+              />
+              {formTypeIsGiftDetails && <GiftDetails />}
+              {formTypeIsGiftPrice && <GiftPrice />}
+              {formTypeIsGiftOccasion && <GiftOccasion />}
+              {formTypeIsGiftUrl && <GiftUrl />}
+              {formTypeIsGiftImages && <GiftImages />}
+              <div className="flex justify-between w-full">
+                <span>
+                  <GhostBtn onClick={handlePrevFormType}>
+                    <IoIosArrowRoundBack size={24} />
+                    <span>Previous</span>
                   </GhostBtn>
-                )}
-              </span>
-            </div>
-          </form>
-        )}
-      </div>
-    </FormProvider>
+                </span>
+                <span>
+                  {formTypeIsGiftImages ? (
+                    <PrimaryBtn type="submit">
+                      <span>Add Gift</span>
+                      <IoMdCheckmark size={24} />
+                    </PrimaryBtn>
+                  ) : (
+                    <GhostBtn type="submit">
+                      <span>Next</span>
+                      <IoIosArrowRoundForward size={24} />
+                    </GhostBtn>
+                  )}
+                </span>
+              </div>
+            </form>
+          )}
+        </div>
+      </FormProvider>
+      <Toast message={toastMessage} show={!!toastMessage} onClose={() => setToastMessage("")} />
+    </>
   );
 }
