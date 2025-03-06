@@ -3,6 +3,7 @@ import { createBrowserRouter, createRoutesFromElements, Route } from "react-rout
 import { PuffLoader } from "react-spinners";
 import RootLayout from "../layouts/RootLayout";
 import HomePage from "../pages/HomePage";
+import NotFoundPage from "../pages/error/NotFoundPage";
 
 const GiftDetailsPage = lazy(() => import("../pages/gift/GiftDetailsPage"));
 const FavoriteGiftsPage = lazy(() => import("../pages/gift/FavoriteGiftsPage"));
@@ -43,6 +44,7 @@ const router = createBrowserRouter(
           </Suspense>
         }
       />
+      <Route path="*" element={<NotFoundPage />} />
     </Route>
   )
 );
